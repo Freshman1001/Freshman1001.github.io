@@ -8,7 +8,7 @@ logo:
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: /img/main/user-astronaut-solid.svg
+    favicon: fas fa-igloo
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -121,7 +121,7 @@ footer:
     links:
         Source Code:
             icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+            url: https://github.com/Freshman1001/Freshman1001.github.io
 # Article related configurations
 article:
     # Code highlight settings
@@ -230,25 +230,25 @@ widgets:
         # Whether show the rounded avatar image
         avatar_rounded: true
         # Email address for the Gravatar
-        gravatar: chendehong3903@foxmail.com
+        gravatar:
         # URL or path for the follow button
         follow_link: https://github.com/Freshman1001
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: https://github.com/ppoffice
+                url: https://github.com/Freshman1001/
             QQ:
-                icon: /img/main/QQ.svg
+                icon: fab fa-qq
                 url: https://user.qzone.qq.com/916863399
             Twitter:
                 icon: fab fa-twitter
                 url: https://twitter.com/Dolores59833903
             Zhihu:
-                icon: /img/main/zhihu.svg
+                icon: fab fa-zhihu
                 url: https://www.zhihu.com/people/63-37-62-97-10
             Bilibili:
-                icon: bilibili
+                icon: fas fa-tv
                 url: https://space.bilibili.com/3494351049067279?spm_id_from=333.1007.0.0
     # Table of contents widget configurations
     -
