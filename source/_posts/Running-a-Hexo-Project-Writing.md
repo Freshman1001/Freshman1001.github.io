@@ -14,7 +14,6 @@ cover: https://blog.getform.io/content/images/2019/10/hexo-cover-01-800x450.png
 ***Before the beginning of everything, learn syntax of markdown first please.***
 
 
-
 ## New Article
 
 ```bash
