@@ -21,6 +21,7 @@ cover: https://blog.getform.io/content/images/2019/10/hexo-cover-01-800x450.png
  hexo new [layout] <title>
 ```
 <!-- more -->
+
 layout has 3 option:
 
 1. post: like an article.
