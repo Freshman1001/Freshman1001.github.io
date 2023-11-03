@@ -15,8 +15,8 @@ cover: https://blog.getform.io/content/images/2019/10/hexo-cover-01-800x450.png
 1. The repository should name after $username.github.io$.
 2. In repository setting, open *page* tab, and make sure the static web is built from branch *main* or what ever you want.
 3. Start web programming.
-
 <!-- more -->
+
 
 ## Init Hexo Project
 
