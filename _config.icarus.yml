@@ -3,11 +3,12 @@ version: 5.1.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: /img/1234.png
+logo:
+    text: "Dehong's Homestead"
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: /img/1234.png
+    favicon: /img/main/user-astronaut-solid.svg
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -109,25 +110,16 @@ navbar:
         Archives: /archives
         Categories: /categories
         Tags: /tags
-        About: /about
     # Links to be shown on the right of the navigation bar
     links:
-        Download on GitHub:
+        Source Code:
             icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+            url: https://github.com/Freshman1001/Freshman1001.github.io
 # Page footer configurations
 footer:
-    # Copyright text
-    copyright: © 2019
     # Links to be shown on the right of the footer section
     links:
-        Creative Commons:
-            icon: fab fa-creative-commons
-            url: https://creativecommons.org/
-        Attribution 4.0 International:
-            icon: fab fa-creative-commons-by
-            url: https://creativecommons.org/licenses/by/4.0/
-        Download on GitHub:
+        Source Code:
             icon: fab fa-github
             url: https://github.com/ppoffice/hexo-theme-icarus
 # Article related configurations
@@ -172,50 +164,49 @@ comment:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
     # "Afdian.net" donate button configurations
-    -
-        type: afdian
-        # URL to the "Afdian.net" personal page
-        url: ''
+    # -
+    #     type: afdian
+    #     # URL to the "Afdian.net" personal page
+    #     url: ''
     # Alipay donate button configurations
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: ''
+        qrcode: '/img/main/alipay.jpg'
     # "Buy me a coffee" donate button configurations
-    -
-        type: buymeacoffee
-        # URL to the "Buy me a coffee" page
-        url: ''
+    # -
+        # type: buymeacoffee
+        # # URL to the "Buy me a coffee" page
+        # # url: /img/wechatpay.jpg
+        # qrcode: '/img/wechatpay.jpg'
     # Patreon donate button configurations
-    -
-        type: patreon
-        # URL to the Patreon page
-        url: ''
+    # -
+    #     type: patreon
+    #     # URL to the Patreon page
+    #     url: ''
     # Paypal donate button configurations
-    -
-        type: paypal
-        # Paypal business ID or email address
-        business: ''
-        # Currency code
-        currency_code: USD
+    # -
+        # type: paypal
+        # # Paypal business ID or email address
+        # business: ''
+        # # Currency code
+        # currency_code: USD
     # Wechat donate button configurations
-    -
-        type: wechat
-        # Wechat qrcode image URL
-        qrcode: ''
+    # -
+    #     type: wechat
+    #     # Wechat qrcode image URL
+    #     qrcode: ''
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
-    type: sharethis
-    # URL to the ShareThis share plugin script
-    install_url: ''
+    type: bdshare
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
     # Left sidebar configurations
     left:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
     # Right sidebar configurations
     right:
         # Whether the sidebar sticks to the top when page scrolls
@@ -229,36 +220,36 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Your name
+        author: Chen Dehong
         # Author title
-        author_title: Your title
+        author_title: Sichuan University, CS
         # Author's current location
-        location: Your location
+        location: Chengdu
         # URL or path to the avatar image
-        avatar: 
+        avatar: /img/main/avatar.png
         # Whether show the rounded avatar image
-        avatar_rounded: false
+        avatar_rounded: true
         # Email address for the Gravatar
-        gravatar: 
+        gravatar: chendehong3903@foxmail.com
         # URL or path for the follow button
-        follow_link: https://github.com/ppoffice
+        follow_link: https://github.com/Freshman1001
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
                 url: https://github.com/ppoffice
-            Facebook:
-                icon: fab fa-facebook
-                url: https://facebook.com
+            QQ:
+                icon: /img/main/QQ.svg
+                url: https://user.qzone.qq.com/916863399
             Twitter:
                 icon: fab fa-twitter
-                url: https://twitter.com
-            Dribbble:
-                icon: fab fa-dribbble
-                url: https://dribbble.com
-            RSS:
-                icon: fas fa-rss
-                url: /
+                url: https://twitter.com/Dolores59833903
+            Zhihu:
+                icon: /img/main/zhihu.svg
+                url: https://www.zhihu.com/people/63-37-62-97-10
+            Bilibili:
+                icon: bilibili
+                url: https://space.bilibili.com/3494351049067279?spm_id_from=333.1007.0.0
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -273,7 +264,7 @@ widgets:
     # Recommendation links widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: links
         # Names and URLs of the sites
         links:
@@ -282,22 +273,22 @@ widgets:
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: categories
     # Recent posts widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: recent_posts
     # Archives widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: archives
     # Tags widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: tags
         # How to order tags. For example 'name' to order by name in ascending order, and '-length' to order by number of posts in each tags in descending order
         order_by: name
@@ -314,15 +305,15 @@ widgets:
         description: 
         # Feedburner ID
         feedburner_id: ''
-    # Google AdSense unit configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: adsense
-        # AdSense client ID
-        client_id: ''
-        # AdSense AD unit ID
-        slot_id: ''
+    # # Google AdSense unit configurations
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: adsense
+    #     # AdSense client ID
+    #     client_id: ''
+    #     # AdSense AD unit ID
+    #     slot_id: ''
     # Follow.it email subscription widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
