@@ -3,7 +3,8 @@ title: Quick Hexo Page Building
 date: 2023-11-03 14:14:59
 updated: 2023-11-03 14:14:59
 tags: hexo
-catogories: web
+categories:
+- web
 layout: post
 comment: true
 ---
