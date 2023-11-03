@@ -7,6 +7,7 @@ categories:
 - web
 layout: post
 comment: true
+cover: https://blog.getform.io/content/images/2019/10/hexo-cover-01-800x450.png
 ---
 
 
@@ -19,7 +20,7 @@ comment: true
 ```bash
  hexo new [layout] <title>
 ```
-
+<!-- more -->
 layout has 3 option:
 
 1. post: like an article.
@@ -53,6 +54,10 @@ categories:
 - [Life]  # Lowerlevel
 ```
 
+Place where you want to show in home page part a 
+```html
+<!-- more -->
+```
 
 
 ## Embed Resource
