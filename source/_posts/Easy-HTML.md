@@ -304,3 +304,42 @@ class
 ​	content
 
 escape characters: &
+
+
+
+## Video and Audio
+
+1. Hosting Service on youtube or vimeo, soundcloud.com or myspace.com
+2. `<vedio>` and `<audio>`
+
+​		src
+
+​		poster
+
+​		width and height
+
+​		control: default control
+
+​		autoplay
+
+​		loop
+
+​		preload=
+
+​			none
+
+​			auto
+
+​			metadata
+
+capability: add more than one media format(multi-source), like mp4 and webM 
+
+`		<source>`
+
+​	src
+
+​	type: tell browser the type will save load time
+
+​	codecs
+
+3. js
