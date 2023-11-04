@@ -10,7 +10,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 
 
 
-So many tutor there are for html and css, so this article just for review and quick look through.
+So many tutor there are for html , so this article just for review and quick look through. It can be used as a simple hand book.
 <!-- more -->
 
 
@@ -162,3 +162,145 @@ index.html
 target=“_blank”
 
 `<a herf="#[id]"></a></a>`: to id’s position
+
+
+
+## Image
+
+set an image directory
+
+`<img>`:
+
+​	src: :link:
+
+​	alt: alternative 
+
+​	title
+
+​	height: better should be designated for better performance
+
+​	weight: better should be designated for better performance
+
+Image should be measured in pixels.
+
+The storage format of images should be determined by its color distribution to optimize performance
+
+`<figure>`
+
+​	`<img>`
+
+​	`<figcaption>`
+
+`</figure>`
+
+
+
+## Table
+
+`<table>`
+
+​	`<tr>` : row
+
+​		`<th>`: heading scope=“row”/“col”
+
+​			`<td>`: data colspan rowspan
+
+`<thead><tbody><tfoot>`
+
+
+
+## Form
+
+Understand workflow with SERVER
+
+`<form>`:
+
+​	action
+
+​	method: get/post
+
+​	id
+
+`<input>`:
+
+​	type: text, password, radio, checkbox, file, submit, image(use image for submit button), hidden, date, email, url, search
+
+​	value: use in radio, checkbox
+
+​	checked: use in radio, only one option checked.
+
+​	name: Identify form
+
+​	maxlength
+
+​	placehoder: hint
+
+`<textarea>`
+
+`<select>`: drop-box
+
+​	name
+
+​	`<option>`
+
+​	value
+
+`<button>`: can contain other elements
+
+`<label>`:
+
+​	for: form id
+
+`<fiedlset>`: a set of forms
+
+​	`<legend>`: title of fieldset
+
+form validation: Done by js usually, but easy validation like required can be done by h5.
+
+
+
+## Other Tags
+
+`<!DOCTYPE html>`
+
+`<!-- -->`
+
+id
+
+class
+
+`<div>`
+
+`<span>`
+
+`<iframe>`
+
+​	width
+
+​	height
+
+​	src
+
+​	seamless: no scrolling
+
+`<meta>`
+
+​	name=
+
+​		description
+
+​		keywords
+
+​		robots: to search engine, contain `noindex` and `nofollow`
+
+​	http-equiv=
+
+​		author
+
+​		pragma
+
+​		expires
+
+​	content
+
+escape characters: &
