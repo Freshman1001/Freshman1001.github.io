@@ -343,3 +343,12 @@ capability: add more than one media format(multi-source), like mp4 and webM
 ​	codecs
 
 3. js
+
+
+
+## New Feature in H5 Layout
+
+No so many `<div>`
+
+`<header>` `<article>` `<footer>` `<aside>` `<section>` `<nav>` `<aside>` `<hgrounp>` `<figure>` `<figurecaption>`
+

@@ -216,3 +216,21 @@ Not scroll
 z-index
 
 clear
+
+
+
+## Image
+
+size
+
+align
+
+background
+
+background-repeat
+
+background-attachment
+
+linear-gradient
+
+:hover :active
