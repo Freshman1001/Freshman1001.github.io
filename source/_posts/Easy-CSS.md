@@ -113,3 +113,106 @@ text-shadow: {down, right, size, color}
 
 :hover, :active, :focus :respond to users
 
+
+
+## Box Model
+
+width, min-width, max-width
+
+height, min-height, max-height
+
+overflow: hidden/scroll
+
+padding: inside. top, right, bottom, left(has order)
+
+border: thin, medium, thick. or just (width, style, color)
+
+​	border-style: solid, dotted, double, dashed, groove, ridge, inset, outset, hidden/none
+
+​	border-color
+
+margin: outside
+
+all 3 above included in width and height
+
+display: inline, block, inline-block, none
+
+​		visibility: hidden, visible
+
+boarder-image/-moz-boarder-image/-webkit-boarder-iamge: url() stretch, repeat, round
+
+box-shadow
+
+border-radius: radius width, radius height
+
+
+
+## List Table and Form
+
+list-style:
+
+​	list-style-type
+
+​	list-style-image
+
+​	list-style-position
+
+empty-cells
+
+border-spacing, border-collapse
+
+**layout of form**
+
+​	float
+
+cursor
+
+​	auto
+
+​	crosshair
+
+​	default
+
+​	pointer
+
+​	move
+
+​	text
+
+​	wait
+
+​	help
+
+​	url(“”)
+
+
+
+
+
+## Layout and Position
+
+### Streaming(static)
+
+block and inline
+
+### Relative
+
+Relative to the position it should be if there is position designation
+
+### Absolute
+
+Absolute to the page, just as if the element doesn't exist.
+
+#### Absolute
+
+Scroll with the page
+
+#### Fixed position
+
+Not scroll
+
+#### Float Position
+
+z-index
+
+clear
