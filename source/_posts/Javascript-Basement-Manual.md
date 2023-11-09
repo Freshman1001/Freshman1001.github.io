@@ -67,10 +67,137 @@ Step:
 
 
 
-## Base Commands
+## Basement of Basement
 
 comment
 
 variable
 
 ​	data type: var array undefined
+
+To try:
+
+```javascript
+document.getElementByID()
+document.write()
+[element].textContent = [*]
+```
+
+
+
+## Function, Methods and Objects
+
+### Function
+
+```js
+function functionName(parameters, here){
+    function body here;
+    var outcome[ret1, ret2];
+    return outcome;
+}
+functionName(parameter1, parameter2)[ansIndex];
+```
+
+Anonymous function
+
+### Variable Scope
+
+local & global
+
+### Object
+
+```js
+var obj = {
+    key: value，
+    key: value,
+    functionName: function(){
+        functionBody here;
+        return value;
+    }
+};
+// or
+var obj = new Object();
+var obj = {};
+// or constructor
+function Obj (var1, var2, var3){
+    this.var1 = value；
+    this.var2 = value；
+}
+var obj = new Obj(var1, var2);
+```
+
+#### Visit Object Attribute
+
+obj.attr or obj[‘arrt name’]
+
+`delete` to delete an attribution.
+
+#### Built-in Objects
+
+1. #### BOM - window
+
+   1. document
+
+   2. history
+
+   3. location
+
+   4. navigator
+
+   5. screen
+
+      ```js
+      window.innerHeight
+      window.innerWidth
+      window.pageXOffset
+      window.pageYOffset
+      window.screenX
+      window.screenY
+      window.location
+      window.document
+      window.history
+      window.history.length
+      window.screen
+      window.screen.width
+      window.screen.height
+      window.alert()
+      window.open()
+      window.print()
+      ```
+
+      
+
+2. #### DOM - Document
+
+   1. `<html>`
+
+      1. `<head>`
+      2. `<title>`
+      3. `<body>`
+      4. `<div>`
+         1. attribute
+      5. `<p>`
+      6. text
+
+      ```js
+      document.title
+      document.lastModified
+      document.URL
+      ducument.domain
+      ducument.write()
+      ducument.getElementById()
+      document.querySelectorAll()
+      document.createElement()
+      document.c
+      ```
+
+      
+
+3. #### Global js objects
+
+   1. String
+   2. Number
+   3. Boolean
+   4. Date
+   5. Math
+   6. RegEx
