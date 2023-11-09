@@ -65,6 +65,10 @@ Step:
 
 `<script>`
 
+### Debug?
+
+console.log() or Web Browser
+
 
 
 ## Basement of Basement
@@ -188,7 +192,7 @@ obj.attr or obj[‘arrt name’]
       ducument.getElementById()
       document.querySelectorAll()
       document.createElement()
-      document.c
+      document.createTextNode()
       ```
 
       
@@ -196,8 +200,39 @@ obj.attr or obj[‘arrt name’]
 3. #### Global js objects
 
    1. String
+      1. length *length of '' is 0*
+      2. toUpperCase()
+      3. toLowerCase()
+      4. charAt()
+      5. indexOf()
+      6. lastIndexOf()
+      7. subString()
+      8. split()
+      9. trim()
+      10. replace()
    2. Number
+      1. isNan()
+      2. toFixed()
+      3. toPresicition()
+      4. toExponential()
    3. Boolean
    4. Date
+      1. getDate() setDate()
+      2. getDay()
+      3. getFullYear() setFullYear()
+      4. getHours() setHours()
+      5. get/setMilliseconds()
+      6. getMinutes() setMinutes()
+      7. get/setMonth()
+      8. get/setSeconds()
+      9. 
    5. Math
+      1. PI
+      2. round()
+      3. sqrt(n)
+      4. ceil()
+      5. floor()
+      6. random()
    6. RegEx
+   7. Undifined
+   8. Null
