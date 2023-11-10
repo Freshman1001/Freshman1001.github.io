@@ -236,3 +236,48 @@ obj.attr or obj[‘arrt name’]
    6. RegEx
    7. Undifined
    8. Null
+   
+   
+
+## Judgment and Loop
+
+if(){}else(){}
+
+Comparison operator: 
+
+== != 
+
+=== !== (type and value)
+
+switch()
+
+> js is weakly typed language
+>
+> item and array is regarded as true(when exist)
+
+for()
+
+while()
+
+do while()
+
+## DOM
+
+DOM TREE
+
+### Element Selector
+
+getElementById() .textContent
+
+querySelector()
+
+### NodeLIst
+
+getElementByClass() (dynamic)
+
+getElementByTagName() (dynamic)
+
+querySelectorAll()
+
+.className
+
