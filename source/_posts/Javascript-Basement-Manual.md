@@ -234,3 +234,66 @@ obj.attr or obj[‘arrt name’]
       5. floor()
       6. random()
    6. RegEx
+
+## DOM
+
+document.getElementById()
+
+document.getElementsByTagName()
+
+document.querySelector()
+
+document.querySelectorAll()
+
+document.getElementsByClassName()
+
+### Traverse
+
+parentNode
+
+previousSibling
+
+nextSibling
+
+firstChild
+
+lastChild
+
+### Get and Update
+
+nodeValue
+
+textContent
+
+innerHTML: handle like a string
+
+### Add and Remove
+
+document.write() (not recommended)
+
+createElement()	
+
+createTextContent()
+
+appendChild()
+
+removeChild()
+
+### Injection and XSS
+
+Check and template
+
+ESCAPE
+
+### Attributes
+
+.getAttribute()
+
+.hasAttribute()
+
+.setAttribute()
+
+
+
+
+
