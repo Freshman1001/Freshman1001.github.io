@@ -4,11 +4,8 @@ date: 2023-11-04 10:07:40
 updated: 2023-11-04 10:07:40
 tags: Yolov8
 categories:
-- 学习
-- 计算机
-- 人工智能
-- 深度学习
-- 图像检测
+- DeepLearning
+- ObjectDetection
 cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReC2WEKvgGPCIbrMPf9OC7y6odxYyDKo9drPtpkmhCmZ5KGtR4BWmROLF9oN-ocBXX_g&usqp=CAU
 ---
 

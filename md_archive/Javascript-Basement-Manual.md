@@ -7,9 +7,7 @@ categories:
 cover: https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg?tx=w_3840,q_auto
 ---
 
-The article is about quick through or review on javascript. Notice that it is not a tutorial.
-
-Before all start, I recommend you to learn html and css first. If you want to get started quickly, referring to the quick overview of html and css is an option.
+js开发
 
 <!--more-->
 
@@ -23,7 +21,7 @@ JavaScript是一种用于网页交互的脚本语言，它主要通过以下步�
 
    示例：
 
-   ```
+   ```js
    html<!DOCTYPE html>
    <html lang="en">
    <head>
@@ -44,7 +42,7 @@ JavaScript是一种用于网页交互的脚本语言，它主要通过以下步�
 
    示例：
 
-   ```
+   ```js
    javascript// 获取元素并修改内容
    var element = document.getElementById("myElement");
    element.innerHTML = "新的内容";
@@ -54,7 +52,7 @@ JavaScript是一种用于网页交互的脚本语言，它主要通过以下步�
 
    示例：
 
-   ```
+   ```js
    javascript// 制定规则 - 条件判断
    var age = 20;
    if (age >= 18) {
@@ -68,7 +66,7 @@ JavaScript是一种用于网页交互的脚本语言，它主要通过以下步�
 
    示例：
 
-   ```
+   ```js
    html<!-- HTML中的按钮 -->
    <button id="myButton" onclick="myFunction()">点击我</button>
    
@@ -104,7 +102,7 @@ JavaScript是一种用于网页交互的脚本语言，它主要通过以下步�
 
    示例（伪代码）：
 
-   ```
+   ```plaintext
    plaintext// 目标：计算并输出两个数的和
    
    // 任务1: 获取用户输入
@@ -117,6 +115,8 @@ JavaScript是一种用于网页交互的脚本语言，它主要通过以下步�
    // 任务3: 输出结果
    输出和
    ```
+
+   
 
 4. **测试和调试 (Testing and Debugging):** 编写完代码后，进行测试以确保脚本按照预期工作。调试任何潜在的错误或问题，并确保脚本的稳定性和正确性。
 
@@ -138,7 +138,7 @@ JavaScript是一种用于网页交互的脚本语言，它主要通过以下步�
 
 例如（伪代码）：
 
-```
+```plaintext
 plaintext// 创建汽车对象
 car = {
     color: "blue",         // 属性: 颜色
@@ -199,7 +199,7 @@ HTML、CSS和JavaScript通常一起协同工作，分别负责内容、视觉效
 
 在HTML文件中，通过`<script>`标签可以将JavaScript代码嵌入到HTML文档中。这可以在文档的头部或尾部完成，例如：
 
-```
+```html
 html<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2716,7 +2716,7 @@ $(':checked').css('border', '2px solid pink');
 以下是 `.each()` 方法的基本语法：
 
 ```
-javascriptCopy code$.each(collection, function(index, value) {
+$.each(collection, function(index, value) {
   // 处理每个元素的代码
 });
 ```
@@ -2728,4 +2728,389 @@ javascriptCopy code$.each(collection, function(index, value) {
 ```js
 $('li[id != "one"]') .hide ().delay (500) . fadeIn (1400) ;
 ```
+
+## 
+
+## 运行调试与错误处理
+
+### 执行顺序
+
+#### 1. 执行上下文
+
+- **内容介绍：** 执行上下文是JavaScript代码执行的环境，包括变量、函数、this等信息。了解执行上下文的创建和执行过程对于理解代码执行流程至关重要。
+
+- 例子：
+
+  ```js
+  console.log(x); // 输出 undefined，但不报错
+  var x = 5;
+  ```
+
+#### 2. 堆栈
+
+- **内容介绍：** JavaScript使用调用栈（执行栈）来管理执行上下文。学习调用栈的概念有助于理解代码的执行顺序和调用关系。
+
+- 例子：
+
+  ```js
+  function foo() {
+    console.log('foo');
+  }
+  function bar() {
+    foo();
+    console.log('bar');
+  }
+  bar();
+  ```
+
+#### 3. 准备阶段
+
+- **内容介绍：** 在代码执行之前，JavaScript会进行准备工作，包括创建新的作用域、变量、函数和参数，以及确定this关键字的值。
+
+- 例子：
+
+  ```js
+  console.log(a); // 输出 undefined，不会报错
+  var a = 10;
+  ```
+
+#### 4. 执行阶段
+
+- **内容介绍：** 一旦准备阶段完成，JavaScript开始执行代码，包括给变量赋值、引用函数来执行其代码以及执行语句。
+
+- 例子：
+
+  ```js
+  function multiply(x, y) {
+    return x * y;
+  }
+  console.log(multiply(3, 4)); // 输出 12
+  ```
+
+### 变量作用域与性能
+
+#### 1. 作用域链
+
+- **内容介绍：** JavaScript中的作用域链决定了变量的访问范围。深入了解作用域链有助于更好地组织和理解代码。
+
+- 例子：
+
+  ```js
+  function outer() {
+    var x = 10;
+    function inner() {
+      console.log(x);
+    }
+    inner();
+  }
+  outer(); // 输出 10
+  ```
+
+#### 2. 闭包
+
+- **内容介绍：** 闭包是指函数能够访问其词法作用域外部的变量。了解闭包的概念和使用场景对于优化代码结构和性能至关重要。
+
+- 例子：
+
+  ```js
+  function outer() {
+    var x = 10;
+    function inner() {
+      console.log(x);
+    }
+    return inner;
+  }
+  var closureFn = outer();
+  closureFn(); // 输出 10
+  ```
+
+###  错误理解和处理
+
+#### 1. 异常机制
+
+- **内容介绍：** JavaScript中的异常是指运行时错误，可能导致代码无法正常执行。了解异常的机制有助于及时发现和处理错误。
+
+- 例子：
+
+  ```js
+  try {
+    // 可能会引发异常的代码
+  } catch (error) {
+    // 异常处理代码
+    console.error(error.message);
+  } finally {
+      // 最终执行的必须执行的代码
+  }
+  ```
+
+#### 2. Error 对象
+
+- **内容介绍：** Error 对象是 JavaScript 中用于表示错误的基础对象，它包含了多个属性用于描述错误的详细信息。
+
+- 属性：
+
+  - **name：** 错误名称
+  - **message：** 错误消息
+  - **stack：** 错误堆栈信息
+
+- 例子：
+
+  ```js
+  try {
+    // 可能会引发异常的代码
+  } catch (error) {
+    console.error(error.name); // 输出错误名称
+    console.error(error.message); // 输出错误消息
+    console.error(error.stack); // 输出错误堆栈信息
+  }
+  ```
+
+#### 3. 内置错误类型
+
+- **内容介绍：** JavaScript内置了多种错误类型，每种类型代表不同的错误情况，包括但不限于语法错误、引用错误、类型错误、范围错误、URI错误和评估错误。
+
+- 内置错误类型：
+
+  - **Error：** 通用错误对象
+  - **SyntaxError：** 语法错误
+  - **ReferenceError：** 引用错误
+  - **TypeError：** 类型错误
+  - **RangeError：** 范围错误
+  - **URIError：** URI错误
+  - **EvalError：** 评估错误
+
+- 例子：
+
+  ```js
+  try {
+    // 可能会引发不同类型的错误的代码
+  } catch (error) {
+    if (error instanceof SyntaxError) {
+      console.error('语法错误');
+    } else if (error instanceof ReferenceError) {
+      console.error('引用错误');
+    } else if (error instanceof TypeError) {
+      console.error('类型错误');
+    }
+    // 其他错误类型的处理
+  }
+  ```
+
+以上是关于错误理解和处理的基本大纲，通过了解异常机制、Error 对象和内置错误类型，你可以更有效地调试和处理JavaScript代码中的错误。
+
+### 调试
+
+#### 1. 浏览器开发者工具和 Console
+
+- **内容介绍：** 浏览器开发者工具是调试JavaScript代码的重要工具之一，而Console是其中一个强大的组件，用于输出日志和进行交互性的调试。
+
+- **使用开发者工具：** 打开浏览器开发者工具，切换到“Console”选项卡。
+
+- 例子：
+
+  ```js
+  // 使用不同的 console 方法输出日志
+  console.log('普通日志');
+  console.info('信息日志');
+  console.warn('警告日志');
+  console.error('错误日志');
+  
+  // 使用 group 和 groupEnd 创建日志分组
+  console.group('日志分组');
+  console.log('分组内的日志');
+  console.groupEnd();
+  
+  // 使用 table 打印表格形式的日志
+  const data = [{ name: 'John', age: 28 }, { name: 'Alice', age: 24 }];
+  console.table(data);
+  
+  // 使用 assert 进行断言，如果条件不满足则输出错误信息
+  console.assert(1 === 2, '断言失败，输出错误信息');
+  ```
+
+### 断点调试
+
+#### 1. 断点
+
+- **内容介绍：** 断点是调试过程中的标记，它允许你在代码执行到特定位置时停止执行，方便你逐步检查代码。
+
+- **设置断点：** 在开发者工具的“Sources”或“Debugger”选项卡中，找到要设置断点的代码行，点击行号左侧即可设置断点。
+
+- 例子：
+
+  ```js
+  function exampleFunction() {
+    let x = 10;
+    let y = 20;
+    let result = x + y; // 设置断点
+    console.log(result);
+  }
+  exampleFunction();
+  ```
+
+#### 2. 条件断点
+
+- **内容介绍：** 条件断点是一种特殊的断点，只有当指定条件满足时才会触发断点停止执行。
+
+- **设置条件断点：** 在设置断点后，右键点击断点图标，选择“Edit Breakpoint”，然后可以输入条件表达式。
+
+- 例子：
+
+  ```js
+  let i = 0;
+  while (i < 5) {
+    console.log(i);
+    i++;
+  }
+  ```
+
+  在上述代码中，你可以设置一个条件断点，条件为 
+
+  ```js
+  i === 3
+  ```
+
+  ，这样当 i 等于 3 时会触发断点。
+
+#### 3. 执行方式
+
+- **内容介绍：** 在调试过程中，你可以选择不同的执行方式，如单步执行、继续执行等，以便更灵活地控制调试流程。
+- 执行方式：
+  - **单步执行（Step Over）：** 逐行执行代码，不进入函数内部。
+  - **进入函数（Step Into）：** 如果当前行包含函数调用，进入函数内部执行。
+  - **跳出函数（Step Out）：** 执行完当前函数的剩余代码，并跳回到调用该函数的地方。
+  - **继续执行（Resume）：** 从当前位置继续执行，直到下一个断点或程序结束。
+- **例子：** 在调试器的“Debugger”选项卡中，你可以使用上述执行方式按钮来控制代码的逐步执行。
+
+### 错误
+
+### 错误处理
+
+#### 1. 捕获错误
+
+- **内容介绍：** 在JavaScript中，通过使用 `try`、`catch`、`finally` 关键字来捕获和处理错误，从而使程序能够更加健壮。
+
+- 使用方式：
+
+  ```js
+  try {
+    // 可能会引发异常的代码
+  } catch (error) {
+    // 异常处理代码
+    console.error(error.message);
+  } finally {
+    // 最终执行的代码，无论是否发生异常都会执行
+  }
+  ```
+
+- 例子：
+
+  ```js
+  try {
+    let result = x / y; // 如果y为0，将抛出除以零的错误
+    console.log(result);
+  } catch (error) {
+    console.error('发生错误：' + error.message);
+  } finally {
+    console.log('最终执行的代码');
+  }
+  ```
+
+#### 2. 抛出错误
+
+- **内容介绍：** 在JavaScript中，通过 `throw` 关键字可以手动抛出一个错误，可以是内置的Error对象或自定义的错误对象。
+
+- 使用方式：
+
+  ```js
+  
+  throw new Error('错误消息');
+  ```
+
+- 例子：
+
+  ```js
+  function divide(x, y) {
+    if (y === 0) {
+      throw new Error('除数不能为零');
+    }
+    return x / y;
+  }
+  
+  try {
+    let result = divide(10, 0);
+    console.log(result);
+  } catch (error) {
+    console.error('发生错误：' + error.message);
+  }
+  ```
+
+以上是关于错误的捕获和抛出的基本介绍。通过使用 `try`、`catch`、`finally` 可以有效地处理代码中可能出现的异常，而通过 `throw` 可以手动引发错误。这些机制有助于提高代码的健壮性和可维护性。
+
+#### 常见错误
+
+1. **SyntaxError（语法错误）:**
+
+   - **描述：** 代码中存在语法错误，违反了JavaScript语法规则。
+
+   - 例子：
+
+     ```js
+     let x = 10;
+     if (x == 10 {  // 缺少右括号
+       console.log('x 等于 10');
+     }
+     ```
+
+2. **ReferenceError（引用错误）:**
+
+   - **描述：** 尝试访问未声明的变量或未定义的对象属性。
+
+   - 例子：
+
+     ```js
+     console.log(y); // y未定义
+     ```
+
+3. **TypeError（类型错误）:**
+
+   - **描述：** 变量或参数的类型不符合预期，无法执行特定的操作。
+
+   - 例子：
+
+     ```js
+     let num = 'abc';
+     console.log(num.toUpperCase()); // num 不是字符串类型，无法调用 toUpperCase 方法
+     ```
+
+4. **RangeError（范围错误）:**
+
+   - **描述：** 数值超出有效范围，例如数组长度为负数。
+
+   - 例子：
+
+     ```js
+     let arr = new Array(-1); // 数组长度不能为负数
+     ```
+
+5. **URIError（URI错误）:**
+
+   - **描述：** 与 URI 相关的函数（比如 decodeURIComponent）使用了无效的参数。
+
+   - 例子：
+
+     ```js
+     decodeURIComponent('%'); // 无效的 URI 编码
+     ```
+
+6. **EvalError（评估错误）:**
+
+   - **描述：** 在使用全局函数 eval() 时发生的错误（在现代 JavaScript 中，很少会遇到这个错误）。
+
+   - 例子：
+
+     ```js
+     
+     eval('alert("Hello, World!")'); // 在严格模式下可能会抛出 EvalError
+     ```
 

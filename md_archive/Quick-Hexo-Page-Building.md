@@ -4,9 +4,7 @@ date: 2023-11-03 14:14:59
 updated: 2023-11-03 14:14:59
 tags: hexo
 categories:
-- 学习
-- 计算机
-- 工具
+- web
 layout: post
 comment: true
 cover: https://blog.getform.io/content/images/2019/10/hexo-cover-01-800x450.png

@@ -3,8 +3,9 @@ title: Easy CSS
 date: 2023-11-05 09:05:06
 tags: web
 categories:
-- web
-- [html, css]
+- 学习
+- 计算机
+- 前端
 cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuXXqnhoPvHQ9kWgT-CuvhO1DJDMM4Bj3WkA&usqp=CAU
 ---
 
@@ -27,26 +28,26 @@ cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuXXqnhoPvHQ9kWgT-C
 <h4 id='如何设置盒子模型的属性'>如何设置盒子模型的属性</h4>
 <ul>
 <li><p><strong>设置盒子尺寸：</strong> 使用 <code>width</code> 和 <code>height</code> 属性设置元素的宽度和高度。</p>
-<pre><code>cssdiv {
+<pre><code>div {
   width: 200px;
   height: 100px;
 }
 </code></pre>
 </li>
 <li><p><strong>设置内边距：</strong> 使用 <code>padding</code> 属性设置元素的内边距。</p>
-<pre><code>cssdiv {
+<pre><code>div {
   padding: 20px;
 }
 </code></pre>
 </li>
 <li><p><strong>设置边框：</strong> 使用 <code>border</code> 属性设置元素的边框。</p>
-<pre><code>cssdiv {
+<pre><code>div {
   border: 2px solid #000;
 }
 </code></pre>
 </li>
 <li><p><strong>设置外边距：</strong> 使用 <code>margin</code> 属性设置元素的外边距。</p>
-<pre><code>cssdiv {
+<pre><code>div {
   margin: 10px;
 }
 </code></pre>
@@ -60,8 +61,8 @@ cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuXXqnhoPvHQ9kWgT-C
 
 </ul>
 <p>你可以通过设置 <code>box-sizing</code> 属性来指定使用哪种盒子模型。例如：</p>
-<pre><code>cssdiv {
-  box-sizing: border-box; /* 使用 IE 盒子模型 */
+<pre><code>div {
+  box-sizing: border-box; /*使用 IE 盒子模型*/
 }
 </code></pre>
 <p>总的来说，盒子模型是 CSS 中布局的基础，了解和熟练使用盒子模型的相关属性是掌握 CSS 核心概念的关键之一。</p>
@@ -144,38 +145,38 @@ cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuXXqnhoPvHQ9kWgT-C
 <p>   选择器用于选择页面上要样式化的元素。它告诉浏览器应该应用哪些样式规则。以下是一些常见的选择器类型：</p>
 <ol start='' >
 <li><p><strong>元素选择器（Element Selector）：</strong> 根据元素的名称选择元素。</p>
-<pre><code>cssp {
-  /* 样式规则 */
+<pre><code>p {
+  /*样式规则 */
 }
 </code></pre>
 </li>
 <li><p><strong>类选择器（Class Selector）：</strong> 根据元素的类名选择元素。</p>
-<pre><code>css.highlight {
+<pre><code>.highlight {
   /* 样式规则 */
 }
 </code></pre>
 </li>
 <li><p><strong>ID 选择器（ID Selector）：</strong> 根据元素的 ID 选择元素。</p>
-<pre><code>css#header {
+<pre><code>#header {
   /* 样式规则 */
 }
 </code></pre>
 </li>
 <li><p><strong>属性选择器（Attribute Selector）：</strong> 根据元素的属性选择元素。</p>
-<pre><code>cssinput[type=&quot;text&quot;] {
+<pre><code>input[type=&quot;text&quot;] {
   /* 样式规则 */
 }
 </code></pre>
 </li>
 <li><p><strong>伪类选择器（Pseudo-class Selector）：</strong> 根据元素的状态或位置选择元素。</p>
-<pre><code>cssa:hover {
+<pre><code>a:hover {
   /* 样式规则 */
 }
 </code></pre>
 </li>
 <li><p><strong>伪元素选择器（Pseudo-element Selector）：</strong> 选择元素的特定部分。</p>
-<pre><code>cssp::first-line {
-  /* 样式规则 */
+<pre><code>p::first-line {
+  /* 样式规则*/
 }
 </code></pre>
 </li>
@@ -183,7 +184,7 @@ cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuXXqnhoPvHQ9kWgT-C
 </ol>
 <h4 id='声明declarations）'>声明（Declarations）</h4>
 <p>   声明由属性和属性值组成。每个声明指定了要应用于选择的元素的一种样式。以下是声明的基本结构：</p>
-<pre><code>cssselector {
+<pre><code>selector {
   property: value;
 }
 </code></pre>
@@ -193,17 +194,17 @@ cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuXXqnhoPvHQ9kWgT-C
 
 </ul>
 <p>   例如，将段落文字颜色设置为红色：</p>
-<pre><code>cssp {
+<pre><code>p {
   color: red;
 }
 </code></pre>
 <p>   或者将标题的字体大小设置为16像素：</p>
-<pre><code>cssh1 {
+<pre><code>h1 {
   font-size: 16px;
 }
 </code></pre>
 <p>   多个声明可以组合在一个样式规则中：</p>
-<pre><code>cssh2 {
+<pre><code>h2 {
   color: blue;
   font-size: 18px;
   margin-bottom: 10px;
@@ -241,7 +242,7 @@ cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuXXqnhoPvHQ9kWgT-C
   
   &lt;!-- 使用 style 元素嵌入CSS样式 --&gt;
   &lt;style type=&quot;text/css&quot;&gt;
-    /* CSS 样式规则 */
+    /*CSS 样式规则*/
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f0f0;
@@ -271,90 +272,90 @@ cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuXXqnhoPvHQ9kWgT-C
 </ol>
 <h4 id='1-通用选择器-'>1. 通用选择器 <code>*</code></h4>
 <p>   <code>*</code> 选择器匹配文档中的所有元素。</p>
-<pre><code>css* {
+<pre><code>*{
   /* 应用于所有元素的样式规则 */
 }
 </code></pre>
 <h4 id='2-标签选择器-tag'>2. 标签选择器 <code>tag</code></h4>
 <p>   标签选择器选择特定类型的元素。</p>
-<pre><code>cssp {
+<pre><code>p {
   /* 应用于所有 &lt;p&gt; 元素的样式规则 */
 }
 </code></pre>
 <h4 id='3-类选择器-class标签与类选择器-tagclass'>3. 类选择器 <code>.class</code>、标签与类选择器 <code>tag.class</code></h4>
 <p>   类选择器选择具有特定类的元素，标签与类选择器选择特定标签下带有特定类的元素。</p>
-<pre><code>css.button {
+<pre><code>.button {
   /* 应用于所有类为 button 的元素的样式规则 */
 }
 
 h1.title {
-  /* 应用于所有 &lt;h1&gt; 标签且类为 title 的元素的样式规则 */
+  /*应用于所有 &lt;h1&gt; 标签且类为 title 的元素的样式规则*/
 }
 </code></pre>
 <h4 id='4-id-选择器-id'>4. ID 选择器 <code>#id</code></h4>
 <p>   ID选择器选择具有特定ID的元素。</p>
-<pre><code>css#header {
-  /* 应用于 ID 为 header 的元素的样式规则 */
+<pre><code>#header {
+  /*应用于 ID 为 header 的元素的样式规则 */
 }
 </code></pre>
 <h4 id='5-子元素选择器-parent--sub'>5. 子元素选择器 <code>parent &gt; sub</code></h4>
 <p>   子元素选择器选择作为指定父元素的直接子元素的元素。</p>
-<pre><code>cssnav &gt; ul {
+<pre><code>nav &gt; ul {
   /* 应用于所有 &lt;ul&gt; 元素，但仅在其直接位于 &lt;nav&gt; 下时生效 */
 }
 </code></pre>
 <h4 id='6-后代元素选择器-parent-nestedtag'>6. 后代元素选择器 <code>parent nestedtag</code></h4>
 <p>   后代元素选择器选择指定祖先元素内的所有后代元素。</p>
-<pre><code>cssarticle p {
+<pre><code>article p {
   /* 应用于所有 &lt;p&gt; 元素，但仅在其位于 &lt;article&gt; 元素内时生效 */
 }
 </code></pre>
 <h4 id='7-相邻兄弟选择器-tagnexttag'>7. 相邻兄弟选择器 <code>tag+nexttag</code></h4>
 <p>   相邻兄弟选择器选择紧接在指定元素后的相邻元素。</p>
-<pre><code>cssh2 + p {
+<pre><code>h2 + p {
   /* 应用于紧接在 &lt;h2&gt; 元素后的第一个 &lt;p&gt; 元素 */
 }
 </code></pre>
 <h4 id='8-通用兄弟选择器-tagsiblingtag'>8. 通用兄弟选择器 <code>tag~siblingtag</code></h4>
 <p>   通用兄弟选择器选择指定元素之后的所有兄弟元素。</p>
-<pre><code>cssh2 ~ p {
+<pre><code>h2 ~ p {
   /* 应用于 &lt;h2&gt; 元素后的所有 &lt;p&gt; 兄弟元素 */
 }
 </code></pre>
 <h4 id='9-属性选择器-tagattribute'>9. 属性选择器 <code>tag[attribute]</code></h4>
 <p>   属性选择器选择具有指定属性的元素。</p>
-<pre><code>cssinput[type] {
+<pre><code>input[type] {
   /* 应用于所有带有 type 属性的 &lt;input&gt; 元素 */
 }
 </code></pre>
 <h4 id='10-属性值选择器-tagattributevalue'>10. 属性值选择器 <code>tag[attribute=value]</code></h4>
 <p>   属性值选择器选择具有指定属性和属性值的元素。</p>
-<pre><code>cssa[href=&quot;https://example.com&quot;] {
+<pre><code>a[href=&quot;https://example.com&quot;] {
   /* 应用于所有链接到 &quot;https://example.com&quot; 的 &lt;a&gt; 元素 */
 }
 </code></pre>
 <h4 id='11-包含属性值选择器-tagattributevalue'>11. 包含属性值选择器 <code>tag[attribute~=value]</code></h4>
 <p>   包含属性值选择器选择具有指定属性，并且该属性的值包含指定词汇的元素。</p>
-<pre><code>cssp[class~=&quot;important&quot;] {
+<pre><code>p[class~=&quot;important&quot;] {
   /* 应用于所有类属性中包含 &quot;important&quot; 的 &lt;p&gt; 元素 */
 }
 </code></pre>
 <h4 id='12-属性值前缀选择器-tagattributevalue'>12. 属性值前缀选择器 <code>tag[attribute^=value]</code></h4>
 <p>   属性值前缀选择器选择具有以指定值开头的属性值的元素。</p>
-<pre><code>cssa[href^=&quot;https://&quot;] {
+<pre><code>a[href^=&quot;https://&quot;] {
   /* 应用于所有链接到以 &quot;https://&quot; 开头的地址的 &lt;a&gt; 元素 */
 }
 </code></pre>
 <h4 id='13-属性值后缀选择器-tagattributevalue'>13. 属性值后缀选择器 <code>tag[attribute$=value]</code></h4>
 <p>   属性值后缀选择器选择具有以指定值结尾的属性值的元素。</p>
-<pre><code>cssimg[src$=&quot;.png&quot;] {
+<pre><code>img[src$=&quot;.png&quot;] {
   /* 应用于所有引用以 &quot;.png&quot; 结尾的图片的 &lt;img&gt; 元素 */
 }
 </code></pre>
 <h4 id='14-属性值包含选择器-tagattributevalue'>14. 属性值包含选择器 <code>tag[attribute*=value]</code></h4>
 <p>   属性值包含选择器选择具有包含指定值的属性值的元素。</p>
-<pre><code>cssa[href*=&quot;example&quot;] {
-  /* 应用于所有链接到包含 &quot;example&quot; 的地址的 &lt;a&gt; 元素 */
+<pre><code>a[href*=&quot;example&quot;] {
+  /* 应用于所有链接到包含 &quot;example&quot; 的地址的 &lt;a&gt; 元素*/
 }
 </code></pre>
 <p>   CSS选择器的灵活性允许开发人员以多种方式选择和定位页面中的元素，从而实现对页面样式的精确控制。</p>
@@ -362,13 +363,13 @@ h1.title {
 <h4 id='颜色属性color-properties）'>颜色属性（Color Properties）</h4>
 <ul>
 <li><p><strong>文本颜色（Text Color）</strong>：通过 <code>color</code> 属性设置文本的颜色。可以使用颜色名称、十六进制值、RGB 值等表示。例如：</p>
-<pre><code>cssp {
+<pre><code>p {
   color: red;
 }
 </code></pre>
 </li>
 <li><p><strong>背景颜色（Background Color）</strong>：通过 <code>background-color</code> 属性设置元素的背景颜色。同样，可以使用不同的表示方法。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   background-color: #f0f0f0;
 }
 </code></pre>
@@ -378,14 +379,14 @@ h1.title {
 <h4 id='透明度opacity）'>透明度（Opacity）</h4>
 <ul>
 <li><p><strong>透明度（Opacity）</strong>：通过 <code>opacity</code> 属性设置元素的透明度。值为 0.0 到 1.0 之间的数字，0.0 表示完全透明，1.0 表示完全不透明。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   opacity: 0.7;
 }
 </code></pre>
 </li>
 <li><p><strong>RGBA 颜色表示</strong>：使用 <code>rgba</code> 函数表示颜色，其中 <code>a</code> 代表 alpha 通道（透明度）。例如：</p>
-<pre><code>cssdiv {
-  background-color: rgba(255, 0, 0, 0.5); /* 半透明红色背景 */
+<pre><code>div {
+  background-color: rgba(255, 0, 0, 0.5); /*半透明红色背景*/
 }
 </code></pre>
 </li>
@@ -394,14 +395,14 @@ h1.title {
 <h4 id='hsl-和-hsla-表示法'>HSL 和 HSLA 表示法</h4>
 <ul>
 <li><p><strong>HSL 颜色表示</strong>：使用 <code>hsl</code> 函数表示颜色，分别设置色相（Hue）、饱和度（Saturation）、亮度（Lightness）。例如：</p>
-<pre><code>cssdiv {
-  background-color: hsl(120, 100%, 50%); /* 绿色背景 */
+<pre><code>div {
+  background-color: hsl(120, 100%, 50%); /*绿色背景 */
 }
 </code></pre>
 </li>
 <li><p><strong>HSLA 颜色表示</strong>：在 <code>hsl</code> 的基础上增加 alpha 通道。例如：</p>
-<pre><code>cssdiv {
-  background-color: hsla(120, 100%, 50%, 0.7); /* 半透明绿色背景 */
+<pre><code>div {
+  background-color: hsla(120, 100%, 50%, 0.7); /* 半透明绿色背景*/
 }
 </code></pre>
 </li>
@@ -411,19 +412,19 @@ h1.title {
 <h2 id='文本和字体text-and-font）'>文本和字体（Text and Font）</h2>
 <h4 id='字体族font-family）'>字体族（Font Family）</h4>
 <p><code>font-family</code> 属性用于设置文本的字体族。可以指定多个字体，以备选项的形式存在，以确保在用户计算机上始终能够找到合适的字体。例如：</p>
-<pre><code>cssbody {
+<pre><code>body {
   font-family: &#39;Arial&#39;, &#39;Helvetica&#39;, sans-serif;
 }
 </code></pre>
 <h4 id='字体大小font-size）'>字体大小（Font Size）</h4>
 <p><code>font-size</code> 属性用于设置文本的大小，可以使用像素（px）、百分比（%）、相对长度单位（em）等。例如：</p>
-<pre><code>cssp {
+<pre><code>p {
   font-size: 16px;
 }
 </code></pre>
 <h4 id='字体引入font-face）'>字体引入（@font-face）</h4>
 <p><code>@font-face</code> 规则允许自定义字体文件，以便在网页上使用。例如：</p>
-<pre><code>css@font-face {
+<pre><code>@font-face {
   font-family: &#39;CustomFont&#39;;
   src: url(&#39;custom-font.woff&#39;) format(&#39;woff&#39;);
 }
@@ -433,44 +434,44 @@ body {
 </code></pre>
 <h4 id='字体粗细font-weight）'>字体粗细（Font Weight）</h4>
 <p><code>font-weight</code> 属性用于设置文本的粗细，可以是数字值，也可以是关键字如 <code>normal</code> 或 <code>bold</code>。例如：</p>
-<pre><code>cssstrong {
+<pre><code>strong {
   font-weight: bold;
 }
 </code></pre>
 <h4 id='字体样式font-style）'>字体样式（Font Style）</h4>
 <p><code>font-style</code> 属性用于设置文本的样式，如斜体。例如：</p>
-<pre><code>cssem {
+<pre><code>em {
   font-style: italic;
 }
 </code></pre>
 <h4 id='字体变形text-transform）'>字体变形（Text Transform）</h4>
 <p><code>text-transform</code> 属性用于控制文本的大小写。例如：</p>
-<pre><code>cssspan {
+<pre><code>span {
   text-transform: uppercase;
 }
 </code></pre>
 <h4 id='文本装饰text-decoration）'>文本装饰（Text Decoration）</h4>
 <p><code>text-decoration</code> 属性用于控制文本的装饰效果，如下划线、删除线等。例如：</p>
-<pre><code>cssa {
+<pre><code>a {
   text-decoration: none;
 }
 </code></pre>
 <h4 id='行高line-height）'>行高（Line Height）</h4>
 <p><code>line-height</code> 属性用于设置行高，最好使用相对长度单位（如 em）以提高可伸缩性。例如：</p>
-<pre><code>cssp {
+<pre><code>p {
   line-height: 1.5;
 }
 </code></pre>
 <h4 id='字母和单词间距letter-and-word-spacing）'>字母和单词间距（Letter and Word Spacing）</h4>
 <ul>
 <li><p><strong>字母间距（Letter Spacing）</strong>：<code>letter-spacing</code> 属性用于设置字母之间的间距。例如：</p>
-<pre><code>cssh1 {
+<pre><code>h1 {
   letter-spacing: 2px;
 }
 </code></pre>
 </li>
 <li><p><strong>单词间距（Word Spacing）</strong>：<code>word-spacing</code> 属性用于设置单词之间的间距。例如：</p>
-<pre><code>cssp {
+<pre><code>p {
   word-spacing: 5px;
 }
 </code></pre>
@@ -479,25 +480,25 @@ body {
 </ul>
 <h4 id='文本对齐text-align）'>文本对齐（Text Align）</h4>
 <p><code>text-align</code> 属性用于设置文本的对齐方式，如左对齐、右对齐、居中等。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   text-align: center;
 }
 </code></pre>
 <h4 id='垂直对齐vertical-align）'>垂直对齐（Vertical Align）</h4>
 <p><code>vertical-align</code> 属性用于设置内联元素的垂直对齐方式。例如：</p>
-<pre><code>cssimg {
+<pre><code>img {
   vertical-align: middle;
 }
 </code></pre>
 <h4 id='文本缩进text-indent）'>文本缩进（Text Indent）</h4>
 <p><code>text-indent</code> 属性用于设置文本的首行缩进。例如：</p>
-<pre><code>cssp {
+<pre><code>p {
   text-indent: 20px;
 }
 </code></pre>
 <h4 id='文本阴影text-shadow）'>文本阴影（Text Shadow）</h4>
 <p><code>text-shadow</code> 属性用于设置文本的阴影效果，包括阴影方向、偏移、大小和颜色。例如：</p>
-<pre><code>cssh1 {
+<pre><code>h1 {
   text-shadow: 2px 2px 4px #999999;
 }
 </code></pre>
@@ -507,7 +508,7 @@ body {
 <li><code>:first-line</code>：用于选择文本的第一行。</li>
 
 </ul>
-<pre><code>cssp:first-letter {
+<pre><code>p:first-letter {
   font-size: 150%;
 }
 
@@ -521,7 +522,7 @@ p:first-line {
 <li><code>:hover</code>、 <code>:active</code>、 <code>:focus</code>：用于响应用户的鼠标悬停、激活和焦点状态。</li>
 
 </ul>
-<pre><code>cssa:link {
+<pre><code>a:link {
   color: blue;
 }
 
@@ -538,7 +539,7 @@ a:visited {
 <h4 id='尺寸属性dimension-properties）'>尺寸属性（Dimension Properties）</h4>
 <ul>
 <li><p><code>width</code>、<code>min-width</code>、<code>max-width</code>：分别用于设置元素的宽度、最小宽度和最大宽度。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   width: 300px;
   min-width: 100px;
   max-width: 500px;
@@ -546,7 +547,7 @@ a:visited {
 </code></pre>
 </li>
 <li><p><code>height</code>、<code>min-height</code>、<code>max-height</code>：分别用于设置元素的高度、最小高度和最大高度。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   height: 200px;
   min-height: 50px;
   max-height: 300px;
@@ -557,32 +558,32 @@ a:visited {
 </ul>
 <h4 id='溢出处理overflow）'>溢出处理（Overflow）</h4>
 <p><code>overflow</code> 属性用于控制当内容溢出容器时的处理方式。例如：</p>
-<pre><code>cssdiv {
-  overflow: hidden; /* 或者 overflow: scroll; */
+<pre><code>div {
+  overflow: hidden; /*或者 overflow: scroll;*/
 }
 </code></pre>
 <h4 id='内边距边框外边距padding-border-margin）'>内边距、边框、外边距（Padding, Border, Margin）</h4>
 <ul>
 <li><p><strong>内边距（Padding）</strong>：<code>padding</code> 属性用于设置元素内部内容与边框之间的空白区域。可以分别设置上、右、下、左的内边距。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   padding: 10px 20px 15px 5px;
 }
 </code></pre>
 </li>
 <li><p><strong>边框（Border）</strong>：<code>border</code> 属性用于设置元素的边框，包括宽度、样式和颜色。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   border: 2px solid #000;
 }
 </code></pre>
 <ul>
 <li><p><strong>边框样式（Border Style）</strong>：<code>border-style</code> 属性定义边框的样式，如实线、虚线等。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   border-style: dashed;
 }
 </code></pre>
 </li>
 <li><p><strong>边框颜色（Border Color）</strong>：<code>border-color</code> 属性定义边框的颜色。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   border-color: #00f;
 }
 </code></pre>
@@ -591,7 +592,7 @@ a:visited {
 </ul>
 </li>
 <li><p><strong>外边距（Margin）</strong>：<code>margin</code> 属性用于设置元素与相邻元素之间的空白区域。可以分别设置上、右、下、左的外边距。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   margin: 10px 20px 15px 5px;
 }
 </code></pre>
@@ -600,13 +601,13 @@ a:visited {
 </ul>
 <h4 id='显示属性display-properties）'>显示属性（Display Properties）</h4>
 <p><code>display</code> 属性用于设置元素的显示方式，包括块级元素、内联元素、内联块级元素等。例如：</p>
-<pre><code>cssdiv {
-  display: block; /* 或者 display: inline; */
+<pre><code>div {
+  display: block; /*或者 display: inline;*/
 }
 </code></pre>
 <ul>
 <li><p><strong>可见性（Visibility）</strong>：<code>visibility</code> 属性用于控制元素的可见性，可以是隐藏或可见。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   visibility: hidden;
 }
 </code></pre>
@@ -615,20 +616,20 @@ a:visited {
 </ul>
 <h4 id='边框图片border-image）'>边框图片（Border Image）</h4>
 <p><code>border-image</code> 属性用于设置边框的图片样式，包括URL、拉伸、重复等。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   border-image: url(&#39;border-image.png&#39;) 30 30 round;
 }
 </code></pre>
 <h4 id='盒子阴影和圆角box-shadow-and-border-radius）'>盒子阴影和圆角（Box Shadow and Border Radius）</h4>
 <ul>
 <li><p><strong>盒子阴影（Box Shadow）</strong>：<code>box-shadow</code> 属性用于创建元素的阴影效果。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   box-shadow: 5px 5px 10px #888888;
 }
 </code></pre>
 </li>
 <li><p><strong>圆角（Border Radius）</strong>：<code>border-radius</code> 属性用于设置元素的边框角的圆角程度。可以分别设置水平和垂直方向的圆角半径。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   border-radius: 10px 20px;
 }
 </code></pre>
@@ -641,19 +642,19 @@ a:visited {
 <p>列表样式用于定义列表项的外观。它包括以下属性：</p>
 <ul>
 <li><p><code>list-style-type</code>：指定列表项的标志类型，如圆点、数字、字母等。例如：</p>
-<pre><code>cssul {
+<pre><code>ul {
   list-style-type: circle;
 }
 </code></pre>
 </li>
 <li><p><code>list-style-image</code>：用图像替代列表项的标志。例如：</p>
-<pre><code>cssul {
+<pre><code>ul {
   list-style-image: url(&#39;bullet.png&#39;);
 }
 </code></pre>
 </li>
 <li><p><code>list-style-position</code>：控制列表项标志的位置，可以是内部或外部。例如：</p>
-<pre><code>cssul {
+<pre><code>ul {
   list-style-position: inside;
 }
 </code></pre>
@@ -662,20 +663,20 @@ a:visited {
 </ul>
 <h4 id='空单元格处理empty-cells）'>空单元格处理（Empty Cells）</h4>
 <p><code>empty-cells</code> 属性用于控制表格中空单元格的显示。例如：</p>
-<pre><code>csstable {
+<pre><code>table {
   empty-cells: hide;
 }
 </code></pre>
 <h4 id='表格边框和间距border-and-spacing-in-tables）'>表格边框和间距（Border and Spacing in Tables）</h4>
 <ul>
 <li><p><code>border-spacing</code>：设置相邻单元格之间的边框间距。例如：</p>
-<pre><code>csstable {
+<pre><code>table {
   border-spacing: 5px;
 }
 </code></pre>
 </li>
 <li><p><code>border-collapse</code>：定义表格的边框模型，可以是分离的（separate）或合并的（collapse）。例如：</p>
-<pre><code>csstable {
+<pre><code>table {
   border-collapse: collapse;
 }
 </code></pre>
@@ -686,31 +687,31 @@ a:visited {
 <p>表单元素的布局可以通过不同的CSS属性来实现。以下是一些常用的属性：</p>
 <ul>
 <li><p><code>float</code>：通过浮动来布局表单元素。例如：</p>
-<pre><code>cssinput {
+<pre><code>input {
   float: left;
 }
 </code></pre>
 </li>
 <li><p><code>cursor</code>：定义鼠标悬停在表单元素上时的光标形状。例如：</p>
-<pre><code>cssbutton {
+<pre><code>button {
   cursor: pointer;
 }
 </code></pre>
 </li>
 <li><p><code>auto</code>：浏览器设置默认的光标形状。例如：</p>
-<pre><code>cssinput {
+<pre><code>input {
   cursor: auto;
 }
 </code></pre>
 </li>
 <li><p><code>crosshair</code>、<code>default</code>、<code>pointer</code>、<code>move</code>、<code>text</code>、<code>wait</code>、<code>help</code>：分别设置光标形状为十字线、默认、指针、移动、文本输入、等待、帮助。例如：</p>
-<pre><code>cssa {
+<pre><code>a {
   cursor: pointer;
 }
 </code></pre>
 </li>
 <li><p><code>url(&quot;&quot;)</code>：通过指定自定义光标的URL来设置光标形状。例如：</p>
-<pre><code>cssa {
+<pre><code>a {
   cursor: url(&#39;custom-cursor.png&#39;), auto;
 }
 </code></pre>
@@ -721,13 +722,13 @@ a:visited {
 <h2 id='布局和定位layout-and-position）'>布局和定位（Layout and Position）</h2>
 <h4 id='静态流动static）'>静态流动（Static）</h4>
 <p>静态流动是元素默认的定位方式。块级元素（block）会独占一行，而行内元素（inline）则在同一行内排列。例如：</p>
-<pre><code>cssdiv {
-  display: block; /* 或者 display: inline; */
+<pre><code>div {
+  display: block; /*或者 display: inline;*/
 }
 </code></pre>
 <h4 id='相对定位relative）'>相对定位（Relative）</h4>
 <p>相对定位是相对于元素在文档流中的原始位置进行定位。通过使用 <code>position: relative;</code> 属性，你可以使用 <code>top</code>、<code>right</code>、<code>bottom</code> 和 <code>left</code> 属性来调整元素的位置。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   position: relative;
   top: 10px;
   left: 20px;
@@ -735,7 +736,7 @@ a:visited {
 </code></pre>
 <h4 id='绝对定位absolute）'>绝对定位（Absolute）</h4>
 <p>绝对定位是相对于最近的非静态定位祖先元素进行定位，如果没有这样的祖先元素，它将相对于文档的初始包含块。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -746,7 +747,7 @@ a:visited {
 <ul>
 <li><p><strong>跟随页面滚动（Absolute）</strong></p>
 <p>当页面滚动时，元素保持在相对于视口的固定位置。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -755,7 +756,7 @@ a:visited {
 </li>
 <li><p><strong>固定位置（Fixed Position）</strong></p>
 <p>元素相对于视口固定，不随页面滚动而变化。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   position: fixed;
   top: 0;
   left: 0;
@@ -766,19 +767,19 @@ a:visited {
 </ul>
 <h4 id='浮动定位float-position）'>浮动定位（Float Position）</h4>
 <p>浮动是一种使元素脱离正常文档流，向左或向右移动的布局方式。在浮动元素周围的文本和内联元素将围绕着它。例如：</p>
-<pre><code>cssimg {
+<pre><code>img {
   float: left;
 }
 </code></pre>
 <h4 id='层叠顺序z-index）'>层叠顺序（Z-Index）</h4>
 <p><code>z-index</code> 属性用于控制元素的层叠顺序。具有较高 <code>z-index</code> 值的元素将显示在具有较低 <code>z-index</code> 值的元素之上。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   z-index: 1;
 }
 </code></pre>
 <h4 id='清除浮动clear）'>清除浮动（Clear）</h4>
 <p><code>clear</code> 属性用于控制元素的浮动行为。它指定了在元素旁边不允许浮动元素的一侧。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   clear: both;
 }
 </code></pre>
@@ -786,16 +787,16 @@ a:visited {
 <h2 id='图片image）'>图片（Image）</h2>
 <h4 id='尺寸size）'>尺寸（Size）</h4>
 <p>在CSS中，你可以使用 <code>width</code> 和 <code>height</code> 属性来设置图像的尺寸。例如：</p>
-<pre><code>cssimg {
+<pre><code>img {
   width: 100px;
   height: 100px;
 }
 </code></pre>
 <h4 id='对齐align）'>对齐（Align）</h4>
 <p>通过使用 <code>float</code> 或 <code>display: flex</code>，你可以控制图像在其容器中的对齐方式。例如：</p>
-<pre><code>cssimg {
+<pre><code>img {
   float: left;
-  /* 或者使用 flexbox */
+  /*或者使用 flexbox */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -804,44 +805,44 @@ a:visited {
 <h3 id='背景background）'>背景（Background）</h3>
 <h4 id='背景图像background-image）'>背景图像（Background Image）</h4>
 <p>使用 <code>background-image</code> 属性可以设置元素的背景图像。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   background-image: url(&#39;example.jpg&#39;);
 }
 </code></pre>
 <h4 id='背景颜色background-color）'>背景颜色（Background Color）</h4>
 <p>通过 <code>background-color</code> 属性，你可以设置元素的背景颜色。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   background-color: #f0f0f0;
 }
 </code></pre>
 <h4 id='背景重复background-repeat）'>背景重复（Background Repeat）</h4>
 <p>使用 <code>background-repeat</code> 属性可以控制背景图像的重复方式。例如：</p>
-<pre><code>cssdiv {
-  background-repeat: repeat-x; /* 水平重复 */
+<pre><code>div {
+  background-repeat: repeat-x; /* 水平重复*/
 }
 </code></pre>
 <h4 id='背景附着background-attachment）'>背景附着（Background Attachment）</h4>
 <p>通过 <code>background-attachment</code> 属性，你可以设置背景图像是随着页面滚动还是固定在一个位置。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   background-attachment: fixed;
 }
 </code></pre>
 <h4 id='线性渐变linear-gradient）'>线性渐变（Linear Gradient）</h4>
 <p>使用 <code>linear-gradient</code> 属性，你可以创建线性渐变的背景。例如：</p>
-<pre><code>cssdiv {
+<pre><code>div {
   background: linear-gradient(to right, #ff0000, #00ff00);
 }
 </code></pre>
 <h2 id='伪类pseudo-classes）-2'>伪类（Pseudo-classes）</h2>
 <h4 id='悬停状态hover）'>悬停状态（:hover）</h4>
 <p><code>:hover</code> 伪类用于在用户悬停在元素上时应用样式。例如：</p>
-<pre><code>cssa:hover {
+<pre><code>a:hover {
   color: #ff0000;
 }
 </code></pre>
 <h4 id='激活状态active）'>激活状态（:active）</h4>
 <p><code>:active</code> 伪类用于在用户点击并按住鼠标按钮时应用样式。例如：</p>
-<pre><code>cssbutton:active {
+<pre><code>button:active {
   background-color: #00ff00;
 }
 </code></pre>
@@ -852,44 +853,44 @@ a:visited {
 <p>以下是一些常见的CSS伪类：</p>
 <ol start='' >
 <li><p><strong>:hover</strong> - 鼠标悬停在元素上时应用的样式。</p>
-<pre><code>cssa:hover {
+<pre><code>a:hover {
   color: red;
 }
 </code></pre>
 </li>
 <li><p><strong>:active</strong> - 用户点击元素但尚未释放鼠标按钮时应用的样式。</p>
-<pre><code>cssbutton:active {
+<pre><code>button:active {
   background-color: yellow;
 }
 </code></pre>
 </li>
 <li><p><strong>:focus</strong> - 元素获得焦点时应用的样式，通常用于表单元素。</p>
-<pre><code>cssinput:focus {
+<pre><code>input:focus {
   border: 2px solid blue;
 }
 </code></pre>
 </li>
 <li><p><strong>:first-child</strong> - 选择元素的第一个子元素。</p>
-<pre><code>cssli:first-child {
+<pre><code>li:first-child {
   font-weight: bold;
 }
 </code></pre>
 </li>
 <li><p><strong>:last-child</strong> - 选择元素的最后一个子元素。</p>
-<pre><code>cssdiv p:last-child {
+<pre><code>div p:last-child {
   margin-bottom: 0;
 }
 </code></pre>
 </li>
 <li><p><strong>:nth-child(n)</strong> - 选择元素的第 n 个子元素。</p>
-<pre><code>cssli:nth-child(odd) {
+<pre><code>li:nth-child(odd) {
   background-color: lightgray;
 }
 </code></pre>
 <p>在这个例子中，奇数位置的 <code>li</code> 元素会有灰色背景。</p>
 </li>
 <li><p><strong>:nth-of-type(n)</strong> - 选择相同类型的元素中的第 n 个元素。</p>
-<pre><code>cssp:nth-of-type(2) {
+<pre><code>p:nth-of-type(2) {
   color: red;
 }
 </code></pre>
@@ -901,33 +902,33 @@ a:visited {
 <p>CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类。这些伪类基于元素的状态或用户与元素的交互来选择元素。以下是一些常见的状态型伪类：</p>
 <ol start='' >
 <li><p><strong>:hover</strong>：当用户将鼠标悬停在元素上时应用的样式。常用于创建交互式效果，例如按钮在鼠标悬停时改变颜色。</p>
-<pre><code>cssbutton:hover {
+<pre><code>button:hover {
   background-color: #3498db;
   color: #fff;
 }
 </code></pre>
 </li>
 <li><p><strong>:active</strong>：当元素处于活动（被点击但尚未释放）状态时应用的样式。通常用于创建按钮被点击时的样式。</p>
-<pre><code>cssbutton:active {
+<pre><code>button:active {
   background-color: #e74c3c;
   color: #fff;
 }
 </code></pre>
 </li>
 <li><p><strong>:focus</strong>：当元素获得焦点时应用的样式。常用于增强表单元素的可访问性，使用户知道当前哪个输入字段处于焦点状态。</p>
-<pre><code>cssinput:focus {
+<pre><code>input:focus {
   border: 2px solid #3498db;
 }
 </code></pre>
 </li>
 <li><p><strong>:visited</strong>：选择已被访问的链接。这使得可以为已访问和未访问的链接应用不同的样式。</p>
-<pre><code>cssa:visited {
+<pre><code>a:visited {
   color: purple;
 }
 </code></pre>
 </li>
 <li><p><strong>:link</strong> 和 <strong>:visited</strong>：分别选择未被访问的链接和已被访问的链接。这两者通常与<code>:hover</code>和<code>:active</code>一起使用，以创建链接的完整状态样式。</p>
-<pre><code>cssa:link {
+<pre><code>a:link {
   color: blue;
 }
 
@@ -954,7 +955,7 @@ a:active {
 <li>用例：用于创建交互式效果，例如在悬停时改变链接或按钮的颜色。</li>
 
 </ul>
-<pre><code>cssbutton:hover {
+<pre><code>button:hover {
   background-color: #3498db;
   color: #fff;
 }
@@ -966,7 +967,7 @@ a:active {
 <li>用例：用于创建按钮被点击时的样式。</li>
 
 </ul>
-<pre><code>cssbutton:active {
+<pre><code>button:active {
   background-color: #e74c3c;
   color: #fff;
 }
@@ -978,7 +979,7 @@ a:active {
 <li>用例：用于突出当前输入字段。</li>
 
 </ul>
-<pre><code>cssinput:focus {
+<pre><code>input:focus {
   border: 2px solid #3498db;
 }
 </code></pre>
@@ -989,7 +990,7 @@ a:active {
 <li>用例：用于为已访问和未访问的链接应用不同的样式。</li>
 
 </ul>
-<pre><code>cssa:visited {
+<pre><code>a:visited {
   color: purple;
 }
 </code></pre>
@@ -1000,7 +1001,7 @@ a:active {
 <li>用例：用于在选择某个选项时应用样式。</li>
 
 </ul>
-<pre><code>cssinput[type=&quot;checkbox&quot;]:checked {
+<pre><code>input[type=&quot;checkbox&quot;]:checked {
   background-color: #2ecc71;
 }
 </code></pre>
@@ -1011,7 +1012,7 @@ a:active {
 <li>用例：用于在表单元素启用时应用样式。</li>
 
 </ul>
-<pre><code>cssinput:enabled {
+<pre><code>input:enabled {
   border: 1px solid #3498db;
 }
 </code></pre>
@@ -1022,7 +1023,7 @@ a:active {
 <li>用例：用于在表单元素禁用时应用样式。</li>
 
 </ul>
-<pre><code>cssinput:disabled {
+<pre><code>input:disabled {
   background-color: #ecf0f1;
 }
 </code></pre>
@@ -1037,8 +1038,8 @@ a:active {
 <li>用例：用于在元素前面添加装饰性内容，例如图标或引用符号。</li>
 
 </ul>
-<pre><code>cssp::before {
-  content: &quot;\201C&quot;; /* 左双引号 */
+<pre><code>p::before {
+  content: &quot;\201C&quot;; /*左双引号*/
 }
 </code></pre>
 </li>
@@ -1048,8 +1049,8 @@ a:active {
 <li>用例：用于在元素后面添加额外的内容，比如清除浮动或添加尾随图标。</li>
 
 </ul>
-<pre><code>cssp::after {
-  content: &quot;\201D&quot;; /* 右双引号 */
+<pre><code>p::after {
+  content: &quot;\201D&quot;; /*右双引号*/
 }
 </code></pre>
 </li>
@@ -1059,7 +1060,7 @@ a:active {
 <li>用例：用于改变段落的首行样式，如字体大小或颜色。</li>
 
 </ul>
-<pre><code>cssp::first-line {
+<pre><code>p::first-line {
   font-weight: bold;
 }
 </code></pre>
@@ -1070,7 +1071,7 @@ a:active {
 <li>用例：用于创建首字母大写或添加特殊样式的效果。</li>
 
 </ul>
-<pre><code>cssp::first-letter {
+<pre><code>p::first-letter {
   font-size: 1.5em;
   color: #3498db;
 }
@@ -1082,7 +1083,7 @@ a:active {
 <li>用例：用于自定义用户选择文本时的背景和文本颜色。</li>
 
 </ul>
-<pre><code>css::selection {
+<pre><code>::selection {
   background-color: #3498db;
   color: #fff;
 }
@@ -1100,7 +1101,7 @@ a:active {
 <li>语法：<code>translate(x, y)</code>，其中 <code>x</code> 和 <code>y</code> 分别是水平和垂直方向上的偏移值。</li>
 
 </ul>
-<pre><code>css.box {
+<pre><code>.box {
   transform: translate(50px, 20px);
 }
 </code></pre>
@@ -1111,7 +1112,7 @@ a:active {
 <li>语法：<code>scale(x, y)</code>，其中 <code>x</code> 和 <code>y</code> 分别是水平和垂直方向上的缩放比例。</li>
 
 </ul>
-<pre><code>css.box {
+<pre><code>.box {
   transform: scale(1.5, 2);
 }
 </code></pre>
@@ -1122,7 +1123,7 @@ a:active {
 <li>语法：<code>rotate(angle)</code>，其中 <code>angle</code> 是旋转的角度。</li>
 
 </ul>
-<pre><code>css.box {
+<pre><code>.box {
   transform: rotate(45deg);
 }
 </code></pre>
@@ -1133,7 +1134,7 @@ a:active {
 <li>语法：<code>skew(x-angle, y-angle)</code>，其中 <code>x-angle</code> 和 <code>y-angle</code> 分别是水平和垂直方向上的倾斜角度。</li>
 
 </ul>
-<pre><code>css.box {
+<pre><code>.box {
   transform: skew(30deg, 20deg);
 }
 </code></pre>
@@ -1144,7 +1145,7 @@ a:active {
 <li>语法：<code>perspective(length)</code>，其中 <code>length</code> 是透视距离。</li>
 
 </ul>
-<pre><code>css.container {
+<pre><code>.container {
   perspective: 1000px;
 }
 </code></pre>
@@ -1155,7 +1156,7 @@ a:active {
 <h4 id='transision'>Transision</h4>
 <p>在CSS中，<code>transition</code>是一种用于在元素状态发生变化时平滑过渡效果的属性。通过使用<code>transition</code>属性，可以定义元素的属性在发生变化时应用过渡效果，而不是突然改变。</p>
 <p><code>transition</code>属性通常与伪类（例如<code>:hover</code>）一起使用，以在元素状态变化时提供平滑的过渡。以下是<code>transition</code>属性的基本语法：</p>
-<pre><code>cssselector {
+<pre><code>selector {
   transition: property duration timing-function delay;
 }
 </code></pre>
@@ -1167,7 +1168,7 @@ a:active {
 
 </ul>
 <p>以下是一个简单的示例，演示了当鼠标悬停在一个按钮上时，背景颜色会平滑过渡变化：</p>
-<pre><code>cssbutton {
+<pre><code>button {
   background-color: #3498db;
   transition: background-color 0.3s ease;
 }
@@ -1182,26 +1183,26 @@ button:hover {
 <p>在CSS中，<code>@keyframes</code> 和 <code>animation</code> 属性用于创建和应用动画。<code>@keyframes</code>规则定义动画的关键帧，而 <code>animation</code> 属性用于指定动画的名称、持续时间、时间函数、延迟、迭代次数、方向和填充模式等。</p>
 <h3 id='keyframes-规则'>@keyframes 规则</h3>
 <p><code>@keyframes</code> 规则用于定义动画的关键帧，即在动画过程中的不同阶段。它的基本语法如下：</p>
-<pre><code>css@keyframes animationName {
+<pre><code>@keyframes animationName {
   from {
-    /* styles at the beginning of the animation */
+    /*styles at the beginning of the animation*/
   }
 
   to {
-    /* styles at the end of the animation */
+    /*styles at the end of the animation*/
   }
 
-  /* or use percentage for intermediate keyframes */
+  /*or use percentage for intermediate keyframes */
   25% {
-    /* styles at 25% of the animation */
+    /* styles at 25% of the animation*/
   }
 
-  /* additional keyframes as needed */
+  /*additional keyframes as needed*/
 }
 </code></pre>
 <h3 id='animation-属性'>animation 属性</h3>
 <p><code>animation</code> 属性用于将动画应用于元素。其基本语法如下：</p>
-<pre><code>cssselector {
+<pre><code>selector {
   animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 </code></pre>
@@ -1216,7 +1217,7 @@ button:hover {
 
 </ul>
 <p>以下是一个简单的例子，演示了一个使用 <code>@keyframes</code> 和 <code>animation</code> 属性的动画：</p>
-<pre><code>css@keyframes slide-in {
+<pre><code>@keyframes slide-in {
   from {
     transform: translateX(-100%);
   }
@@ -1232,7 +1233,7 @@ button:hover {
 </code></pre>
 <p>在这个例子中，一个名为 <code>slide-in</code> 的关键帧规则定义了一个元素从左侧滑入的动画，然后通过 <code>.slide-in</code> 类将这个动画应用到特定的元素上。</p>
 <h2 id='字库'>字库</h2>
-<pre><code>css@font-face {
+<pre><code>@font-face {
   font-family: fnt;
   src: url(../remixicon.woff) format(&quot;woff&quot;);
 }
@@ -1244,7 +1245,7 @@ button:hover {
 
 </ul>
 <p>然后，你可以在其他地方的样式规则中使用 <code>font-family: fnt;</code> 来引用这个自定义字体，例如：</p>
-<pre><code>cssbody {
+<pre><code>body {
   font-family: fnt, sans-serif;
 }
 </code></pre>
@@ -1301,11 +1302,11 @@ button:hover {
 <li><strong>属性选择器：</strong> 适用于根据元素的属性选择样式，例如 <code>[disabled]</code>。</li>
 
 </ul>
-<pre><code>css.highlight {
+<pre><code>.highlight {
   color: red;
 }
 
-#header {
+# header {
   font-size: 20px;
 }
 
@@ -1320,8 +1321,8 @@ button:hover {
 <li>避免过于宽泛的选择器，以免影响到其他模块的样式。</li>
 
 </ul>
-<pre><code>css.section1 .content {
-  /* 样式规则 */
+<pre><code>.section1 .content {
+  /*样式规则*/
 }
 </code></pre>
 </li>
@@ -1395,11 +1396,11 @@ button:hover {
 </ul>
 <h3 id='css浏览器版本兼容方式'>CSS浏览器版本兼容方式</h3>
 <p>在写CSS样式时，通常会使用带有浏览器私有前缀的规则，以确保在各种浏览器中都能正确渲染。一种通用的方式是使用带前缀和不带前缀的规则，例如：</p>
-<pre><code>css.transition {
-  -webkit-transition: all .5s; /* Chrome, Safari */
+<pre><code>.transition {
+  -webkit-transition: all .5s; /*Chrome, Safari */
   -moz-transition: all .5s;    /* Firefox */
   -o-transition: all .5s;      /* Opera */
-  transition: all .5s;         /* Standard */
+  transition: all .5s;         /* Standard*/
 }
 </code></pre>
 <p>在这个例子中，<code>.transition</code> 类使用了带有不同私有前缀和不带前缀的 <code>transition</code> 属性。浏览器会选择解析符合其规范的属性，并忽略不认识的属性。这样，无论用户使用哪种浏览器，都能保证过渡效果的兼容性。当浏览器逐渐支持标准的写法时，可以逐步去掉私有前缀。</p>

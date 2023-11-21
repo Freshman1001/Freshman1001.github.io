@@ -122,7 +122,7 @@ HTML5和CSS3 是用于构建现代网页的最新版本的标准，它们引入�
 1. `<ol>`：有序列表元素，用于创建按顺序排列的列表。包含在`<ol>`中的每个列表项使用 `<li>` 标签定义。
 
    ```
-   htmlCopy code<ol>
+   <ol>
        <li>First item</li>
        <li>Second item</li>
        <li>Third item</li>
@@ -132,7 +132,7 @@ HTML5和CSS3 是用于构建现代网页的最新版本的标准，它们引入�
 2. `<ul>`：无序列表元素，用于创建无特定顺序的列表。同样，每个列表项使用 `<li>` 标签定义。
 
    ```
-   htmlCopy code<ul>
+   <ul>
        <li>Red</li>
        <li>Green</li>
        <li>Blue</li>
@@ -142,7 +142,7 @@ HTML5和CSS3 是用于构建现代网页的最新版本的标准，它们引入�
 3. `<li>`：列表项元素，用于定义列表中的每一项。可以包含文本、图像或其他HTML元素。
 
    ```
-   htmlCopy code<ul>
+   <ul>
        <li>Item 1</li>
        <li>Item 2</li>
        <li>Item 3</li>
@@ -152,7 +152,7 @@ HTML5和CSS3 是用于构建现代网页的最新版本的标准，它们引入�
 4. `<dl>`：定义列表元素，用于创建术语及其定义的列表。每个术语由 `<dt>` 定义，相应的定义由 `<dd>` 定义。
 
    ```
-   htmlCopy code<dl>
+   <dl>
        <dt>HTML</dt>
        <dd>HyperText Markup Language</dd>
        <dt>CSS</dt>
@@ -167,7 +167,7 @@ HTML5和CSS3 是用于构建现代网页的最新版本的标准，它们引入�
 列表可以嵌套，这意味着你可以在列表项中放置另一个列表。这种嵌套结构可以用于创建更复杂的文档层次结构。例如：
 
 ```
-htmlCopy code<ul>
+<ul>
     <li>Item 1</li>
     <li>Item 2
         <ul>
@@ -186,7 +186,7 @@ htmlCopy code<ul>
 在HTML中，链接元素 `<a>` 用于创建超链接，使用户能够点击跳转到其他页面或资源。以下是创建链接的基本用法：
 
 ```
-htmlCopy code
+
 <a href="https://www.example.com">Visit Example.com</a>
 ```
 
@@ -197,14 +197,14 @@ htmlCopy code
 1. **绝对URL链接：**
 
    ```
-   htmlCopy code
+   
    <a href="https://www.example.com">Visit Example.com</a>
    ```
 
 2. **相对URL链接：**
 
    ```
-   htmlCopy code
+   
    <a href="/page/about.html">About Us</a>
    ```
 
@@ -267,7 +267,7 @@ markdownCopy code- / (根目录)
 在HTML中，可以使用 `mailto` 协议创建一个链接，使用户能够点击链接以启动默认邮件客户端并打开一个新的邮件窗口。下面是创建电子邮件链接的示例：
 
 ```
-htmlCopy code
+
 <a href="mailto:somebody@example.org">Send Email</a>
 ```
 
@@ -282,7 +282,7 @@ htmlCopy code
    使用 `target="_blank"` 可以让链接在新的浏览器窗口或标签页中打开。例如：
 
    ```
-   htmlCopy code
+   
    <a href="https://www.example.com" target="_blank">Visit Example.com</a>
    ```
 
@@ -293,7 +293,7 @@ htmlCopy code
    使用 `href="#[id]"` 可以创建内部链接，将页面滚动到具有特定ID的元素位置。例如：
 
    ```
-   htmlCopy code<a href="#section2">Go to Section 2</a>
+   <a href="#section2">Go to Section 2</a>
    
    <div id="section2">
        <!-- Content of Section 2 -->
@@ -318,7 +318,7 @@ htmlCopy code
    - `height` 和 `width`：指定图像的高度和宽度，最好在设计时指定以提高性能。
 
    ```
-   htmlCopy code
+   
    <img src="images/example.jpg" alt="A descriptive text" title="Additional information" height="300" width="400">
    ```
 
@@ -335,7 +335,7 @@ htmlCopy code
    `<figure>` 元素用于组合图像及其标题或说明。通常与 `<figcaption>` 元素一起使用。
 
    ```
-   htmlCopy code<figure>
+   <figure>
        <img src="images/example.jpg" alt="A descriptive text" title="Additional information" height="300" width="400">
        <figcaption>Caption or description for the image.</figcaption>
    </figure>
@@ -348,7 +348,7 @@ htmlCopy code
 在HTML中，使用 `<table>` 元素可以创建表格，其中包含了行（`<tr>`）、列标题（`<th>`）和数据单元格（`<td>`）。以下是一个基本的表格结构：
 
 ```
-htmlCopy code<table>
+<table>
     <thead>
         <tr>
             <th>Heading 1</th>
@@ -386,7 +386,7 @@ htmlCopy code<table>
 - `rowspan`：定义单元格纵向合并的行数。
 
 ```
-htmlCopy code<table>
+<table>
     <thead>
         <tr>
             <th colspan="2">Header 1 and Header 2 merged</th>
@@ -415,7 +415,7 @@ htmlCopy code<table>
 #### **`<form>` 元素：**
 
 ```
-htmlCopy code<form action="/submit" method="post" id="myForm">
+<form action="/submit" method="post" id="myForm">
     <!-- Form content goes here -->
 </form>
 ```
@@ -427,7 +427,7 @@ htmlCopy code<form action="/submit" method="post" id="myForm">
 #### **`<input>` 元素：**
 
 ```
-htmlCopy code
+
 <input type="text" name="username" id="username" placeholder="Enter your username" maxlength="30">
 ```
 
@@ -442,7 +442,7 @@ htmlCopy code
 #### **`<textarea>` 元素：**
 
 ```
-htmlCopy code
+
 <textarea name="message" id="message" placeholder="Enter your message" rows="4" cols="50"></textarea>
 ```
 
@@ -454,7 +454,7 @@ htmlCopy code
 #### **`<select>` 元素：**
 
 ```
-htmlCopy code<select name="country" id="country">
+<select name="country" id="country">
     <option value="us">United States</option>
     <option value="ca">Canada</option>
     <option value="uk">United Kingdom</option>
@@ -467,7 +467,7 @@ htmlCopy code<select name="country" id="country">
 #### **`<button>` 元素：**
 
 ```
-htmlCopy code
+
 <button type="submit">Submit</button>
 ```
 
@@ -476,7 +476,7 @@ htmlCopy code
 #### **`<label>` 元素：**
 
 ```
-htmlCopy code<label for="username">Username:</label>
+<label for="username">Username:</label>
 <input type="text" name="username" id="username">
 ```
 
@@ -485,7 +485,7 @@ htmlCopy code<label for="username">Username:</label>
 #### **`<fieldset>` 元素：**
 
 ```
-htmlCopy code<fieldset>
+<fieldset>
     <legend>Personal Information</legend>
     <!-- Form elements go here -->
 </fieldset>
@@ -498,7 +498,7 @@ htmlCopy code<fieldset>
 表单验证通常由JavaScript完成，但HTML5提供了一些简单的验证功能，如 `required` 属性。更复杂的验证通常在服务器端进行。
 
 ```
-htmlCopy code
+
 <input type="text" name="username" required>
 ```
 
@@ -521,7 +521,7 @@ htmlCopy code
 `id` 用于为HTML元素定义唯一的标识符，而 `class` 用于为元素定义一个或多个类。这些标识符和类通常用于CSS和JavaScript中，以便样式化和操作特定元素。
 
 ```
-htmlCopy code
+
 <div id="uniqueId" class="commonClass">Content</div>
 ```
 
@@ -530,7 +530,7 @@ htmlCopy code
 <div> 和 <span> 是用于在HTML文档中创建容器的通用元素。<div> 通常用于块级元素，而 <span> 通常用于内联元素。它们通常与CSS一起使用，用于样式化和布局。
 
 ```
-htmlCopy code<div>This is a block-level container</div>
+<div>This is a block-level container</div>
 <span>This is an inline container</span>
 ```
 
@@ -539,7 +539,7 @@ htmlCopy code<div>This is a block-level container</div>
 <iframe> 用于嵌入其他文档，如其他网页或多媒体内容。常见属性包括 width 和 height 以设置框架的尺寸，以及 src 以指定要嵌入的文档的URL。
 
 ```
-htmlCopy code
+
 <iframe src="https://www.example.com" width="600" height="400" seamless></iframe>
 ```
 
@@ -552,7 +552,7 @@ htmlCopy code
 - `http-equiv`：提供HTTP头信息，如 "Content-Type"。
 
 ```
-htmlCopy code<meta name="description" content="This is a description of the web page">
+<meta name="description" content="This is a description of the web page">
 <meta name="keywords" content="HTML, CSS, JavaScript">
 <meta name="robots" content="noindex, nofollow">
 ```
@@ -562,7 +562,7 @@ htmlCopy code<meta name="description" content="This is a description of the web 
 在HTML中，一些字符具有特殊的含义，如 `<` 和 `>`。为了在文本中显示这些字符，需要使用转义字符。例如，`<` 表示 `<`，`>` 表示 `>`。
 
 ```
-htmlCopy code
+
 <p>This is an &lt;example&gt; text.</p>
 ```
 
@@ -579,7 +579,7 @@ htmlCopy code
 HTML 提供了 `<video>` 和 `<audio>` 元素，用于在网页中嵌入视频和音频。
 
 ```
-htmlCopy code<video src="example.mp4" width="640" height="360" controls autoplay loop preload="auto" poster="video-thumbnail.jpg">
+<video src="example.mp4" width="640" height="360" controls autoplay loop preload="auto" poster="video-thumbnail.jpg">
     <source src="example.webm" type="video/webm">
     Your browser does not support the video tag.
 </video>
@@ -598,7 +598,7 @@ htmlCopy code<video src="example.mp4" width="640" height="360" controls autoplay
 为了支持多个媒体格式，可以使用 `<source>` 元素指定多个媒体源。
 
 ```
-htmlCopy code<video width="640" height="360" controls>
+<video width="640" height="360" controls>
     <source src="example.mp4" type="video/mp4">
     <source src="example.webm" type="video/webm">
     Your browser does not support the video tag.
@@ -616,7 +616,7 @@ htmlCopy code<video width="640" height="360" controls>
 例如，你可以使用 JavaScript 来处理媒体事件（如播放、暂停、结束）或更复杂的交互。
 
 ```
-htmlCopy code<script>
+<script>
     var video = document.getElementById("myVideo");
 
     function playPause() {
@@ -642,7 +642,7 @@ HTML5引入了一些新的语义化元素，使得页面结构更清晰、更有
 `<header>` 元素用于定义文档或节的页眉。通常包含导航、标题、子标题等内容。
 
 ```
-htmlCopy code<header>
+<header>
     <h1>Website Title</h1>
     <nav>
         <ul>
@@ -659,7 +659,7 @@ htmlCopy code<header>
 `<article>` 元素用于定义独立的、完整的内容单元，例如一篇文章、一段新闻、一篇博客等。
 
 ```
-htmlCopy code<article>
+<article>
     <h2>Article Title</h2>
     <p>Article content goes here.</p>
 </article>
@@ -670,7 +670,7 @@ htmlCopy code<article>
 `<footer>` 元素用于定义文档或节的页脚，通常包含作者信息、版权信息、相关链接等。
 
 ```
-htmlCopy code<footer>
+<footer>
     <p>&copy; 2023 Website Name. All rights reserved.</p>
 </footer>
 ```
@@ -680,7 +680,7 @@ htmlCopy code<footer>
 `<aside>` 元素用于定义页面内容之外的内容，例如侧边栏、广告、相关链接等。
 
 ```
-htmlCopy code<aside>
+<aside>
     <h3>Related Links</h3>
     <ul>
         <li><a href="#">Link 1</a></li>
@@ -694,7 +694,7 @@ htmlCopy code<aside>
 `<section>` 元素用于定义文档中的一个区域，通常包含一个主题。可以有多个 `<section>` 元素组成一个页面。
 
 ```
-htmlCopy code<section>
+<section>
     <h2>Section Title</h2>
     <p>Section content goes here.</p>
 </section>
@@ -705,7 +705,7 @@ htmlCopy code<section>
 `<nav>` 元素用于定义导航链接的容器，包括菜单、导航条等。
 
 ```
-htmlCopy code<nav>
+<nav>
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -719,7 +719,7 @@ htmlCopy code<nav>
 `<hgroup>` 元素用于对页面或区域标题进行分组，包含一个或多个标题元素。
 
 ```
-htmlCopy code<hgroup>
+<hgroup>
     <h1>Main Title</h1>
     <h2>Subtitle</h2>
 </hgroup>
@@ -730,7 +730,7 @@ htmlCopy code<hgroup>
 <figure> 元素用于包含一组媒体元素，通常与 <figcaption> 元素一起使用来为媒体元素添加标题。
 
 ```
-htmlCopy code<figure>
+<figure>
     <img src="image.jpg" alt="Image">
     <figcaption>Image Caption</figcaption>
 </figure>
@@ -745,7 +745,7 @@ htmlCopy code<figure>
 `<canvas>` 元素用于绘制图形，创建图形、图表、动画等。JavaScript通常与`<canvas>`一起使用，以在页面上进行动态绘图。
 
 ```
-htmlCopy code<canvas id="myCanvas" width="400" height="200"></canvas>
+<canvas id="myCanvas" width="400" height="200"></canvas>
 <script>
     var canvas = document.getElementById("myCanvas");
     var context = canvas.getContext("2d");
@@ -758,7 +758,7 @@ htmlCopy code<canvas id="myCanvas" width="400" height="200"></canvas>
 可以使用自定义数据属性（data attributes）为HTML元素添加额外的数据，这些数据可以通过JavaScript访问。
 
 ```
-htmlCopy code<div data-user-id="123" data-username="john_doe">User Profile</div>
+<div data-user-id="123" data-username="john_doe">User Profile</div>
 <script>
     var userProfile = document.querySelector('div');
     var userId = userProfile.dataset.userId; // 获取数据属性值
@@ -771,7 +771,7 @@ htmlCopy code<div data-user-id="123" data-username="john_doe">User Profile</div>
 HTML5引入了 `<audio>` 和 `<video>` 元素，允许直接在网页上嵌入音频和视频。
 
 ```
-htmlCopy code<audio controls>
+<audio controls>
     <source src="audio.mp3" type="audio/mp3">
     Your browser does not support the audio tag.
 </audio>
@@ -787,7 +787,7 @@ htmlCopy code<audio controls>
 使用媒体查询和弹性布局技术，可以创建响应式的Web设计，使网页在不同设备和屏幕尺寸上具有良好的表现。
 
 ```
-htmlCopy code<link rel="stylesheet" media="screen and (max-width: 600px)" href="small-screen.css">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="small-screen.css">
 <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 1024px)" href="medium-screen.css">
 <link rel="stylesheet" media="screen and (min-width: 1025px)" href="large-screen.css">
 ```
@@ -797,14 +797,14 @@ htmlCopy code<link rel="stylesheet" media="screen and (max-width: 600px)" href="
 编写具有良好语意化的HTML可以提高页面的可访问性（accessibility）。
 
 ```
-htmlCopy code
+
 <button type="button" onclick="submitForm()">Submit</button>
 ```
 
 为提高可访问性，可以添加 `role` 和 `aria-*` 属性。
 
 ```
-htmlCopy code
+
 <button type="button" role="button" aria-label="Submit button" onclick="submitForm()">Submit</button>
 ```
 
@@ -813,7 +813,7 @@ htmlCopy code
 Web组件是一种创建可重用和独立的自定义HTML元素的技术。它包括自定义元素、Shadow DOM、HTML模板和HTML导入。
 
 ```
-htmlCopy code<!-- 自定义元素 -->
+<!-- 自定义元素 -->
 <my-custom-element></my-custom-element>
 
 <!-- HTML模板 -->
@@ -827,7 +827,7 @@ htmlCopy code<!-- 自定义元素 -->
 PWA是一种结合了Web和原生应用的开发方法，使得Web应用在离线时也能正常工作，可以添加到主屏幕上，提供推送通知等功能。
 
 ```
-htmlCopy code<!-- 渐进式Web应用标记 -->
+<!-- 渐进式Web应用标记 -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="manifest" href="/manifest.json">

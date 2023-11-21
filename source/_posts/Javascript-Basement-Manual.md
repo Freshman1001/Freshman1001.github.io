@@ -1,15 +1,16 @@
 ---
 title: Javascript Basement Quick Overview - Interactive Front-end Development
 date: 2023-11-07 20:58:48
-tags: javascript
+tags: 前端技术
 categories:
-- web
+- 学习
+- 计算机技
+- 前端
 cover: https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg?tx=w_3840,q_auto
 ---
 
 <body>
-<p>The article is about quick through or review on javascript. Notice that it is not a tutorial.</p>
-<p>Before all start, I recommend you to learn html and css first. If you want to get started quickly, referring to the quick overview of html and css is an option.</p>
+<p>Javascript，live your pages.</p>
 <!--more-->
 <h2 id='qa'>Q&amp;A</h2>
 <h3 id='javascript工作原理'>JavaScript工作原理</h3>
@@ -17,7 +18,7 @@ cover: https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-
 <ol start='' >
 <li><p><strong>访问HTML (Visit HTML):</strong> JavaScript通常嵌入在HTML文档中，并通过<code>&lt;script&gt;</code>标签嵌入到HTML代码中。当浏览器加载页面时，会解释并执行嵌入的JavaScript代码。</p>
 <p>示例：</p>
-<pre><code>html&lt;!DOCTYPE html&gt;
+<pre><code class='language-javascript' lang='javascript'>html&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -35,14 +36,14 @@ cover: https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-
 </li>
 <li><p><strong>修改内容 (Modify Content):</strong> JavaScript可以通过操作文档对象模型（DOM）来动态修改网页内容。DOM表示网页的结构，通过JavaScript，可以添加、删除或修改HTML元素、属性和文本内容。</p>
 <p>示例：</p>
-<pre><code>javascript// 获取元素并修改内容
+<pre><code class='language-javascript' lang='javascript'>javascript// 获取元素并修改内容
 var element = document.getElementById(&quot;myElement&quot;);
 element.innerHTML = &quot;新的内容&quot;;
 </code></pre>
 </li>
 <li><p><strong>制定规则 (Make Rules):</strong> JavaScript用于制定网页的行为规则，包括对数据的处理、条件判断、循环等。这有助于实现动态和交互式的用户体验。</p>
 <p>示例：</p>
-<pre><code>javascript// 制定规则 - 条件判断
+<pre><code class='language-javascript' lang='javascript'>javascript// 制定规则 - 条件判断
 var age = 20;
 if (age &gt;= 18) {
     console.log(&quot;成年人&quot;);
@@ -53,7 +54,7 @@ if (age &gt;= 18) {
 </li>
 <li><p><strong>响应事件 (Respond to Events):</strong> JavaScript使网页能够对用户的交互作出响应，例如点击按钮、提交表单等。通过事件处理程序，可以定义在事件发生时执行的操作。</p>
 <p>示例：</p>
-<pre><code>html&lt;!-- HTML中的按钮 --&gt;
+<pre><code class='language-javascript' lang='javascript'>html&lt;!-- HTML中的按钮 --&gt;
 &lt;button id=&quot;myButton&quot; onclick=&quot;myFunction()&quot;&gt;点击我&lt;/button&gt;
 
 &lt;!-- JavaScript中的事件处理程序 --&gt;
@@ -81,7 +82,7 @@ if (age &gt;= 18) {
 </li>
 <li><p><strong>编写代码 (Coding):</strong> 针对每个任务，编写相应的代码来实现它。使用适当的编程语言，并根据任务的要求选择合适的数据结构、算法和控制流程。</p>
 <p>示例（伪代码）：</p>
-<pre><code>plaintext// 目标：计算并输出两个数的和
+<pre><code class='language-plaintext' lang='plaintext'>plaintext// 目标：计算并输出两个数的和
 
 // 任务1: 获取用户输入
 输入第一个数
@@ -93,6 +94,7 @@ if (age &gt;= 18) {
 // 任务3: 输出结果
 输出和
 </code></pre>
+<p>&nbsp;</p>
 </li>
 <li><p><strong>测试和调试 (Testing and Debugging):</strong> 编写完代码后，进行测试以确保脚本按照预期工作。调试任何潜在的错误或问题，并确保脚本的稳定性和正确性。</p>
 </li>
@@ -109,7 +111,7 @@ if (age &gt;= 18) {
 <p><strong>属性 (Attribute):</strong> 属性是对象的特征或状态，描述对象的某个方面。属性可以是对象的数据，例如颜色、大小、重量等。通过访问对象的属性，我们可以了解或修改对象的状态。</p>
 <p><strong>事件 (Event):</strong> 事件是对象发生的动作或事情，可以触发相应的响应。在编程中，事件通常与用户交互有关，例如点击按钮、输入文本等。处理事件的代码被称为事件处理程序。</p>
 <p>例如（伪代码）：</p>
-<pre><code>plaintext// 创建汽车对象
+<pre><code class='language-plaintext' lang='plaintext'>plaintext// 创建汽车对象
 car = {
     color: &quot;blue&quot;,         // 属性: 颜色
     model: &quot;sedan&quot;,        // 属性: 型号
@@ -195,7 +197,7 @@ car.start()           // 启动汽车
 </ol>
 <h3 id='如何连接js和html'>如何连接JS和HTML？</h3>
 <p>在HTML文件中，通过<code>&lt;script&gt;</code>标签可以将JavaScript代码嵌入到HTML文档中。这可以在文档的头部或尾部完成，例如：</p>
-<pre><code>html&lt;!DOCTYPE html&gt;
+<pre><code class='language-html' lang='html'>html&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -222,7 +224,7 @@ car.start()           // 启动汽车
 <h2 id='基础的基础'>基础的基础</h2>
 <p>在编程中，有一些基础的概念和操作，其中包括注释、变量和数据类型。</p>
 <h4 id='注释comment）'>注释（Comment）</h4>
-<p>注释用于在代码中添加说明性的文字，这些文字不会被计算机执行，而是用于帮助人们理解代码。在JavaScript中，单行注释使用<code>//</code>，多行注释使用<code>/**/</code>。</p>
+<p>注释用于在代码中添加说明性的文字，这些文字不会被计算机执行，而是用于帮助人们理解代码。在JavaScript中，单行注释使用<code>//</code>，多行注释使用<code>/* */</code>。</p>
 <pre><code>javascript// 这是单行注释
 
 /*
@@ -1309,7 +1311,7 @@ $(&#39;:checked&#39;).css(&#39;border&#39;, &#39;2px solid pink&#39;);
 <h3 id='方法'>方法</h3>
 <h4 id='元素选择'>元素选择</h4>
 <h5 id='获取更改'>获取/更改</h5>
-<ol>
+<ol start='' >
 <li><p><strong>.html():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 用于获取或设置元素的 HTML 内容。</p>
@@ -1381,7 +1383,7 @@ $(&quot;#toBeRemoved&quot;).remove();
 
 </ol>
 <h5 id='元素'>元素</h5>
-<ol>
+<ol start='' >
 <li><p><strong>.before():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 在每个匹配的元素之前插入指定的内容。</p>
@@ -1536,7 +1538,7 @@ $(&quot;.existing&quot;).add(newElement);
 
 </ol>
 <h5 id='属性-2'>属性</h5>
-<ol>
+<ol start='' >
 <li><p><strong>.attr():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 用于获取或设置匹配元素的属性。</p>
@@ -1623,7 +1625,7 @@ $(&quot;#myDiv&quot;).css(&quot;color&quot;, &quot;blue&quot;);
 
 </ol>
 <h5 id='表单'>表单</h5>
-<ol>
+<ol start='' >
 <li><p><strong>.val():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 用于获取或设置表单元素的值。</p>
@@ -1665,7 +1667,7 @@ console.log(isNotNumeric); // 输出: false
 
 </ol>
 <h5 id='一般方法'>一般方法</h5>
-<ol>
+<ol start='' >
 <li><p><strong>.find():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 在匹配的元素中查找后代元素。</p>
@@ -1831,7 +1833,7 @@ var prevAllElements = $(&quot;.target&quot;).prevAll();
 
 </ol>
 <h5 id='筛选器测试'>筛选器/测试</h5>
-<ol>
+<ol start='' >
 <li><p><strong>.filter():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 用于筛选匹配元素集合中满足指定条件的元素。</p>
@@ -1920,7 +1922,7 @@ var containsText = $(&quot;li:contains(&#39;contains text&#39;)&quot;);
 
 </ol>
 <h5 id='元素选中顺序索引）'>元素选中顺序（索引）</h5>
-<ol>
+<ol start='' >
 <li><p><strong>.eq():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 用于选择匹配元素集合中指定索引位置的元素。</p>
@@ -1979,7 +1981,7 @@ var itemsAfterIndex0 = $(&quot;li:gt(0)&quot;);
 </ol>
 <h4 id='内容操作'>内容操作</h4>
 <h5 id='尺寸'>尺寸</h5>
-<ol>
+<ol start='' >
 <li><p><strong>.height():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 获取或设置匹配元素的高度。</p>
@@ -2121,7 +2123,7 @@ var windowWidth = $(window).width();
 
 </ol>
 <h5 id='位置'>位置</h5>
-<ol>
+<ol start='' >
 <li><p><strong>.offset():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 获取匹配元素相对于文档的偏移。</p>
@@ -2191,7 +2193,7 @@ var scrollTopValue = $(&quot;#scrollContainer&quot;).scrollTop();
 </ol>
 <h5 id='特效和动画'>特效和动画</h5>
 <h6 id='一般'>一般</h6>
-<ol>
+<ol start='' >
 <li><p><strong>.show():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 用于显示匹配的元素。</p>
@@ -2231,7 +2233,7 @@ $(&quot;#myElement&quot;).toggle();
 
 </ol>
 <h6 id='淡出'>淡出</h6>
-<ol>
+<ol start='' >
 <li><p><strong>.fadeIn():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 用于淡入匹配的元素，逐渐使元素从不透明到透明。</p>
@@ -2283,7 +2285,7 @@ $(&quot;#myElement&quot;).fadeToggle();
 
 </ol>
 <h6 id='滑动'>滑动</h6>
-<ol>
+<ol start='' >
 <li><p><strong>.slideDown():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 用于滑动显示匹配的元素。</p>
@@ -2323,7 +2325,7 @@ $(&quot;#myElement&quot;).slideToggle();
 
 </ol>
 <h6 id='自定义'>自定义</h6>
-<ol>
+<ol start='' >
 <li><p><strong>.delay():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 用于设置动画开始之前的延迟。</p>
@@ -2366,7 +2368,7 @@ $(&quot;#myElement&quot;).animate({
 
 </ol>
 <h5 id='文档'>文档</h5>
-<ol>
+<ol start='' >
 <li><p><strong>.ready():</strong></p>
 <ul>
 <li><p><strong>描述：</strong> 用于在文档加载完成后执行函数。</p>
@@ -2424,7 +2426,7 @@ $(&quot;button&quot;).on(&quot;click&quot;, function() {
 <h5 id='遍历'>遍历</h5>
 <p><code>.each()</code> 方法是 jQuery 提供的用于迭代处理集合中的元素的方法。它可以用于循环遍历数组、对象或 jQuery 对象中的元素，执行指定的函数。</p>
 <p>以下是 <code>.each()</code> 方法的基本语法：</p>
-<pre><code>javascript$.each(collection, function(index, value) {
+<pre><code>$.each(collection, function(index, value) {
   // 处理每个元素的代码
 });
 </code></pre>
@@ -2432,5 +2434,390 @@ $(&quot;button&quot;).on(&quot;click&quot;, function() {
 <p>例子：</p>
 <pre><code class='language-javascript' lang='javascript'>$(&#39;li[id != &quot;one&quot;]&#39;) .hide ().delay (500) . fadeIn (1400) ;
 </code></pre>
+<p>## </p>
+<h2 id='运行调试与错误处理'>运行调试与错误处理</h2>
+<h3 id='执行顺序'>执行顺序</h3>
+<h4 id='1-执行上下文'>1. 执行上下文</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> 执行上下文是JavaScript代码执行的环境，包括变量、函数、this等信息。了解执行上下文的创建和执行过程对于理解代码执行流程至关重要。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>console.log(x); // 输出 undefined，但不报错
+var x = 5;
+</code></pre>
+</li>
+
+</ul>
+<h4 id='2-堆栈'>2. 堆栈</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> JavaScript使用调用栈（执行栈）来管理执行上下文。学习调用栈的概念有助于理解代码的执行顺序和调用关系。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>function foo() {
+  console.log(&#39;foo&#39;);
+}
+function bar() {
+  foo();
+  console.log(&#39;bar&#39;);
+}
+bar();
+</code></pre>
+</li>
+
+</ul>
+<h4 id='3-准备阶段'>3. 准备阶段</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> 在代码执行之前，JavaScript会进行准备工作，包括创建新的作用域、变量、函数和参数，以及确定this关键字的值。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>console.log(a); // 输出 undefined，不会报错
+var a = 10;
+</code></pre>
+</li>
+
+</ul>
+<h4 id='4-执行阶段'>4. 执行阶段</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> 一旦准备阶段完成，JavaScript开始执行代码，包括给变量赋值、引用函数来执行其代码以及执行语句。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>function multiply(x, y) {
+  return x * y;
+}
+console.log(multiply(3, 4)); // 输出 12
+</code></pre>
+</li>
+
+</ul>
+<h3 id='变量作用域与性能'>变量作用域与性能</h3>
+<h4 id='1-作用域链'>1. 作用域链</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> JavaScript中的作用域链决定了变量的访问范围。深入了解作用域链有助于更好地组织和理解代码。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>function outer() {
+  var x = 10;
+  function inner() {
+    console.log(x);
+  }
+  inner();
+}
+outer(); // 输出 10
+</code></pre>
+</li>
+
+</ul>
+<h4 id='2-闭包'>2. 闭包</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> 闭包是指函数能够访问其词法作用域外部的变量。了解闭包的概念和使用场景对于优化代码结构和性能至关重要。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>function outer() {
+  var x = 10;
+  function inner() {
+    console.log(x);
+  }
+  return inner;
+}
+var closureFn = outer();
+closureFn(); // 输出 10
+</code></pre>
+</li>
+
+</ul>
+<h3 id='错误理解和处理'>错误理解和处理</h3>
+<h4 id='1-异常机制'>1. 异常机制</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> JavaScript中的异常是指运行时错误，可能导致代码无法正常执行。了解异常的机制有助于及时发现和处理错误。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>try {
+  // 可能会引发异常的代码
+} catch (error) {
+  // 异常处理代码
+  console.error(error.message);
+} finally {
+    // 最终执行的必须执行的代码
+}
+</code></pre>
+</li>
+
+</ul>
+<h4 id='2-error-对象'>2. Error 对象</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> Error 对象是 JavaScript 中用于表示错误的基础对象，它包含了多个属性用于描述错误的详细信息。</p>
+</li>
+<li><p>属性：</p>
+<ul>
+<li><strong>name：</strong> 错误名称</li>
+<li><strong>message：</strong> 错误消息</li>
+<li><strong>stack：</strong> 错误堆栈信息</li>
+
+</ul>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>try {
+  // 可能会引发异常的代码
+} catch (error) {
+  console.error(error.name); // 输出错误名称
+  console.error(error.message); // 输出错误消息
+  console.error(error.stack); // 输出错误堆栈信息
+}
+</code></pre>
+</li>
+
+</ul>
+<h4 id='3-内置错误类型'>3. 内置错误类型</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> JavaScript内置了多种错误类型，每种类型代表不同的错误情况，包括但不限于语法错误、引用错误、类型错误、范围错误、URI错误和评估错误。</p>
+</li>
+<li><p>内置错误类型：</p>
+<ul>
+<li><strong>Error：</strong> 通用错误对象</li>
+<li><strong>SyntaxError：</strong> 语法错误</li>
+<li><strong>ReferenceError：</strong> 引用错误</li>
+<li><strong>TypeError：</strong> 类型错误</li>
+<li><strong>RangeError：</strong> 范围错误</li>
+<li><strong>URIError：</strong> URI错误</li>
+<li><strong>EvalError：</strong> 评估错误</li>
+
+</ul>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>try {
+  // 可能会引发不同类型的错误的代码
+} catch (error) {
+  if (error instanceof SyntaxError) {
+    console.error(&#39;语法错误&#39;);
+  } else if (error instanceof ReferenceError) {
+    console.error(&#39;引用错误&#39;);
+  } else if (error instanceof TypeError) {
+    console.error(&#39;类型错误&#39;);
+  }
+  // 其他错误类型的处理
+}
+</code></pre>
+</li>
+
+</ul>
+<p>以上是关于错误理解和处理的基本大纲，通过了解异常机制、Error 对象和内置错误类型，你可以更有效地调试和处理JavaScript代码中的错误。</p>
+<h3 id='调试'>调试</h3>
+<h4 id='1-浏览器开发者工具和-console'>1. 浏览器开发者工具和 Console</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> 浏览器开发者工具是调试JavaScript代码的重要工具之一，而Console是其中一个强大的组件，用于输出日志和进行交互性的调试。</p>
+</li>
+<li><p><strong>使用开发者工具：</strong> 打开浏览器开发者工具，切换到“Console”选项卡。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>// 使用不同的 console 方法输出日志
+console.log(&#39;普通日志&#39;);
+console.info(&#39;信息日志&#39;);
+console.warn(&#39;警告日志&#39;);
+console.error(&#39;错误日志&#39;);
+
+// 使用 group 和 groupEnd 创建日志分组
+console.group(&#39;日志分组&#39;);
+console.log(&#39;分组内的日志&#39;);
+console.groupEnd();
+
+// 使用 table 打印表格形式的日志
+const data = [{ name: &#39;John&#39;, age: 28 }, { name: &#39;Alice&#39;, age: 24 }];
+console.table(data);
+
+// 使用 assert 进行断言，如果条件不满足则输出错误信息
+console.assert(1 === 2, &#39;断言失败，输出错误信息&#39;);
+</code></pre>
+</li>
+
+</ul>
+<h3 id='断点调试'>断点调试</h3>
+<h4 id='1-断点'>1. 断点</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> 断点是调试过程中的标记，它允许你在代码执行到特定位置时停止执行，方便你逐步检查代码。</p>
+</li>
+<li><p><strong>设置断点：</strong> 在开发者工具的“Sources”或“Debugger”选项卡中，找到要设置断点的代码行，点击行号左侧即可设置断点。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>function exampleFunction() {
+  let x = 10;
+  let y = 20;
+  let result = x + y; // 设置断点
+  console.log(result);
+}
+exampleFunction();
+</code></pre>
+</li>
+
+</ul>
+<h4 id='2-条件断点'>2. 条件断点</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> 条件断点是一种特殊的断点，只有当指定条件满足时才会触发断点停止执行。</p>
+</li>
+<li><p><strong>设置条件断点：</strong> 在设置断点后，右键点击断点图标，选择“Edit Breakpoint”，然后可以输入条件表达式。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>let i = 0;
+while (i &lt; 5) {
+  console.log(i);
+  i++;
+}
+</code></pre>
+<p>在上述代码中，你可以设置一个条件断点，条件为 </p>
+<pre><code class='language-javascript' lang='javascript'>i === 3
+</code></pre>
+<p>，这样当 i 等于 3 时会触发断点。</p>
+</li>
+
+</ul>
+<h4 id='3-执行方式'>3. 执行方式</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> 在调试过程中，你可以选择不同的执行方式，如单步执行、继续执行等，以便更灵活地控制调试流程。</p>
+</li>
+<li><p>执行方式：</p>
+<ul>
+<li><strong>单步执行（Step Over）：</strong> 逐行执行代码，不进入函数内部。</li>
+<li><strong>进入函数（Step Into）：</strong> 如果当前行包含函数调用，进入函数内部执行。</li>
+<li><strong>跳出函数（Step Out）：</strong> 执行完当前函数的剩余代码，并跳回到调用该函数的地方。</li>
+<li><strong>继续执行（Resume）：</strong> 从当前位置继续执行，直到下一个断点或程序结束。</li>
+
+</ul>
+</li>
+<li><p><strong>例子：</strong> 在调试器的“Debugger”选项卡中，你可以使用上述执行方式按钮来控制代码的逐步执行。</p>
+</li>
+
+</ul>
+<h3 id='错误'>错误</h3>
+<h3 id='错误处理'>错误处理</h3>
+<h4 id='1-捕获错误'>1. 捕获错误</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> 在JavaScript中，通过使用 <code>try</code>、<code>catch</code>、<code>finally</code> 关键字来捕获和处理错误，从而使程序能够更加健壮。</p>
+</li>
+<li><p>使用方式：</p>
+<pre><code class='language-javascript' lang='javascript'>try {
+  // 可能会引发异常的代码
+} catch (error) {
+  // 异常处理代码
+  console.error(error.message);
+} finally {
+  // 最终执行的代码，无论是否发生异常都会执行
+}
+</code></pre>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>try {
+  let result = x / y; // 如果y为0，将抛出除以零的错误
+  console.log(result);
+} catch (error) {
+  console.error(&#39;发生错误：&#39; + error.message);
+} finally {
+  console.log(&#39;最终执行的代码&#39;);
+}
+</code></pre>
+</li>
+
+</ul>
+<h4 id='2-抛出错误'>2. 抛出错误</h4>
+<ul>
+<li><p><strong>内容介绍：</strong> 在JavaScript中，通过 <code>throw</code> 关键字可以手动抛出一个错误，可以是内置的Error对象或自定义的错误对象。</p>
+</li>
+<li><p>使用方式：</p>
+<pre><code class='language-javascript' lang='javascript'>
+throw new Error(&#39;错误消息&#39;);
+</code></pre>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>function divide(x, y) {
+  if (y === 0) {
+    throw new Error(&#39;除数不能为零&#39;);
+  }
+  return x / y;
+}
+
+try {
+  let result = divide(10, 0);
+  console.log(result);
+} catch (error) {
+  console.error(&#39;发生错误：&#39; + error.message);
+}
+</code></pre>
+</li>
+
+</ul>
+<p>以上是关于错误的捕获和抛出的基本介绍。通过使用 <code>try</code>、<code>catch</code>、<code>finally</code> 可以有效地处理代码中可能出现的异常，而通过 <code>throw</code> 可以手动引发错误。这些机制有助于提高代码的健壮性和可维护性。</p>
+<h4 id='常见错误'>常见错误</h4>
+<ol start='' >
+<li><p><strong>SyntaxError（语法错误）:</strong></p>
+<ul>
+<li><p><strong>描述：</strong> 代码中存在语法错误，违反了JavaScript语法规则。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>let x = 10;
+if (x == 10 {  // 缺少右括号
+  console.log(&#39;x 等于 10&#39;);
+}
+</code></pre>
+</li>
+
+</ul>
+</li>
+<li><p><strong>ReferenceError（引用错误）:</strong></p>
+<ul>
+<li><p><strong>描述：</strong> 尝试访问未声明的变量或未定义的对象属性。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>console.log(y); // y未定义
+</code></pre>
+</li>
+
+</ul>
+</li>
+<li><p><strong>TypeError（类型错误）:</strong></p>
+<ul>
+<li><p><strong>描述：</strong> 变量或参数的类型不符合预期，无法执行特定的操作。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>let num = &#39;abc&#39;;
+console.log(num.toUpperCase()); // num 不是字符串类型，无法调用 toUpperCase 方法
+</code></pre>
+</li>
+
+</ul>
+</li>
+<li><p><strong>RangeError（范围错误）:</strong></p>
+<ul>
+<li><p><strong>描述：</strong> 数值超出有效范围，例如数组长度为负数。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>let arr = new Array(-1); // 数组长度不能为负数
+</code></pre>
+</li>
+
+</ul>
+</li>
+<li><p><strong>URIError（URI错误）:</strong></p>
+<ul>
+<li><p><strong>描述：</strong> 与 URI 相关的函数（比如 decodeURIComponent）使用了无效的参数。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>decodeURIComponent(&#39;%&#39;); // 无效的 URI 编码
+</code></pre>
+</li>
+
+</ul>
+</li>
+<li><p><strong>EvalError（评估错误）:</strong></p>
+<ul>
+<li><p><strong>描述：</strong> 在使用全局函数 eval() 时发生的错误（在现代 JavaScript 中，很少会遇到这个错误）。</p>
+</li>
+<li><p>例子：</p>
+<pre><code class='language-javascript' lang='javascript'>
+eval(&#39;alert(&quot;Hello, World!&quot;)&#39;); // 在严格模式下可能会抛出 EvalError
+</code></pre>
+</li>
+
+</ul>
+</li>
+
+</ol>
 <p>&nbsp;</p>
 </body>

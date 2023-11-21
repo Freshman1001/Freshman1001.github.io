@@ -33,7 +33,7 @@ CSS，从入门到？
 - **设置盒子尺寸：** 使用 `width` 和 `height` 属性设置元素的宽度和高度。
 
   ```
-  cssCopy codediv {
+  div {
     width: 200px;
     height: 100px;
   }
@@ -42,7 +42,7 @@ CSS，从入门到？
 - **设置内边距：** 使用 `padding` 属性设置元素的内边距。
 
   ```
-  cssCopy codediv {
+  div {
     padding: 20px;
   }
   ```
@@ -50,7 +50,7 @@ CSS，从入门到？
 - **设置边框：** 使用 `border` 属性设置元素的边框。
 
   ```
-  cssCopy codediv {
+  div {
     border: 2px solid #000;
   }
   ```
@@ -58,7 +58,7 @@ CSS，从入门到？
 - **设置外边距：** 使用 `margin` 属性设置元素的外边距。
 
   ```
-  cssCopy codediv {
+  div {
     margin: 10px;
   }
   ```
@@ -71,7 +71,7 @@ CSS，从入门到？
 你可以通过设置 `box-sizing` 属性来指定使用哪种盒子模型。例如：
 
 ```
-cssCopy codediv {
+div {
   box-sizing: border-box; /* 使用 IE 盒子模型 */
 }
 ```
@@ -125,7 +125,7 @@ CSS（层叠样式表）是一种强大的样式语言，使得Web开发人员�
    1. **元素选择器（Element Selector）：** 根据元素的名称选择元素。
 
       ```
-      cssCopy codep {
+      p {
         /* 样式规则 */
       }
       ```
@@ -133,7 +133,7 @@ CSS（层叠样式表）是一种强大的样式语言，使得Web开发人员�
    2. **类选择器（Class Selector）：** 根据元素的类名选择元素。
 
       ```
-      cssCopy code.highlight {
+      .highlight {
         /* 样式规则 */
       }
       ```
@@ -141,7 +141,7 @@ CSS（层叠样式表）是一种强大的样式语言，使得Web开发人员�
    3. **ID 选择器（ID Selector）：** 根据元素的 ID 选择元素。
 
       ```
-      cssCopy code#header {
+      #header {
         /* 样式规则 */
       }
       ```
@@ -149,7 +149,7 @@ CSS（层叠样式表）是一种强大的样式语言，使得Web开发人员�
    4. **属性选择器（Attribute Selector）：** 根据元素的属性选择元素。
 
       ```
-      cssCopy codeinput[type="text"] {
+      input[type="text"] {
         /* 样式规则 */
       }
       ```
@@ -157,7 +157,7 @@ CSS（层叠样式表）是一种强大的样式语言，使得Web开发人员�
    5. **伪类选择器（Pseudo-class Selector）：** 根据元素的状态或位置选择元素。
 
       ```
-      cssCopy codea:hover {
+      a:hover {
         /* 样式规则 */
       }
       ```
@@ -165,7 +165,7 @@ CSS（层叠样式表）是一种强大的样式语言，使得Web开发人员�
    6. **伪元素选择器（Pseudo-element Selector）：** 选择元素的特定部分。
 
       ```
-      cssCopy codep::first-line {
+      p::first-line {
         /* 样式规则 */
       }
       ```
@@ -175,7 +175,7 @@ CSS（层叠样式表）是一种强大的样式语言，使得Web开发人员�
    声明由属性和属性值组成。每个声明指定了要应用于选择的元素的一种样式。以下是声明的基本结构：
 
    ```
-   cssCopy codeselector {
+   selector {
      property: value;
    }
    ```
@@ -186,7 +186,7 @@ CSS（层叠样式表）是一种强大的样式语言，使得Web开发人员�
    例如，将段落文字颜色设置为红色：
 
    ```
-   cssCopy codep {
+   p {
      color: red;
    }
    ```
@@ -194,7 +194,7 @@ CSS（层叠样式表）是一种强大的样式语言，使得Web开发人员�
    或者将标题的字体大小设置为16像素：
 
    ```
-   cssCopy codeh1 {
+   h1 {
      font-size: 16px;
    }
    ```
@@ -202,7 +202,7 @@ CSS（层叠样式表）是一种强大的样式语言，使得Web开发人员�
    多个声明可以组合在一个样式规则中：
 
    ```
-   cssCopy codeh2 {
+   h2 {
      color: blue;
      font-size: 18px;
      margin-bottom: 10px;
@@ -220,7 +220,7 @@ CSS（层叠样式表）是一种强大的样式语言，使得Web开发人员�
 `<link>` 元素用于将外部样式表链接到HTML文档。它通常位于HTML文档的 `<head>` 部分。以下是添加CSS样式的基本语法：
 
 ```
-htmlCopy code<!DOCTYPE html>
+html<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -243,7 +243,7 @@ htmlCopy code<!DOCTYPE html>
 <style> 元素用于在HTML文档中嵌入CSS样式。可以将其放置在文档的 <head> 部分或 <body> 部分。以下是在文档头部添加嵌入式CSS样式的基本语法：
 
 ```
-htmlCopy code<!DOCTYPE html>
+html<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -285,7 +285,7 @@ htmlCopy code<!DOCTYPE html>
    `*` 选择器匹配文档中的所有元素。
 
    ```
-   cssCopy code* {
+   * {
      /* 应用于所有元素的样式规则 */
    }
    ```
@@ -295,7 +295,7 @@ htmlCopy code<!DOCTYPE html>
    标签选择器选择特定类型的元素。
 
    ```
-   cssCopy codep {
+   p {
      /* 应用于所有 <p> 元素的样式规则 */
    }
    ```
@@ -305,7 +305,7 @@ htmlCopy code<!DOCTYPE html>
    类选择器选择具有特定类的元素，标签与类选择器选择特定标签下带有特定类的元素。
 
    ```
-   cssCopy code.button {
+   .button {
      /* 应用于所有类为 button 的元素的样式规则 */
    }
    
@@ -319,7 +319,7 @@ htmlCopy code<!DOCTYPE html>
    ID选择器选择具有特定ID的元素。
 
    ```
-   cssCopy code#header {
+   #header {
      /* 应用于 ID 为 header 的元素的样式规则 */
    }
    ```
@@ -329,7 +329,7 @@ htmlCopy code<!DOCTYPE html>
    子元素选择器选择作为指定父元素的直接子元素的元素。
 
    ```
-   cssCopy codenav > ul {
+   nav > ul {
      /* 应用于所有 <ul> 元素，但仅在其直接位于 <nav> 下时生效 */
    }
    ```
@@ -339,7 +339,7 @@ htmlCopy code<!DOCTYPE html>
    后代元素选择器选择指定祖先元素内的所有后代元素。
 
    ```
-   cssCopy codearticle p {
+   article p {
      /* 应用于所有 <p> 元素，但仅在其位于 <article> 元素内时生效 */
    }
    ```
@@ -349,7 +349,7 @@ htmlCopy code<!DOCTYPE html>
    相邻兄弟选择器选择紧接在指定元素后的相邻元素。
 
    ```
-   cssCopy codeh2 + p {
+   h2 + p {
      /* 应用于紧接在 <h2> 元素后的第一个 <p> 元素 */
    }
    ```
@@ -359,7 +359,7 @@ htmlCopy code<!DOCTYPE html>
    通用兄弟选择器选择指定元素之后的所有兄弟元素。
 
    ```
-   cssCopy codeh2 ~ p {
+   h2 ~ p {
      /* 应用于 <h2> 元素后的所有 <p> 兄弟元素 */
    }
    ```
@@ -369,7 +369,7 @@ htmlCopy code<!DOCTYPE html>
    属性选择器选择具有指定属性的元素。
 
    ```
-   cssCopy codeinput[type] {
+   input[type] {
      /* 应用于所有带有 type 属性的 <input> 元素 */
    }
    ```
@@ -379,7 +379,7 @@ htmlCopy code<!DOCTYPE html>
    属性值选择器选择具有指定属性和属性值的元素。
 
    ```
-   cssCopy codea[href="https://example.com"] {
+   a[href="https://example.com"] {
      /* 应用于所有链接到 "https://example.com" 的 <a> 元素 */
    }
    ```
@@ -389,7 +389,7 @@ htmlCopy code<!DOCTYPE html>
    包含属性值选择器选择具有指定属性，并且该属性的值包含指定词汇的元素。
 
    ```
-   cssCopy codep[class~="important"] {
+   p[class~="important"] {
      /* 应用于所有类属性中包含 "important" 的 <p> 元素 */
    }
    ```
@@ -399,7 +399,7 @@ htmlCopy code<!DOCTYPE html>
    属性值前缀选择器选择具有以指定值开头的属性值的元素。
 
    ```
-   cssCopy codea[href^="https://"] {
+   a[href^="https://"] {
      /* 应用于所有链接到以 "https://" 开头的地址的 <a> 元素 */
    }
    ```
@@ -409,7 +409,7 @@ htmlCopy code<!DOCTYPE html>
    属性值后缀选择器选择具有以指定值结尾的属性值的元素。
 
    ```
-   cssCopy codeimg[src$=".png"] {
+   img[src$=".png"] {
      /* 应用于所有引用以 ".png" 结尾的图片的 <img> 元素 */
    }
    ```
@@ -419,7 +419,7 @@ htmlCopy code<!DOCTYPE html>
    属性值包含选择器选择具有包含指定值的属性值的元素。
 
    ```
-   cssCopy codea[href*="example"] {
+   a[href*="example"] {
      /* 应用于所有链接到包含 "example" 的地址的 <a> 元素 */
    }
    ```
@@ -433,7 +433,7 @@ htmlCopy code<!DOCTYPE html>
 - **文本颜色（Text Color）**：通过 `color` 属性设置文本的颜色。可以使用颜色名称、十六进制值、RGB 值等表示。例如：
 
   ```
-  cssCopy codep {
+  p {
     color: red;
   }
   ```
@@ -441,7 +441,7 @@ htmlCopy code<!DOCTYPE html>
 - **背景颜色（Background Color）**：通过 `background-color` 属性设置元素的背景颜色。同样，可以使用不同的表示方法。例如：
 
   ```
-  cssCopy codediv {
+  div {
     background-color: #f0f0f0;
   }
   ```
@@ -451,7 +451,7 @@ htmlCopy code<!DOCTYPE html>
 - **透明度（Opacity）**：通过 `opacity` 属性设置元素的透明度。值为 0.0 到 1.0 之间的数字，0.0 表示完全透明，1.0 表示完全不透明。例如：
 
   ```
-  cssCopy codediv {
+  div {
     opacity: 0.7;
   }
   ```
@@ -459,7 +459,7 @@ htmlCopy code<!DOCTYPE html>
 - **RGBA 颜色表示**：使用 `rgba` 函数表示颜色，其中 `a` 代表 alpha 通道（透明度）。例如：
 
   ```
-  cssCopy codediv {
+  div {
     background-color: rgba(255, 0, 0, 0.5); /* 半透明红色背景 */
   }
   ```
@@ -469,7 +469,7 @@ htmlCopy code<!DOCTYPE html>
 - **HSL 颜色表示**：使用 `hsl` 函数表示颜色，分别设置色相（Hue）、饱和度（Saturation）、亮度（Lightness）。例如：
 
   ```
-  cssCopy codediv {
+  div {
     background-color: hsl(120, 100%, 50%); /* 绿色背景 */
   }
   ```
@@ -477,7 +477,7 @@ htmlCopy code<!DOCTYPE html>
 - **HSLA 颜色表示**：在 `hsl` 的基础上增加 alpha 通道。例如：
 
   ```
-  cssCopy codediv {
+  div {
     background-color: hsla(120, 100%, 50%, 0.7); /* 半透明绿色背景 */
   }
   ```
@@ -491,7 +491,7 @@ htmlCopy code<!DOCTYPE html>
 `font-family` 属性用于设置文本的字体族。可以指定多个字体，以备选项的形式存在，以确保在用户计算机上始终能够找到合适的字体。例如：
 
 ```
-cssCopy codebody {
+body {
   font-family: 'Arial', 'Helvetica', sans-serif;
 }
 ```
@@ -501,7 +501,7 @@ cssCopy codebody {
 `font-size` 属性用于设置文本的大小，可以使用像素（px）、百分比（%）、相对长度单位（em）等。例如：
 
 ```
-cssCopy codep {
+p {
   font-size: 16px;
 }
 ```
@@ -511,7 +511,7 @@ cssCopy codep {
 `@font-face` 规则允许自定义字体文件，以便在网页上使用。例如：
 
 ```
-cssCopy code@font-face {
+@font-face {
   font-family: 'CustomFont';
   src: url('custom-font.woff') format('woff');
 }
@@ -525,7 +525,7 @@ body {
 `font-weight` 属性用于设置文本的粗细，可以是数字值，也可以是关键字如 `normal` 或 `bold`。例如：
 
 ```
-cssCopy codestrong {
+strong {
   font-weight: bold;
 }
 ```
@@ -535,7 +535,7 @@ cssCopy codestrong {
 `font-style` 属性用于设置文本的样式，如斜体。例如：
 
 ```
-cssCopy codeem {
+em {
   font-style: italic;
 }
 ```
@@ -545,7 +545,7 @@ cssCopy codeem {
 `text-transform` 属性用于控制文本的大小写。例如：
 
 ```
-cssCopy codespan {
+span {
   text-transform: uppercase;
 }
 ```
@@ -555,7 +555,7 @@ cssCopy codespan {
 `text-decoration` 属性用于控制文本的装饰效果，如下划线、删除线等。例如：
 
 ```
-cssCopy codea {
+a {
   text-decoration: none;
 }
 ```
@@ -565,7 +565,7 @@ cssCopy codea {
 `line-height` 属性用于设置行高，最好使用相对长度单位（如 em）以提高可伸缩性。例如：
 
 ```
-cssCopy codep {
+p {
   line-height: 1.5;
 }
 ```
@@ -575,7 +575,7 @@ cssCopy codep {
 - **字母间距（Letter Spacing）**：`letter-spacing` 属性用于设置字母之间的间距。例如：
 
   ```
-  cssCopy codeh1 {
+  h1 {
     letter-spacing: 2px;
   }
   ```
@@ -583,7 +583,7 @@ cssCopy codep {
 - **单词间距（Word Spacing）**：`word-spacing` 属性用于设置单词之间的间距。例如：
 
   ```
-  cssCopy codep {
+  p {
     word-spacing: 5px;
   }
   ```
@@ -593,7 +593,7 @@ cssCopy codep {
 `text-align` 属性用于设置文本的对齐方式，如左对齐、右对齐、居中等。例如：
 
 ```
-cssCopy codediv {
+div {
   text-align: center;
 }
 ```
@@ -603,7 +603,7 @@ cssCopy codediv {
 `vertical-align` 属性用于设置内联元素的垂直对齐方式。例如：
 
 ```
-cssCopy codeimg {
+img {
   vertical-align: middle;
 }
 ```
@@ -613,7 +613,7 @@ cssCopy codeimg {
 `text-indent` 属性用于设置文本的首行缩进。例如：
 
 ```
-cssCopy codep {
+p {
   text-indent: 20px;
 }
 ```
@@ -623,7 +623,7 @@ cssCopy codep {
 `text-shadow` 属性用于设置文本的阴影效果，包括阴影方向、偏移、大小和颜色。例如：
 
 ```
-cssCopy codeh1 {
+h1 {
   text-shadow: 2px 2px 4px #999999;
 }
 ```
@@ -634,7 +634,7 @@ cssCopy codeh1 {
 - `:first-line`：用于选择文本的第一行。
 
 ```
-cssCopy codep:first-letter {
+p:first-letter {
   font-size: 150%;
 }
 
@@ -649,7 +649,7 @@ p:first-line {
 - `:hover`、 `:active`、 `:focus`：用于响应用户的鼠标悬停、激活和焦点状态。
 
 ```
-cssCopy codea:link {
+a:link {
   color: blue;
 }
 
@@ -671,7 +671,7 @@ a:visited {
 - `width`、`min-width`、`max-width`：分别用于设置元素的宽度、最小宽度和最大宽度。例如：
 
   ```
-  cssCopy codediv {
+  div {
     width: 300px;
     min-width: 100px;
     max-width: 500px;
@@ -681,7 +681,7 @@ a:visited {
 - `height`、`min-height`、`max-height`：分别用于设置元素的高度、最小高度和最大高度。例如：
 
   ```
-  cssCopy codediv {
+  div {
     height: 200px;
     min-height: 50px;
     max-height: 300px;
@@ -693,7 +693,7 @@ a:visited {
 `overflow` 属性用于控制当内容溢出容器时的处理方式。例如：
 
 ```
-cssCopy codediv {
+div {
   overflow: hidden; /* 或者 overflow: scroll; */
 }
 ```
@@ -703,7 +703,7 @@ cssCopy codediv {
 - **内边距（Padding）**：`padding` 属性用于设置元素内部内容与边框之间的空白区域。可以分别设置上、右、下、左的内边距。例如：
 
   ```
-  cssCopy codediv {
+  div {
     padding: 10px 20px 15px 5px;
   }
   ```
@@ -711,7 +711,7 @@ cssCopy codediv {
 - **边框（Border）**：`border` 属性用于设置元素的边框，包括宽度、样式和颜色。例如：
 
   ```
-  cssCopy codediv {
+  div {
     border: 2px solid #000;
   }
   ```
@@ -719,7 +719,7 @@ cssCopy codediv {
   - **边框样式（Border Style）**：`border-style` 属性定义边框的样式，如实线、虚线等。例如：
 
     ```
-    cssCopy codediv {
+    div {
       border-style: dashed;
     }
     ```
@@ -727,7 +727,7 @@ cssCopy codediv {
   - **边框颜色（Border Color）**：`border-color` 属性定义边框的颜色。例如：
 
     ```
-    cssCopy codediv {
+    div {
       border-color: #00f;
     }
     ```
@@ -735,7 +735,7 @@ cssCopy codediv {
 - **外边距（Margin）**：`margin` 属性用于设置元素与相邻元素之间的空白区域。可以分别设置上、右、下、左的外边距。例如：
 
   ```
-  cssCopy codediv {
+  div {
     margin: 10px 20px 15px 5px;
   }
   ```
@@ -745,7 +745,7 @@ cssCopy codediv {
 `display` 属性用于设置元素的显示方式，包括块级元素、内联元素、内联块级元素等。例如：
 
 ```
-cssCopy codediv {
+div {
   display: block; /* 或者 display: inline; */
 }
 ```
@@ -753,7 +753,7 @@ cssCopy codediv {
 - **可见性（Visibility）**：`visibility` 属性用于控制元素的可见性，可以是隐藏或可见。例如：
 
   ```
-  cssCopy codediv {
+  div {
     visibility: hidden;
   }
   ```
@@ -763,7 +763,7 @@ cssCopy codediv {
 `border-image` 属性用于设置边框的图片样式，包括URL、拉伸、重复等。例如：
 
 ```
-cssCopy codediv {
+div {
   border-image: url('border-image.png') 30 30 round;
 }
 ```
@@ -773,7 +773,7 @@ cssCopy codediv {
 - **盒子阴影（Box Shadow）**：`box-shadow` 属性用于创建元素的阴影效果。例如：
 
   ```
-  cssCopy codediv {
+  div {
     box-shadow: 5px 5px 10px #888888;
   }
   ```
@@ -781,7 +781,7 @@ cssCopy codediv {
 - **圆角（Border Radius）**：`border-radius` 属性用于设置元素的边框角的圆角程度。可以分别设置水平和垂直方向的圆角半径。例如：
 
   ```
-  cssCopy codediv {
+  div {
     border-radius: 10px 20px;
   }
   ```
@@ -797,7 +797,7 @@ cssCopy codediv {
 - `list-style-type`：指定列表项的标志类型，如圆点、数字、字母等。例如：
 
   ```
-  cssCopy codeul {
+  ul {
     list-style-type: circle;
   }
   ```
@@ -805,7 +805,7 @@ cssCopy codediv {
 - `list-style-image`：用图像替代列表项的标志。例如：
 
   ```
-  cssCopy codeul {
+  ul {
     list-style-image: url('bullet.png');
   }
   ```
@@ -813,7 +813,7 @@ cssCopy codediv {
 - `list-style-position`：控制列表项标志的位置，可以是内部或外部。例如：
 
   ```
-  cssCopy codeul {
+  ul {
     list-style-position: inside;
   }
   ```
@@ -823,7 +823,7 @@ cssCopy codediv {
 `empty-cells` 属性用于控制表格中空单元格的显示。例如：
 
 ```
-cssCopy codetable {
+table {
   empty-cells: hide;
 }
 ```
@@ -833,7 +833,7 @@ cssCopy codetable {
 - `border-spacing`：设置相邻单元格之间的边框间距。例如：
 
   ```
-  cssCopy codetable {
+  table {
     border-spacing: 5px;
   }
   ```
@@ -841,7 +841,7 @@ cssCopy codetable {
 - `border-collapse`：定义表格的边框模型，可以是分离的（separate）或合并的（collapse）。例如：
 
   ```
-  cssCopy codetable {
+  table {
     border-collapse: collapse;
   }
   ```
@@ -853,7 +853,7 @@ cssCopy codetable {
 - `float`：通过浮动来布局表单元素。例如：
 
   ```
-  cssCopy codeinput {
+  input {
     float: left;
   }
   ```
@@ -861,7 +861,7 @@ cssCopy codetable {
 - `cursor`：定义鼠标悬停在表单元素上时的光标形状。例如：
 
   ```
-  cssCopy codebutton {
+  button {
     cursor: pointer;
   }
   ```
@@ -869,7 +869,7 @@ cssCopy codetable {
 - `auto`：浏览器设置默认的光标形状。例如：
 
   ```
-  cssCopy codeinput {
+  input {
     cursor: auto;
   }
   ```
@@ -877,7 +877,7 @@ cssCopy codetable {
 - `crosshair`、`default`、`pointer`、`move`、`text`、`wait`、`help`：分别设置光标形状为十字线、默认、指针、移动、文本输入、等待、帮助。例如：
 
   ```
-  cssCopy codea {
+  a {
     cursor: pointer;
   }
   ```
@@ -885,7 +885,7 @@ cssCopy codetable {
 - `url("")`：通过指定自定义光标的URL来设置光标形状。例如：
 
   ```
-  cssCopy codea {
+  a {
     cursor: url('custom-cursor.png'), auto;
   }
   ```
@@ -899,7 +899,7 @@ cssCopy codetable {
 静态流动是元素默认的定位方式。块级元素（block）会独占一行，而行内元素（inline）则在同一行内排列。例如：
 
 ```
-cssCopy codediv {
+div {
   display: block; /* 或者 display: inline; */
 }
 ```
@@ -909,7 +909,7 @@ cssCopy codediv {
 相对定位是相对于元素在文档流中的原始位置进行定位。通过使用 `position: relative;` 属性，你可以使用 `top`、`right`、`bottom` 和 `left` 属性来调整元素的位置。例如：
 
 ```
-cssCopy codediv {
+div {
   position: relative;
   top: 10px;
   left: 20px;
@@ -921,7 +921,7 @@ cssCopy codediv {
 绝对定位是相对于最近的非静态定位祖先元素进行定位，如果没有这样的祖先元素，它将相对于文档的初始包含块。例如：
 
 ```
-cssCopy codediv {
+div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -936,7 +936,7 @@ cssCopy codediv {
   当页面滚动时，元素保持在相对于视口的固定位置。例如：
 
   ```
-  cssCopy codediv {
+  div {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -948,7 +948,7 @@ cssCopy codediv {
   元素相对于视口固定，不随页面滚动而变化。例如：
 
   ```
-  cssCopy codediv {
+  div {
     position: fixed;
     top: 0;
     left: 0;
@@ -960,7 +960,7 @@ cssCopy codediv {
 浮动是一种使元素脱离正常文档流，向左或向右移动的布局方式。在浮动元素周围的文本和内联元素将围绕着它。例如：
 
 ```
-cssCopy codeimg {
+img {
   float: left;
 }
 ```
@@ -970,7 +970,7 @@ cssCopy codeimg {
 `z-index` 属性用于控制元素的层叠顺序。具有较高 `z-index` 值的元素将显示在具有较低 `z-index` 值的元素之上。例如：
 
 ```
-cssCopy codediv {
+div {
   z-index: 1;
 }
 ```
@@ -980,7 +980,7 @@ cssCopy codediv {
 `clear` 属性用于控制元素的浮动行为。它指定了在元素旁边不允许浮动元素的一侧。例如：
 
 ```
-cssCopy codediv {
+div {
   clear: both;
 }
 ```
@@ -994,7 +994,7 @@ cssCopy codediv {
 在CSS中，你可以使用 `width` 和 `height` 属性来设置图像的尺寸。例如：
 
 ```
-cssCopy codeimg {
+img {
   width: 100px;
   height: 100px;
 }
@@ -1005,7 +1005,7 @@ cssCopy codeimg {
 通过使用 `float` 或 `display: flex`，你可以控制图像在其容器中的对齐方式。例如：
 
 ```
-cssCopy codeimg {
+img {
   float: left;
   /* 或者使用 flexbox */
   display: flex;
@@ -1021,7 +1021,7 @@ cssCopy codeimg {
 使用 `background-image` 属性可以设置元素的背景图像。例如：
 
 ```
-cssCopy codediv {
+div {
   background-image: url('example.jpg');
 }
 ```
@@ -1031,7 +1031,7 @@ cssCopy codediv {
 通过 `background-color` 属性，你可以设置元素的背景颜色。例如：
 
 ```
-cssCopy codediv {
+div {
   background-color: #f0f0f0;
 }
 ```
@@ -1041,7 +1041,7 @@ cssCopy codediv {
 使用 `background-repeat` 属性可以控制背景图像的重复方式。例如：
 
 ```
-cssCopy codediv {
+div {
   background-repeat: repeat-x; /* 水平重复 */
 }
 ```
@@ -1051,7 +1051,7 @@ cssCopy codediv {
 通过 `background-attachment` 属性，你可以设置背景图像是随着页面滚动还是固定在一个位置。例如：
 
 ```
-cssCopy codediv {
+div {
   background-attachment: fixed;
 }
 ```
@@ -1061,7 +1061,7 @@ cssCopy codediv {
 使用 `linear-gradient` 属性，你可以创建线性渐变的背景。例如：
 
 ```
-cssCopy codediv {
+div {
   background: linear-gradient(to right, #ff0000, #00ff00);
 }
 ```
@@ -1073,7 +1073,7 @@ cssCopy codediv {
 `:hover` 伪类用于在用户悬停在元素上时应用样式。例如：
 
 ```
-cssCopy codea:hover {
+a:hover {
   color: #ff0000;
 }
 ```
@@ -1083,7 +1083,7 @@ cssCopy codea:hover {
 `:active` 伪类用于在用户点击并按住鼠标按钮时应用样式。例如：
 
 ```
-cssCopy codebutton:active {
+button:active {
   background-color: #00ff00;
 }
 ```
@@ -1101,7 +1101,7 @@ cssCopy codebutton:active {
 1. **:hover** - 鼠标悬停在元素上时应用的样式。
 
    ```
-   cssCopy codea:hover {
+   a:hover {
      color: red;
    }
    ```
@@ -1109,7 +1109,7 @@ cssCopy codebutton:active {
 2. **:active** - 用户点击元素但尚未释放鼠标按钮时应用的样式。
 
    ```
-   cssCopy codebutton:active {
+   button:active {
      background-color: yellow;
    }
    ```
@@ -1117,7 +1117,7 @@ cssCopy codebutton:active {
 3. **:focus** - 元素获得焦点时应用的样式，通常用于表单元素。
 
    ```
-   cssCopy codeinput:focus {
+   input:focus {
      border: 2px solid blue;
    }
    ```
@@ -1125,7 +1125,7 @@ cssCopy codebutton:active {
 4. **:first-child** - 选择元素的第一个子元素。
 
    ```
-   cssCopy codeli:first-child {
+   li:first-child {
      font-weight: bold;
    }
    ```
@@ -1133,7 +1133,7 @@ cssCopy codebutton:active {
 5. **:last-child** - 选择元素的最后一个子元素。
 
    ```
-   cssCopy codediv p:last-child {
+   div p:last-child {
      margin-bottom: 0;
    }
    ```
@@ -1141,7 +1141,7 @@ cssCopy codebutton:active {
 6. **:nth-child(n)** - 选择元素的第 n 个子元素。
 
    ```
-   cssCopy codeli:nth-child(odd) {
+   li:nth-child(odd) {
      background-color: lightgray;
    }
    ```
@@ -1151,7 +1151,7 @@ cssCopy codebutton:active {
 7. **:nth-of-type(n)** - 选择相同类型的元素中的第 n 个元素。
 
    ```
-   cssCopy codep:nth-of-type(2) {
+   p:nth-of-type(2) {
      color: red;
    }
    ```
@@ -1165,7 +1165,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
 1. **:hover**：当用户将鼠标悬停在元素上时应用的样式。常用于创建交互式效果，例如按钮在鼠标悬停时改变颜色。
 
    ```
-   cssCopy codebutton:hover {
+   button:hover {
      background-color: #3498db;
      color: #fff;
    }
@@ -1174,7 +1174,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
 2. **:active**：当元素处于活动（被点击但尚未释放）状态时应用的样式。通常用于创建按钮被点击时的样式。
 
    ```
-   cssCopy codebutton:active {
+   button:active {
      background-color: #e74c3c;
      color: #fff;
    }
@@ -1183,7 +1183,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
 3. **:focus**：当元素获得焦点时应用的样式。常用于增强表单元素的可访问性，使用户知道当前哪个输入字段处于焦点状态。
 
    ```
-   cssCopy codeinput:focus {
+   input:focus {
      border: 2px solid #3498db;
    }
    ```
@@ -1191,7 +1191,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
 4. **:visited**：选择已被访问的链接。这使得可以为已访问和未访问的链接应用不同的样式。
 
    ```
-   cssCopy codea:visited {
+   a:visited {
      color: purple;
    }
    ```
@@ -1199,7 +1199,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
 5. **:link** 和 **:visited**：分别选择未被访问的链接和已被访问的链接。这两者通常与`:hover`和`:active`一起使用，以创建链接的完整状态样式。
 
    ```
-   cssCopy codea:link {
+   a:link {
      color: blue;
    }
    
@@ -1224,7 +1224,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 用例：用于创建交互式效果，例如在悬停时改变链接或按钮的颜色。
 
    ```
-   cssCopy codebutton:hover {
+   button:hover {
      background-color: #3498db;
      color: #fff;
    }
@@ -1236,7 +1236,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 用例：用于创建按钮被点击时的样式。
 
    ```
-   cssCopy codebutton:active {
+   button:active {
      background-color: #e74c3c;
      color: #fff;
    }
@@ -1248,7 +1248,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 用例：用于突出当前输入字段。
 
    ```
-   cssCopy codeinput:focus {
+   input:focus {
      border: 2px solid #3498db;
    }
    ```
@@ -1259,7 +1259,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 用例：用于为已访问和未访问的链接应用不同的样式。
 
    ```
-   cssCopy codea:visited {
+   a:visited {
      color: purple;
    }
    ```
@@ -1270,7 +1270,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 用例：用于在选择某个选项时应用样式。
 
    ```
-   cssCopy codeinput[type="checkbox"]:checked {
+   input[type="checkbox"]:checked {
      background-color: #2ecc71;
    }
    ```
@@ -1281,7 +1281,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 用例：用于在表单元素启用时应用样式。
 
    ```
-   cssCopy codeinput:enabled {
+   input:enabled {
      border: 1px solid #3498db;
    }
    ```
@@ -1292,7 +1292,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 用例：用于在表单元素禁用时应用样式。
 
    ```
-   cssCopy codeinput:disabled {
+   input:disabled {
      background-color: #ecf0f1;
    }
    ```
@@ -1305,7 +1305,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 用例：用于在元素前面添加装饰性内容，例如图标或引用符号。
 
    ```
-   cssCopy codep::before {
+   p::before {
      content: "\201C"; /* 左双引号 */
    }
    ```
@@ -1316,7 +1316,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 用例：用于在元素后面添加额外的内容，比如清除浮动或添加尾随图标。
 
    ```
-   cssCopy codep::after {
+   p::after {
      content: "\201D"; /* 右双引号 */
    }
    ```
@@ -1327,7 +1327,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 用例：用于改变段落的首行样式，如字体大小或颜色。
 
    ```
-   cssCopy codep::first-line {
+   p::first-line {
      font-weight: bold;
    }
    ```
@@ -1338,7 +1338,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 用例：用于创建首字母大写或添加特殊样式的效果。
 
    ```
-   cssCopy codep::first-letter {
+   p::first-letter {
      font-size: 1.5em;
      color: #3498db;
    }
@@ -1350,7 +1350,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 用例：用于自定义用户选择文本时的背景和文本颜色。
 
    ```
-   cssCopy code::selection {
+   ::selection {
      background-color: #3498db;
      color: #fff;
    }
@@ -1368,7 +1368,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 语法：`translate(x, y)`，其中 `x` 和 `y` 分别是水平和垂直方向上的偏移值。
 
    ```
-   cssCopy code.box {
+   .box {
      transform: translate(50px, 20px);
    }
    ```
@@ -1379,7 +1379,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 语法：`scale(x, y)`，其中 `x` 和 `y` 分别是水平和垂直方向上的缩放比例。
 
    ```
-   cssCopy code.box {
+   .box {
      transform: scale(1.5, 2);
    }
    ```
@@ -1390,7 +1390,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 语法：`rotate(angle)`，其中 `angle` 是旋转的角度。
 
    ```
-   cssCopy code.box {
+   .box {
      transform: rotate(45deg);
    }
    ```
@@ -1401,7 +1401,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 语法：`skew(x-angle, y-angle)`，其中 `x-angle` 和 `y-angle` 分别是水平和垂直方向上的倾斜角度。
 
    ```
-   cssCopy code.box {
+   .box {
      transform: skew(30deg, 20deg);
    }
    ```
@@ -1412,7 +1412,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
    - 语法：`perspective(length)`，其中 `length` 是透视距离。
 
    ```
-   cssCopy code.container {
+   .container {
      perspective: 1000px;
    }
    ```
@@ -1426,7 +1426,7 @@ CSS伪类可以分为几个不同类型，其中之一是“状态型”伪类�
 `transition`属性通常与伪类（例如`:hover`）一起使用，以在元素状态变化时提供平滑的过渡。以下是`transition`属性的基本语法：
 
 ```
-cssCopy codeselector {
+selector {
   transition: property duration timing-function delay;
 }
 ```
@@ -1439,7 +1439,7 @@ cssCopy codeselector {
 以下是一个简单的示例，演示了当鼠标悬停在一个按钮上时，背景颜色会平滑过渡变化：
 
 ```
-cssCopy codebutton {
+button {
   background-color: #3498db;
   transition: background-color 0.3s ease;
 }
@@ -1462,7 +1462,7 @@ button:hover {
 `@keyframes` 规则用于定义动画的关键帧，即在动画过程中的不同阶段。它的基本语法如下：
 
 ```
-cssCopy code@keyframes animationName {
+@keyframes animationName {
   from {
     /* styles at the beginning of the animation */
   }
@@ -1485,7 +1485,7 @@ cssCopy code@keyframes animationName {
 `animation` 属性用于将动画应用于元素。其基本语法如下：
 
 ```
-cssCopy codeselector {
+selector {
   animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 ```
@@ -1501,7 +1501,7 @@ cssCopy codeselector {
 以下是一个简单的例子，演示了一个使用 `@keyframes` 和 `animation` 属性的动画：
 
 ```
-cssCopy code@keyframes slide-in {
+@keyframes slide-in {
   from {
     transform: translateX(-100%);
   }
@@ -1521,7 +1521,7 @@ cssCopy code@keyframes slide-in {
 ## 字库
 
 ```
-cssCopy code@font-face {
+@font-face {
   font-family: fnt;
   src: url(../remixicon.woff) format("woff");
 }
@@ -1534,7 +1534,7 @@ cssCopy code@font-face {
 然后，你可以在其他地方的样式规则中使用 `font-family: fnt;` 来引用这个自定义字体，例如：
 
 ```
-cssCopy codebody {
+body {
   font-family: fnt, sans-serif;
 }
 ```
@@ -1553,7 +1553,7 @@ CSS的结构规划对于项目的可维护性和团队协作至关重要。以�
    - **特点：** 样式与HTML元素直接关联，不推荐在大型项目中使用，因为难以维护。
 
    ```
-   htmlCopy code
+   html
    <p style="color: red; font-size: 16px;">This is a paragraph.</p>
    ```
 
@@ -1563,7 +1563,7 @@ CSS的结构规划对于项目的可维护性和团队协作至关重要。以�
    - **特点：** 样式写在HTML文档的头部，适用于小型项目或需要页面特定样式的情况。
 
    ```
-   htmlCopy code<head>
+   html<head>
      <style>
        p {
          color: blue;
@@ -1579,7 +1579,7 @@ CSS的结构规划对于项目的可维护性和团队协作至关重要。以�
    - **特点：** 样式定义在独立的CSS文件中，适用于大型项目和样式共享。
 
    ```
-   htmlCopy code<head>
+   html<head>
      <link rel="stylesheet" type="text/css" href="style.css">
    </head>
    ```
@@ -1593,7 +1593,7 @@ CSS的结构规划对于项目的可维护性和团队协作至关重要。以�
    - **属性选择器：** 适用于根据元素的属性选择样式，例如 `[disabled]`。
 
    ```
-   cssCopy code.highlight {
+   .highlight {
      color: red;
    }
    
@@ -1612,7 +1612,7 @@ CSS的结构规划对于项目的可维护性和团队协作至关重要。以�
    - 避免过于宽泛的选择器，以免影响到其他模块的样式。
 
    ```
-   cssCopy code.section1 .content {
+   .section1 .content {
      /* 样式规则 */
    }
    ```
@@ -1652,7 +1652,7 @@ CSS的结构规划对于项目的可维护性和团队协作至关重要。以�
 在写CSS样式时，通常会使用带有浏览器私有前缀的规则，以确保在各种浏览器中都能正确渲染。一种通用的方式是使用带前缀和不带前缀的规则，例如：
 
 ```
-cssCopy code.transition {
+.transition {
   -webkit-transition: all .5s; /* Chrome, Safari */
   -moz-transition: all .5s;    /* Firefox */
   -o-transition: all .5s;      /* Opera */

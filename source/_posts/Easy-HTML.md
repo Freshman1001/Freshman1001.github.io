@@ -1,18 +1,17 @@
 ---
 title: Easy HTML
 date: 2023-11-04 16:02:29
-tags: web
+tags: 前端技术
 categories:
-- web
-- [html, css]
+- 学习
+- 计算机技术
+- 前端
 cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 ---
 
 <body>
 <p>HTML，从入门到？
 <!-- more --></p>
-<div>[TOC]</div>
-<p>&nbsp;</p>
 <h2 id='qa'>Q&amp;A</h2>
 <h3 id='how-to-visit-web'><strong>How to visit web?</strong></h3>
 <p>在学习HTML时，首先要了解如何访问网页，这涉及以下关键要素：</p>
@@ -112,7 +111,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <p>在HTML中，有多种标签用于创建不同类型的列表。以下是常见的列表元素及其用法：</p>
 <ol start='' >
 <li><p><code>&lt;ol&gt;</code>：有序列表元素，用于创建按顺序排列的列表。包含在<code>&lt;ol&gt;</code>中的每个列表项使用 <code>&lt;li&gt;</code> 标签定义。</p>
-<pre><code>html&lt;ol&gt;
+<pre><code>&lt;ol&gt;
     &lt;li&gt;First item&lt;/li&gt;
     &lt;li&gt;Second item&lt;/li&gt;
     &lt;li&gt;Third item&lt;/li&gt;
@@ -120,7 +119,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 </code></pre>
 </li>
 <li><p><code>&lt;ul&gt;</code>：无序列表元素，用于创建无特定顺序的列表。同样，每个列表项使用 <code>&lt;li&gt;</code> 标签定义。</p>
-<pre><code>html&lt;ul&gt;
+<pre><code>&lt;ul&gt;
     &lt;li&gt;Red&lt;/li&gt;
     &lt;li&gt;Green&lt;/li&gt;
     &lt;li&gt;Blue&lt;/li&gt;
@@ -128,7 +127,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 </code></pre>
 </li>
 <li><p><code>&lt;li&gt;</code>：列表项元素，用于定义列表中的每一项。可以包含文本、图像或其他HTML元素。</p>
-<pre><code>html&lt;ul&gt;
+<pre><code>&lt;ul&gt;
     &lt;li&gt;Item 1&lt;/li&gt;
     &lt;li&gt;Item 2&lt;/li&gt;
     &lt;li&gt;Item 3&lt;/li&gt;
@@ -136,7 +135,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 </code></pre>
 </li>
 <li><p><code>&lt;dl&gt;</code>：定义列表元素，用于创建术语及其定义的列表。每个术语由 <code>&lt;dt&gt;</code> 定义，相应的定义由 <code>&lt;dd&gt;</code> 定义。</p>
-<pre><code>html&lt;dl&gt;
+<pre><code>&lt;dl&gt;
     &lt;dt&gt;HTML&lt;/dt&gt;
     &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
     &lt;dt&gt;CSS&lt;/dt&gt;
@@ -151,7 +150,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 
 </ol>
 <p>列表可以嵌套，这意味着你可以在列表项中放置另一个列表。这种嵌套结构可以用于创建更复杂的文档层次结构。例如：</p>
-<pre><code>html&lt;ul&gt;
+<pre><code>&lt;ul&gt;
     &lt;li&gt;Item 1&lt;/li&gt;
     &lt;li&gt;Item 2
         &lt;ul&gt;
@@ -165,19 +164,19 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <p>通过了解和灵活使用这些列表元素，你可以更好地组织和呈现文档的内容。</p>
 <h2 id='link'>Link</h2>
 <p>在HTML中，链接元素 <code>&lt;a&gt;</code> 用于创建超链接，使用户能够点击跳转到其他页面或资源。以下是创建链接的基本用法：</p>
-<pre><code>html
+<pre><code>
 &lt;a href=&quot;https://www.example.com&quot;&gt;Visit Example.com&lt;/a&gt;
 </code></pre>
 <p>在这个例子中，<code>href</code> 属性包含链接的目标地址，可以是绝对URL（指向其他网站的完整地址）或相对URL（指向同一网站内的地址）。</p>
 <p><strong>示例：</strong></p>
 <ol start='' >
 <li><p><strong>绝对URL链接：</strong></p>
-<pre><code>html
+<pre><code>
 &lt;a href=&quot;https://www.example.com&quot;&gt;Visit Example.com&lt;/a&gt;
 </code></pre>
 </li>
 <li><p><strong>相对URL链接：</strong></p>
-<pre><code>html
+<pre><code>
 &lt;a href=&quot;/page/about.html&quot;&gt;About Us&lt;/a&gt;
 </code></pre>
 </li>
@@ -202,7 +201,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 
 </ol>
 <p><strong>示例目录结构：</strong></p>
-<pre><code>markdown- / (根目录)
+<pre><code>markdownCopy code- / (根目录)
   - index.html (默认首页)
   - css/ (样式文件夹)
     - style.css
@@ -231,7 +230,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <p>在相对URL中，使用这些符号可以更灵活地指定文件路径，使得文件引用更加方便。</p>
 <h4 id='email-link'>Email Link</h4>
 <p>在HTML中，可以使用 <code>mailto</code> 协议创建一个链接，使用户能够点击链接以启动默认邮件客户端并打开一个新的邮件窗口。下面是创建电子邮件链接的示例：</p>
-<pre><code>html
+<pre><code>
 &lt;a href=&quot;mailto:somebody@example.org&quot;&gt;Send Email&lt;/a&gt;
 </code></pre>
 <p>在这个例子中，<code>mailto:somebody@example.org</code> 是一个特殊的URL，其中 <code>mailto:</code> 表示协议，后面跟着电子邮件地址。用户点击这个链接时，浏览器将尝试打开默认的邮件客户端，并创建一个新的邮件，收件人已经填写为指定的电子邮件地址。</p>
@@ -240,14 +239,14 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <ol start='' >
 <li><p><strong><code>target=&quot;_blank&quot;</code>：</strong></p>
 <p>使用 <code>target=&quot;_blank&quot;</code> 可以让链接在新的浏览器窗口或标签页中打开。例如：</p>
-<pre><code>html
+<pre><code>
 &lt;a href=&quot;https://www.example.com&quot; target=&quot;_blank&quot;&gt;Visit Example.com&lt;/a&gt;
 </code></pre>
 <p>这将在新的浏览器窗口或标签页中打开链接，而不是在当前页面中导航。</p>
 </li>
 <li><p><strong><code>&lt;a href=&quot;#[id]&quot;&gt;&lt;/a&gt;</code>：</strong></p>
 <p>使用 <code>href=&quot;#[id]&quot;</code> 可以创建内部链接，将页面滚动到具有特定ID的元素位置。例如：</p>
-<pre><code>html&lt;a href=&quot;#section2&quot;&gt;Go to Section 2&lt;/a&gt;
+<pre><code>&lt;a href=&quot;#section2&quot;&gt;Go to Section 2&lt;/a&gt;
 
 &lt;div id=&quot;section2&quot;&gt;
     &lt;!-- Content of Section 2 --&gt;
@@ -270,7 +269,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <li><code>height</code> 和 <code>width</code>：指定图像的高度和宽度，最好在设计时指定以提高性能。</li>
 
 </ul>
-<pre><code>html
+<pre><code>
 &lt;img src=&quot;images/example.jpg&quot; alt=&quot;A descriptive text&quot; title=&quot;Additional information&quot; height=&quot;300&quot; width=&quot;400&quot;&gt;
 </code></pre>
 </li>
@@ -282,7 +281,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 </li>
 <li><p><strong><code>&lt;figure&gt;</code> 元素：</strong></p>
 <p><code>&lt;figure&gt;</code> 元素用于组合图像及其标题或说明。通常与 <code>&lt;figcaption&gt;</code> 元素一起使用。</p>
-<pre><code>html&lt;figure&gt;
+<pre><code>&lt;figure&gt;
     &lt;img src=&quot;images/example.jpg&quot; alt=&quot;A descriptive text&quot; title=&quot;Additional information&quot; height=&quot;300&quot; width=&quot;400&quot;&gt;
     &lt;figcaption&gt;Caption or description for the image.&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -293,7 +292,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <p>通过了解这些基本概念，你可以更好地组织和管理网页中的图像内容。在设计网页时，务必考虑性能和可访问性，为图像添加适当的描述文本以确保网站对所有用户都友好。</p>
 <h2 id='table'>Table</h2>
 <p>在HTML中，使用 <code>&lt;table&gt;</code> 元素可以创建表格，其中包含了行（<code>&lt;tr&gt;</code>）、列标题（<code>&lt;th&gt;</code>）和数据单元格（<code>&lt;td&gt;</code>）。以下是一个基本的表格结构：</p>
-<pre><code>html&lt;table&gt;
+<pre><code>&lt;table&gt;
     &lt;thead&gt;
         &lt;tr&gt;
             &lt;th&gt;Heading 1&lt;/th&gt;
@@ -330,7 +329,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <li><code>rowspan</code>：定义单元格纵向合并的行数。</li>
 
 </ul>
-<pre><code>html&lt;table&gt;
+<pre><code>&lt;table&gt;
     &lt;thead&gt;
         &lt;tr&gt;
             &lt;th colspan=&quot;2&quot;&gt;Header 1 and Header 2 merged&lt;/th&gt;
@@ -352,7 +351,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <h2 id='form'>Form</h2>
 <p>在HTML中，使用 <code>&lt;form&gt;</code> 元素可以创建用户输入的表单。表单允许用户提交数据，通过服务器进行处理。以下是关于表单及其元素的一些基本概念：</p>
 <h4 id='form-元素'><strong><code>&lt;form&gt;</code> 元素：</strong></h4>
-<pre><code>html&lt;form action=&quot;/submit&quot; method=&quot;post&quot; id=&quot;myForm&quot;&gt;
+<pre><code>&lt;form action=&quot;/submit&quot; method=&quot;post&quot; id=&quot;myForm&quot;&gt;
     &lt;!-- Form content goes here --&gt;
 &lt;/form&gt;
 </code></pre>
@@ -363,7 +362,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 
 </ul>
 <h4 id='input-元素'><strong><code>&lt;input&gt;</code> 元素：</strong></h4>
-<pre><code>html
+<pre><code>
 &lt;input type=&quot;text&quot; name=&quot;username&quot; id=&quot;username&quot; placeholder=&quot;Enter your username&quot; maxlength=&quot;30&quot;&gt;
 </code></pre>
 <ul>
@@ -377,7 +376,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 
 </ul>
 <h4 id='textarea-元素'><strong><code>&lt;textarea&gt;</code> 元素：</strong></h4>
-<pre><code>html
+<pre><code>
 &lt;textarea name=&quot;message&quot; id=&quot;message&quot; placeholder=&quot;Enter your message&quot; rows=&quot;4&quot; cols=&quot;50&quot;&gt;&lt;/textarea&gt;
 </code></pre>
 <ul>
@@ -388,7 +387,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 
 </ul>
 <h4 id='select-元素'><strong><code>&lt;select&gt;</code> 元素：</strong></h4>
-<pre><code>html&lt;select name=&quot;country&quot; id=&quot;country&quot;&gt;
+<pre><code>&lt;select name=&quot;country&quot; id=&quot;country&quot;&gt;
     &lt;option value=&quot;us&quot;&gt;United States&lt;/option&gt;
     &lt;option value=&quot;ca&quot;&gt;Canada&lt;/option&gt;
     &lt;option value=&quot;uk&quot;&gt;United Kingdom&lt;/option&gt;
@@ -400,12 +399,12 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 
 </ul>
 <h4 id='button-元素'><strong><code>&lt;button&gt;</code> 元素：</strong></h4>
-<pre><code>html
+<pre><code>
 &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
 </code></pre>
 <p><code>&lt;button&gt;</code> 元素可以包含文本、图像或其他元素，并用于触发表单的提交等操作。</p>
 <h4 id='label-元素'><strong><code>&lt;label&gt;</code> 元素：</strong></h4>
-<pre><code>html&lt;label for=&quot;username&quot;&gt;Username:&lt;/label&gt;
+<pre><code>&lt;label for=&quot;username&quot;&gt;Username:&lt;/label&gt;
 &lt;input type=&quot;text&quot; name=&quot;username&quot; id=&quot;username&quot;&gt;
 </code></pre>
 <ul>
@@ -413,7 +412,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 
 </ul>
 <h4 id='fieldset-元素'><strong><code>&lt;fieldset&gt;</code> 元素：</strong></h4>
-<pre><code>html&lt;fieldset&gt;
+<pre><code>&lt;fieldset&gt;
     &lt;legend&gt;Personal Information&lt;/legend&gt;
     &lt;!-- Form elements go here --&gt;
 &lt;/fieldset&gt;
@@ -421,7 +420,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <p><code>&lt;fieldset&gt;</code> 元素用于将表单分组，并可以包含一个 <code>&lt;legend&gt;</code> 元素作为分组的标题。</p>
 <h4 id='表单验证'><strong>表单验证：</strong></h4>
 <p>表单验证通常由JavaScript完成，但HTML5提供了一些简单的验证功能，如 <code>required</code> 属性。更复杂的验证通常在服务器端进行。</p>
-<pre><code>html
+<pre><code>
 &lt;input type=&quot;text&quot; name=&quot;username&quot; required&gt;
 </code></pre>
 <p>在这个例子中，<code>required</code> 属性表示该字段是必填的。</p>
@@ -433,17 +432,17 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <p><code>&lt;!-- --&gt;</code> 用于在HTML中添加注释。注释不会在浏览器中显示，而是用于提供对代码的解释或临时禁用代码的功能。</p>
 <h4 id='id-和-class'><strong><code>id</code> 和 <code>class</code>：</strong></h4>
 <p><code>id</code> 用于为HTML元素定义唯一的标识符，而 <code>class</code> 用于为元素定义一个或多个类。这些标识符和类通常用于CSS和JavaScript中，以便样式化和操作特定元素。</p>
-<pre><code>html
+<pre><code>
 &lt;div id=&quot;uniqueId&quot; class=&quot;commonClass&quot;&gt;Content&lt;/div&gt;
 </code></pre>
 <h4 id='div-和-span'><strong><code>&lt;div&gt;</code> 和 <code>&lt;span&gt;</code>：</strong></h4>
 <div> 和 <span> 是用于在HTML文档中创建容器的通用元素。<div> 通常用于块级元素，而 <span> 通常用于内联元素。它们通常与CSS一起使用，用于样式化和布局。</span></div></span></div>
-<pre><code>html&lt;div&gt;This is a block-level container&lt;/div&gt;
+<pre><code>&lt;div&gt;This is a block-level container&lt;/div&gt;
 &lt;span&gt;This is an inline container&lt;/span&gt;
 </code></pre>
 <h4 id='iframe-元素'><strong><code>&lt;iframe&gt;</code> 元素：</strong></h4>
 <iframe> 用于嵌入其他文档，如其他网页或多媒体内容。常见属性包括 width 和 height 以设置框架的尺寸，以及 src 以指定要嵌入的文档的URL。</body></iframe>
-<pre><code>html
+<pre><code>
 &lt;iframe src=&quot;https://www.example.com&quot; width=&quot;600&quot; height=&quot;400&quot; seamless&gt;&lt;/iframe&gt;
 </code></pre>
 <h4 id='meta-元素'><strong><code>&lt;meta&gt;</code> 元素：</strong></h4>
@@ -454,13 +453,13 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <li><code>http-equiv</code>：提供HTTP头信息，如 &quot;Content-Type&quot;。</li>
 
 </ul>
-<pre><code>html&lt;meta name=&quot;description&quot; content=&quot;This is a description of the web page&quot;&gt;
+<pre><code>&lt;meta name=&quot;description&quot; content=&quot;This is a description of the web page&quot;&gt;
 &lt;meta name=&quot;keywords&quot; content=&quot;HTML, CSS, JavaScript&quot;&gt;
 &lt;meta name=&quot;robots&quot; content=&quot;noindex, nofollow&quot;&gt;
 </code></pre>
 <h4 id='转义字符'><strong>转义字符：</strong></h4>
 <p>在HTML中，一些字符具有特殊的含义，如 <code>&lt;</code> 和 <code>&gt;</code>。为了在文本中显示这些字符，需要使用转义字符。例如，<code>&lt;</code> 表示 <code>&lt;</code>，<code>&gt;</code> 表示 <code>&gt;</code>。</p>
-<pre><code>html
+<pre><code>
 &lt;p&gt;This is an &amp;lt;example&amp;gt; text.&lt;/p&gt;
 </code></pre>
 <p>这些元素和概念在HTML中具有不同的用途，用于增强文档的结构、样式和功能。深入理解它们可以使你更加熟练地创建和维护Web页面。</p>
@@ -469,7 +468,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <p>将视频或音频上传到专业的托管服务，如 YouTube、Vimeo、SoundCloud 或 MySpace，并使用它们提供的嵌入代码来在网页中嵌入。</p>
 <h4 id='2-video-和-audio-元素'><strong>2. <code>&lt;video&gt;</code> 和 <code>&lt;audio&gt;</code> 元素:</strong></h4>
 <p>HTML 提供了 <code>&lt;video&gt;</code> 和 <code>&lt;audio&gt;</code> 元素，用于在网页中嵌入视频和音频。</p>
-<pre><code>html&lt;video src=&quot;example.mp4&quot; width=&quot;640&quot; height=&quot;360&quot; controls autoplay loop preload=&quot;auto&quot; poster=&quot;video-thumbnail.jpg&quot;&gt;
+<pre><code>&lt;video src=&quot;example.mp4&quot; width=&quot;640&quot; height=&quot;360&quot; controls autoplay loop preload=&quot;auto&quot; poster=&quot;video-thumbnail.jpg&quot;&gt;
     &lt;source src=&quot;example.webm&quot; type=&quot;video/webm&quot;&gt;
     Your browser does not support the video tag.
 &lt;/video&gt;
@@ -486,7 +485,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 </ul>
 <h4 id='source-元素'><strong><code>&lt;source&gt;</code> 元素:</strong></h4>
 <p>为了支持多个媒体格式，可以使用 <code>&lt;source&gt;</code> 元素指定多个媒体源。</p>
-<pre><code>html&lt;video width=&quot;640&quot; height=&quot;360&quot; controls&gt;
+<pre><code>&lt;video width=&quot;640&quot; height=&quot;360&quot; controls&gt;
     &lt;source src=&quot;example.mp4&quot; type=&quot;video/mp4&quot;&gt;
     &lt;source src=&quot;example.webm&quot; type=&quot;video/webm&quot;&gt;
     Your browser does not support the video tag.
@@ -501,7 +500,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <h4 id='3-javascript'><strong>3. JavaScript:</strong></h4>
 <p>通过使用 JavaScript，你可以更精细地控制媒体播放，添加交互性，或根据用户的行为进行一些操作。</p>
 <p>例如，你可以使用 JavaScript 来处理媒体事件（如播放、暂停、结束）或更复杂的交互。</p>
-<pre><code>html&lt;script&gt;
+<pre><code>&lt;script&gt;
     var video = document.getElementById(&quot;myVideo&quot;);
 
     function playPause() {
@@ -519,7 +518,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <p>HTML5引入了一些新的语义化元素，使得页面结构更清晰、更有意义。这些元素有助于更好地描述文档的结构和内容，而不仅仅是使用无语义的<code>&lt;div&gt;</code>元素。以下是一些HTML5的新语义化元素：</p>
 <h3 id='header-元素'><code>&lt;header&gt;</code> 元素</h3>
 <p><code>&lt;header&gt;</code> 元素用于定义文档或节的页眉。通常包含导航、标题、子标题等内容。</p>
-<pre><code>html&lt;header&gt;
+<pre><code>&lt;header&gt;
     &lt;h1&gt;Website Title&lt;/h1&gt;
     &lt;nav&gt;
         &lt;ul&gt;
@@ -532,20 +531,20 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 </code></pre>
 <h3 id='article-元素'><code>&lt;article&gt;</code> 元素</h3>
 <p><code>&lt;article&gt;</code> 元素用于定义独立的、完整的内容单元，例如一篇文章、一段新闻、一篇博客等。</p>
-<pre><code>html&lt;article&gt;
+<pre><code>&lt;article&gt;
     &lt;h2&gt;Article Title&lt;/h2&gt;
     &lt;p&gt;Article content goes here.&lt;/p&gt;
 &lt;/article&gt;
 </code></pre>
 <h3 id='footer-元素'><code>&lt;footer&gt;</code> 元素</h3>
 <p><code>&lt;footer&gt;</code> 元素用于定义文档或节的页脚，通常包含作者信息、版权信息、相关链接等。</p>
-<pre><code>html&lt;footer&gt;
+<pre><code>&lt;footer&gt;
     &lt;p&gt;&amp;copy; 2023 Website Name. All rights reserved.&lt;/p&gt;
 &lt;/footer&gt;
 </code></pre>
 <h3 id='aside-元素'><code>&lt;aside&gt;</code> 元素</h3>
 <p><code>&lt;aside&gt;</code> 元素用于定义页面内容之外的内容，例如侧边栏、广告、相关链接等。</p>
-<pre><code>html&lt;aside&gt;
+<pre><code>&lt;aside&gt;
     &lt;h3&gt;Related Links&lt;/h3&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
@@ -555,14 +554,14 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 </code></pre>
 <h3 id='section-元素'><code>&lt;section&gt;</code> 元素</h3>
 <p><code>&lt;section&gt;</code> 元素用于定义文档中的一个区域，通常包含一个主题。可以有多个 <code>&lt;section&gt;</code> 元素组成一个页面。</p>
-<pre><code>html&lt;section&gt;
+<pre><code>&lt;section&gt;
     &lt;h2&gt;Section Title&lt;/h2&gt;
     &lt;p&gt;Section content goes here.&lt;/p&gt;
 &lt;/section&gt;
 </code></pre>
 <h3 id='nav-元素'><code>&lt;nav&gt;</code> 元素</h3>
 <p><code>&lt;nav&gt;</code> 元素用于定义导航链接的容器，包括菜单、导航条等。</p>
-<pre><code>html&lt;nav&gt;
+<pre><code>&lt;nav&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
@@ -572,14 +571,14 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 </code></pre>
 <h3 id='hgroup-元素'><code>&lt;hgroup&gt;</code> 元素</h3>
 <p><code>&lt;hgroup&gt;</code> 元素用于对页面或区域标题进行分组，包含一个或多个标题元素。</p>
-<pre><code>html&lt;hgroup&gt;
+<pre><code>&lt;hgroup&gt;
     &lt;h1&gt;Main Title&lt;/h1&gt;
     &lt;h2&gt;Subtitle&lt;/h2&gt;
 &lt;/hgroup&gt;
 </code></pre>
 <h3 id='figure-和-figcaption-元素'><code>&lt;figure&gt;</code> 和 <code>&lt;figcaption&gt;</code> 元素</h3>
 <figure> 元素用于包含一组媒体元素，通常与 <figcaption> 元素一起使用来为媒体元素添加标题。</figcaption></figure>
-<pre><code>html&lt;figure&gt;
+<pre><code>&lt;figure&gt;
     &lt;img src=&quot;image.jpg&quot; alt=&quot;Image&quot;&gt;
     &lt;figcaption&gt;Image Caption&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -588,7 +587,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 <h2 id='html进阶补充'>HTML进阶补充</h2>
 <h3 id='1-canvas-元素'><strong>1. </strong><code>&lt;canvas&gt;</code> 元素：**</h3>
 <p><code>&lt;canvas&gt;</code> 元素用于绘制图形，创建图形、图表、动画等。JavaScript通常与<code>&lt;canvas&gt;</code>一起使用，以在页面上进行动态绘图。</p>
-<pre><code>html&lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;200&quot;&gt;&lt;/canvas&gt;
+<pre><code>&lt;canvas id=&quot;myCanvas&quot; width=&quot;400&quot; height=&quot;200&quot;&gt;&lt;/canvas&gt;
 &lt;script&gt;
     var canvas = document.getElementById(&quot;myCanvas&quot;);
     var context = canvas.getContext(&quot;2d&quot;);
@@ -597,7 +596,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 </code></pre>
 <h3 id='2-自定义数据属性data-attributes）'><strong>2. </strong>自定义数据属性（Data Attributes）：**</h3>
 <p>可以使用自定义数据属性（data attributes）为HTML元素添加额外的数据，这些数据可以通过JavaScript访问。</p>
-<pre><code>html&lt;div data-user-id=&quot;123&quot; data-username=&quot;john_doe&quot;&gt;User Profile&lt;/div&gt;
+<pre><code>&lt;div data-user-id=&quot;123&quot; data-username=&quot;john_doe&quot;&gt;User Profile&lt;/div&gt;
 &lt;script&gt;
     var userProfile = document.querySelector(&#39;div&#39;);
     var userId = userProfile.dataset.userId; // 获取数据属性值
@@ -606,7 +605,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 </code></pre>
 <h3 id='3-多媒体元素'><strong>3. </strong>多媒体元素：**</h3>
 <p>HTML5引入了 <code>&lt;audio&gt;</code> 和 <code>&lt;video&gt;</code> 元素，允许直接在网页上嵌入音频和视频。</p>
-<pre><code>html&lt;audio controls&gt;
+<pre><code>&lt;audio controls&gt;
     &lt;source src=&quot;audio.mp3&quot; type=&quot;audio/mp3&quot;&gt;
     Your browser does not support the audio tag.
 &lt;/audio&gt;
@@ -618,22 +617,22 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 </code></pre>
 <h3 id='4-响应式web设计'><strong>4. </strong>响应式Web设计：**</h3>
 <p>使用媒体查询和弹性布局技术，可以创建响应式的Web设计，使网页在不同设备和屏幕尺寸上具有良好的表现。</p>
-<pre><code>html&lt;link rel=&quot;stylesheet&quot; media=&quot;screen and (max-width: 600px)&quot; href=&quot;small-screen.css&quot;&gt;
+<pre><code>&lt;link rel=&quot;stylesheet&quot; media=&quot;screen and (max-width: 600px)&quot; href=&quot;small-screen.css&quot;&gt;
 &lt;link rel=&quot;stylesheet&quot; media=&quot;screen and (min-width: 601px) and (max-width: 1024px)&quot; href=&quot;medium-screen.css&quot;&gt;
 &lt;link rel=&quot;stylesheet&quot; media=&quot;screen and (min-width: 1025px)&quot; href=&quot;large-screen.css&quot;&gt;
 </code></pre>
 <h3 id='5-web语意化和访问性'><strong>5. </strong>Web语意化和访问性：**</h3>
 <p>编写具有良好语意化的HTML可以提高页面的可访问性（accessibility）。</p>
-<pre><code>html
+<pre><code>
 &lt;button type=&quot;button&quot; onclick=&quot;submitForm()&quot;&gt;Submit&lt;/button&gt;
 </code></pre>
 <p>为提高可访问性，可以添加 <code>role</code> 和 <code>aria-*</code> 属性。</p>
-<pre><code>html
+<pre><code>
 &lt;button type=&quot;button&quot; role=&quot;button&quot; aria-label=&quot;Submit button&quot; onclick=&quot;submitForm()&quot;&gt;Submit&lt;/button&gt;
 </code></pre>
 <h3 id='6-web组件web-components）'><strong>6. </strong>Web组件（Web Components）：**</h3>
 <p>Web组件是一种创建可重用和独立的自定义HTML元素的技术。它包括自定义元素、Shadow DOM、HTML模板和HTML导入。</p>
-<pre><code>html&lt;!-- 自定义元素 --&gt;
+<pre><code>&lt;!-- 自定义元素 --&gt;
 &lt;my-custom-element&gt;&lt;/my-custom-element&gt;
 
 &lt;!-- HTML模板 --&gt;
@@ -643,7 +642,7 @@ cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 </code></pre>
 <h3 id='7-渐进式web应用progressive-web-app-pwa）'><strong>7. </strong>渐进式Web应用（Progressive Web App, PWA）：**</h3>
 <p>PWA是一种结合了Web和原生应用的开发方法，使得Web应用在离线时也能正常工作，可以添加到主屏幕上，提供推送通知等功能。</p>
-<pre><code>html&lt;!-- 渐进式Web应用标记 --&gt;
+<pre><code>&lt;!-- 渐进式Web应用标记 --&gt;
 &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;
 &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot;&gt;
 &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;

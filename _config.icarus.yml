@@ -106,10 +106,10 @@ head:
 navbar:
     # Navigation menu items
     menu:
-        Home: /
-        Archives: /archives
-        Categories: /categories
-        Tags: /tags
+        主页: /
+        归档: /archives
+        分类: /categories
+        标签: /tags
     # Links to be shown on the right of the navigation bar
     links:
         Source Code:
