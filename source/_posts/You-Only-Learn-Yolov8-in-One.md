@@ -12,6 +12,8 @@ categories:
 cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReC2WEKvgGPCIbrMPf9OC7y6odxYyDKo9drPtpkmhCmZ5KGtR4BWmROLF9oN-ocBXX_g&usqp=CAU
 ---
 
+yolov8使用快速上手指南
+<!-- more -->
 ## Start and Try
 
 ```bash
@@ -28,7 +30,6 @@ yolo copy-cfg
 yolo cfg
 
 ```
-<!-- more -->
 
 
 ## Modes

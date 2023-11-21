@@ -4,7 +4,7 @@ date: 2023-11-07 20:58:48
 tags: 前端技术
 categories:
 - 学习
-- 计算机技
+- 计算机
 - 前端
 cover: https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg?tx=w_3840,q_auto
 ---

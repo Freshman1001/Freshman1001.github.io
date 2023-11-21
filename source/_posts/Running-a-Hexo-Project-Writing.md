@@ -12,7 +12,8 @@ comment: true
 cover: https://blog.getform.io/content/images/2019/10/hexo-cover-01-800x450.png
 ---
 
-
+hexo博客搭建后的运营工作
+<!-- more -->
 ***Before the beginning of everything, learn syntax of markdown first please.***
 
 
@@ -21,7 +22,6 @@ cover: https://blog.getform.io/content/images/2019/10/hexo-cover-01-800x450.png
 ```bash
  hexo new [layout] <title>
 ```
-<!-- more -->
 
 layout has 3 option:
 

@@ -4,7 +4,7 @@ date: 2023-11-04 16:02:29
 tags: 前端技术
 categories:
 - 学习
-- 计算机技术
+- 计算机
 - 前端
 cover: https://austingil.com/wp-content/uploads/HTML-Blog-Cover.png
 ---
