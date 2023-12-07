@@ -3,7 +3,9 @@ title: Javascript Basement Quick Overview - Interactive Front-end Development
 date: 2023-11-07 20:58:48
 tags: javascript
 categories:
-- web
+- 学习
+- 计算机
+- 前端
 cover: https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg?tx=w_3840,q_auto
 ---
 
@@ -3114,3 +3116,464 @@ $('li[id != "one"]') .hide ().delay (500) . fadeIn (1400) ;
      eval('alert("Hello, World!")'); // 在严格模式下可能会抛出 EvalError
      ```
 
+
+
+## Ajax
+
+### 入门
+
+让我们来了解一下Ajax（Asynchronous JavaScript and XML）技术。Ajax是一种用于创建异步网络应用的技术，它使得在不重新加载整个页面的情况下，能够向服务器发送请求并获取数据。
+
+以下是使用Ajax的基本步骤：
+
+1. **创建一个XMLHttpRequest对象：** 在现代浏览器中，你可以使用`XMLHttpRequest`对象来创建一个HTTP请求。示例代码如下：
+
+   ```js
+   var xhttp = new XMLHttpRequest();
+   ```
+
+2. **指定请求的类型、URL以及是否异步：** 设置请求的方法（GET或POST）、URL以及是否异步。异步是Ajax的关键，它允许页面在等待服务器响应的同时执行其他操作。示例代码如下：
+
+   ```js
+   xhttp.open("GET", "https://example.com/api/data", true);
+   ```
+
+3. **定义响应函数：** 在请求的`onreadystatechange`事件中定义一个函数，该函数将在服务器响应发生变化时被调用。通常，在`readyState`为4（表示请求已完成）且`status`为200（表示成功）时执行相应的操作。示例代码如下：
+
+   ```js
+   xhttp.onreadystatechange = function() {
+     if (this.readyState == 4 && this.status == 200) {
+       // 处理服务器响应的数据
+       console.log(this.responseText);
+     }
+   };
+   ```
+
+4. **发送请求：** 最后，使用`send`方法发送请求。如果是GET请求，可以将参数附加在URL上；如果是POST请求，需要在`send`方法中传递参数。示例代码如下：
+
+   ```js
+   xhttp.send();
+   ```
+
+### AJAX概述
+
+AJAX的全称为（Asynchronous JavaScript and XML，异步JavaScript和XML） ，是Web开发应用的一个里程碑
+
+在用户和服务器之间引入了一个中间媒介，从而改变了同步交互过程中“处理－等待－处理－等待”的模式
+
+揭开了无刷新更新页面的新时代，代替传统Web请求方式和通过隐藏的框架来进行异步提交的趋势
+
+AJAX独立于用户与Web服务器之间的交互，数据编辑、页面导航和数据验证等操作不再需要重新加载整个页面
+
+### XMLHttpRequest的创建
+
+创建`XMLHttpRequest`对象，并且在不同的浏览器中有不同的实现方式。这是因为不同的浏览器在支持Ajax时采用了不同的技术实现。
+
+在现代的浏览器中，你可以使用`window.XMLHttpRequest`来检查是否支持`XMLHttpRequest`对象。如果支持，就直接使用`new XMLHttpRequest()`来创建对象。这是因为现代浏览器通常都支持这个标准的方式。
+
+在某些旧版本的Internet Explorer浏览器中，`XMLHttpRequest`对象可能不被支持，因此需要使用`ActiveXObject`来创建一个类似的对象。在这种情况下，你可以通过检查`window.ActiveXObject`来确定浏览器是否支持这种方式，并使用`new ActiveXObject("Microsoft.XMLHTTP")`来创建对象。
+
+下面是一个结合判断的完整示例：
+
+```js
+var xhr;
+
+if (window.XMLHttpRequest) {
+  // 现代浏览器
+  xhr = new XMLHttpRequest();
+} else if (window.ActiveXObject) {
+  // IE浏览器
+  try {
+    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+  } catch (e) {
+    // 可能存在某些IE版本不支持
+    console.error("Error creating XMLHttpRequest object:", e);
+  }
+} else {
+  // 不支持Ajax方式
+  console.error("Ajax not supported in this browser");
+}
+
+// 接下来，你可以继续使用xhr对象进行Ajax请求
+```
+
+这种方法确保了在现代浏览器和一些旧版本的IE浏览器中都能够正确创建`XMLHttpRequest`对象。
+
+### XMLHttpRequest简单流程
+
+### 同步方式：
+
+```js
+var xhr = new XMLHttpRequest(); // 创建
+xhr.open("GET", "/test.json", false); // 目标(绝对相对网址)，false 表示同步
+xhr.send(); // 发送
+console.log(xhr.status + ':' + xhr.responseText); // 内容
+```
+
+这是一个同步的Ajax请求，其中：
+
+- `xhr.open("GET", "/test.json", false);` 指定了请求的目标为"/test.json"，并设置为同步请求（`false`表示同步）。
+- `xhr.send();` 发送了请求，代码会等待服务器响应，直到请求完成为止。
+- `console.log(xhr.status + ':' + xhr.responseText);` 打印了服务器的响应状态码和响应文本。
+
+### 异步方式：
+
+```js
+var xhr = new XMLHttpRequest(); // 创建
+xhr.open("GET", "/test.json", true); // 目标，true 表示异步
+xhr.onreadystatechange = function (e) {
+  if (xhr.readyState != 4) return; // 不是就绪状态
+  console.log(xhr.status + ':' + xhr.responseText); // 内容
+}
+xhr.send(); // 发送
+console.log('OK');
+```
+
+这是一个异步的Ajax请求，其中：
+
+- `xhr.open("GET", "/test.json", true);` 指定了请求的目标为"/test.json"，并设置为异步请求（`true`表示异步）。
+- `xhr.onreadystatechange` 是一个回调函数，当`xhr`对象的状态改变时，该函数将被调用。在这里，我们检查`xhr.readyState`是否为4（表示请求完成），然后打印服务器的响应状态码和响应文本。
+- `xhr.send();` 发送了异步请求，代码继续执行而不等待服务器响应。
+- `console.log('OK');` 这行代码会在请求发送后立即执行，而不等待响应。
+
+总的来说，异步方式的优势在于不会阻塞页面的其他操作，而同步方式会导致页面在等待响应时被冻结。在现代Web开发中，一般推荐使用异步方式。
+
+### XMLHttpRequest的属性
+
+1. **`readyState`（只读）：** 表示当前请求的状态，具体取值如下：
+   - 0: 请求未初始化
+   - 1: 服务器连接已建立
+   - 2: 请求已接收
+   - 3: 请求处理中
+   - 4: 请求已完成，且响应已就绪
+2. **`responseType`：** 在调用`send()`方法前设置，用于指定返回的响应数据类型，例如`"text"`、`"json"`、`"blob"`等。
+3. **`responseBody`（只读）：** 返回信息的无符号字节数组形式。
+4. **`responseStream`（只读）：** 返回信息的ADO Stream对象形式。
+5. **`responseText`（只读）：** 返回信息的字符串形式。
+6. **`responseXML`（只读）：** 返回信息的XML Document对象形式。
+7. **`status`（只读）：** 返回信息的HTTP状态码。
+8. **`statusText`（只读）：** 返回信息的响应行文本。
+9. **`timeout`：** 异步请求的超时时间（毫秒）。需要在调用`open()`方法后、`send()`方法前进行设置。早期浏览器可能不支持。
+10. **`withCredentials`：** 一个布尔值，默认为`false`。表示跨域请求是否携带凭据（如Cookie或HTTP认证信息）。
+
+这些属性为开发者提供了对Ajax请求和其结果的详细控制和访问。在实际应用中，可以利用这些属性来处理不同的响应类型、状态变化等情况。
+
+### XMLHttpRequest的responseType
+
+`XMLHttpRequest`的`responseType`属性用于指定服务器返回的数据类型。以下是常见的`responseType`值及其含义：
+
+1. **`""`（空字符串）：** 将`responseType`设为空字符串与设置为`text`相同，表示返回的数据将以字符串（DOMString）形式处理，这是默认类型。
+2. **`arraybuffer`：** 表示返回的数据将以JavaScript的ArrayBuffer对象形式处理，用于处理二进制数据。
+3. **`blob`：** 表示返回的数据将以Blob对象形式处理，适用于处理二进制数据。请注意，部分浏览器可能不支持此类型。
+4. **`document`：** 表示返回的数据将以HTML Document或XML XMLDocument形式处理，具体取决于接收到的数据的MIME类型。
+5. **`json`：** 表示返回的数据将被视为JSON，自动解析为JavaScript对象。
+6. **`text`：** 表示返回的数据将包含在DOMString对象中的文本。请注意，IE10/IE11不支持这个类型。
+7. **`moz-chunked-arraybuffer`：** 类似于`arraybuffer`，但数据将以流的形式接收。在使用此响应类型时，响应中的值仅在progress事件的处理程序中可用，并且只包含上一次响应progress事件以后收到的数据，而不是自请求发送以来收到的所有数据。在progress事件处理时访问`response`将返回到目前为止收到的数据。在progress事件处理程序之外访问，`response`的值会始终为`null`。
+8. **`ms-stream`：** 表示返回的数据将以unsigned byte数组形式处理，仅在IE中可用。
+
+选择适当的`responseType`取决于你期望从服务器接收到的数据类型。
+
+### XMLHttpRequest的方法
+
+1. **`abort()`：** 用于取消当前的请求。
+
+   ```js
+   
+   xhr.abort();
+   ```
+
+2. **`getAllResponseHeaders()`：** 获取所有响应的HTTP头，返回一个包含所有头信息的字符串。
+
+   ```js
+   
+   var allHeaders = xhr.getAllResponseHeaders();
+   ```
+
+3. **`getResponseHeader(headerName)`：** 从响应信息中获取指定的HTTP头。
+
+   ```js
+   
+   var contentType = xhr.getResponseHeader("Content-Type");
+   ```
+
+4. **`open(method, url, async, user, password)`：** 创建一个新的HTTP请求，并指定此请求的方法、URL以及验证信息（可选的用户名和密码）。
+
+   ```js
+   
+   xhr.open("GET", "/example/api", true, "username", "password");
+   ```
+
+5. **`send(data)`：** 发送请求到HTTP服务器并接收回应。可以传递可选的数据参数，适用于POST请求。
+
+   ```js
+   
+   xhr.send();
+   ```
+
+6. **`setRequestHeader(header, value)`：** 单独指定请求的某个HTTP头。必须在`open()`之后调用，`send()`之前调用。
+
+   ```js
+   
+   xhr.setRequestHeader("Content-Type", "application/json");
+   ```
+
+这些方法提供了对`XMLHttpRequest`对象的进一步控制，允许你在请求过程中进行取消、获取响应头、设置请求头等操作。请注意，一些方法的调用顺序是有讲究的，例如在调用`setRequestHeader`之前必须先调用`open`。
+
+### XMLHttpRequest的事件
+
+1. **`onreadystatechange`：** 当`readyState`属性改变时触发，表示请求的状态发生了变化。注意，当`readyState`由非0值变为0时，不会触发该事件。
+
+   ```js
+   xhr.onreadystatechange = function() {
+     if (xhr.readyState == 4 && xhr.status == 200) {
+       // 请求已完成，可以处理响应
+     }
+   };
+   ```
+
+2. **`onloadstart`：** 在调用`send()`方法后立即触发，表示请求开始。
+
+   ```js
+   xhr.onloadstart = function() {
+     // 请求开始时执行的代码
+   };
+   ```
+
+3. **`onprogress`：** 在上传阶段（`send()`之后，`readyState`为2之前）和下载阶段（`readyState`为3时）触发，每50ms触发一次。
+
+   ```js
+   xhr.onprogress = function(event) {
+     // 处理上传或下载的进度
+   };
+   ```
+
+4. **`onload`：** 当请求成功完成时触发，此时`readyState`为4。
+
+   ```js
+   xhr.onload = function() {
+     // 请求成功完成时执行的代码
+   };
+   ```
+
+5. **`onloadend`：** 当请求结束（包括请求成功和请求失败）时触发。
+
+   ```js
+   xhr.onloadend = function() {
+     // 请求结束时执行的代码
+   };
+   ```
+
+6. **`onabort`：** 当调用`abort()`方法后触发。
+
+   ```js
+   xhr.onabort = function() {
+     // 请求被取消时执行的代码
+   };
+   ```
+
+7. **`ontimeout`：** 当设置了超时时间（`timeout`不等于0）并在`onloadstart`开始后超时未发生`onloadend`时触发。
+
+   ```js
+   xhr.ontimeout = function() {
+     // 超时时执行的代码
+   };
+   ```
+
+8. **`onerror`：** 发生网络错误时触发。
+
+   ```js
+   xhr.onerror = function() {
+     // 网络错误时执行的代码
+   };
+   ```
+
+这些事件提供了对Ajax请求过程中不同阶段的控制和处理机会，使开发者能够更好地处理请求的状态变化和处理响应。
+
+## JSON
+
+### 概述
+
+JSON(JavaScript Object Notation)JavaScript对象表示法
+
+JSON是Douglas Crockford在2001年开始推广使用
+
+在2005年-2006年正式成为主流的数据格式
+
+成为Standard ECMA-262 3rd Edition - December 1999的子集
+
+SON（JavaScript Object Notation）是一种轻量级的数据交换格式。它是一种易于人阅读和编写，同时也易于机器解析和生成的文本格式。JSON是基于JavaScript语言的，但它是一种独立于语言的数据格式，因此可以被多种编程语言使用。
+
+### JSON的特点：
+
+1. **简洁性：** JSON采用键值对的方式表示数据，使得数据结构清晰简洁，易于理解和阅读。
+2. **易于扩展：** 可以很容易地向JSON中添加新的数据类型，而无需更改解析JSON的代码。
+3. **自描述性：** JSON数据是自描述的，每个数据字段都有对应的键名，使得数据的含义更加清晰。
+4. **跨语言性：** JSON数据格式是独立于语言的，因此可以在不同编程语言之间进行轻松的数据交换。
+
+### JSON的基本语法：
+
+- **对象（Object）：** 由键值对组成，键和值之间使用冒号分隔，不同键值对之间使用逗号分隔，整个对象使用花括号括起来。
+
+  ```json
+  {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+  }
+  ```
+
+- **数组（Array）：** 有序列表，使用方括号括起来，数组中的元素可以是任意数据类型，包括对象和数组。
+
+  ```json
+  
+  ["apple", "orange", "banana"]
+  ```
+
+- **值：** 可以是字符串、数字、布尔值、对象、数组、null等。
+
+  ```json
+  {
+    "name": "Alice",
+    "age": 25,
+    "isStudent": true,
+    "grades": [95, 87, 92],
+    "address": {
+      "street": "123 Main St",
+      "city": "Cityville"
+    },
+    "isMarried": null
+  }
+  ```
+
+### JSON与JavaScript的关系：
+
+JSON的语法是JavaScript对象表示法的子集，这意味着几乎所有的JavaScript对象都可以表示为JSON。在JavaScript中，可以使用`JSON.stringify()`将对象转换为JSON字符串，而使用`JSON.parse()`将JSON字符串转换为JavaScript对象。
+
+```js
+// JavaScript对象
+var person = { "name": "John", "age": 30, "city": "New York" };
+
+// 将JavaScript对象转换为JSON字符串
+var jsonStr = JSON.stringify(person);
+console.log(jsonStr);
+
+// 将JSON字符串转换为JavaScript对象
+var jsonObj = JSON.parse(jsonStr);
+console.log(jsonObj);
+```
+
+JSON在Web开发中广泛应用于数据传输和配置文件等领域，它的简洁性和跨语言性使得它成为一种优秀的数据交换格式。
+
+### JSON-value
+
+在JSON（JavaScript Object Notation）中，一个 "JSON value" 表示 JSON 数据的最小单元，它可以是以下几种类型之一：
+
+1. **字符串（String）：** 表示文本数据，使用双引号括起来。
+
+   ```json
+   
+   "Hello, World!"
+   ```
+
+2. **数字（Number）：** 表示数值数据，可以是整数或浮点数。
+
+   ```json
+   
+   42
+   ```
+
+   ```json
+   
+   3.14
+   ```
+
+3. **布尔值（Boolean）：** 表示逻辑值，可以是 `true` 或 `false`。
+
+   ```json
+   
+   true
+   ```
+
+4. **对象（Object）：** 表示键值对集合，使用花括号括起来。
+
+   ```json
+   
+   {"name": "John", "age": 30}
+   ```
+
+5. **数组（Array）：** 表示有序的值列表，使用方括号括起来。
+
+   ```json
+   
+   ["apple", "orange", "banana"]
+   ```
+
+6. **空值（null）：** 表示空值。
+
+   ```json
+   
+   null
+   ```
+
+### 内嵌对象
+
+在 JavaScript 中，JSON 内嵌对象通常是指 JSON 对象中包含其他 JSON 对象的情况。下面我将解释与 JSON 内嵌对象相关的几个概念和问题。
+
+### 1. JSON.parse(String):
+
+`JSON.parse()` 方法用于解析 JSON 字符串，将其转换为对应的 JavaScript 对象。
+
+```js
+var jsonString = '{"name": "John", "age": 30}';
+var jsonObj = JSON.parse(jsonString);
+console.log(jsonObj);
+```
+
+### 2. JSON.stringify(Value):
+
+`JSON.stringify()` 方法用于将 JavaScript 对象转换为 JSON 字符串。
+
+```js
+var obj = { a: 1, f: function(x) { x++; } };
+var jsonString = JSON.stringify(obj);
+console.log(jsonString);
+```
+
+请注意，`JSON.stringify()` 在处理函数时会将函数忽略，因此在上述例子中，函数 `f` 不会出现在生成的 JSON 字符串中。
+
+### 3. 循环引用问题:
+
+当对象存在循环引用（对象之间相互引用）时，使用 `JSON.stringify()` 可能会导致问题，因为 JSON 不支持循环引用。
+
+```js
+var obj = { a: 1, b: {} };
+obj.c = obj.b;
+obj.b.x = obj.c;
+
+try {
+  var jsonString = JSON.stringify(obj);
+} catch (error) {
+  console.error(error.message); // TypeError: Converting circular structure to JSON
+}
+```
+
+上述例子中，`obj` 对象存在循环引用，尝试使用 `JSON.stringify()` 会抛出 `TypeError`。
+
+解决循环引用问题的一种方式是在调用 `JSON.stringify()` 时传递一个 replacer 函数，用于控制对象的序列化过程。
+
+```js
+var obj = { a: 1, b: {} };
+obj.c = obj.b;
+obj.b.x = obj.c;
+
+var jsonString = JSON.stringify(obj, function(key, value) {
+  if (key !== "" && value === obj) {
+    return undefined; // 遇到循环引用时返回 undefined
+  }
+  return value;
+});
+
+console.log(jsonString);
+```
+
+这样可以避免抛出错误，但需要注意，在这种情况下，生成的 JSON 字符串中会缺少循环引用的部分。解决循环引用问题需要谨慎处理，具体方案可能取决于你的应用场景。

@@ -3,7 +3,9 @@ title: Front End Engineering
 date: 2023-11-06 23:17:00
 tags: web
 categories:
-- web
+- 学习
+- 计算机
+- 前端
 cover: https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201111215809/How-to-Become-a-Front-End-Developer-in-2020.png
 ---
 
